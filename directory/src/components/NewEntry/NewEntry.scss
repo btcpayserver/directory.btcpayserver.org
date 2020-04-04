@@ -1,7 +1,7 @@
 @import "../../constants.scss";
 
 .newentry-container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 75px;
 
@@ -16,20 +16,20 @@
   .entry-title {
     width: 100%;
     margin: 0 auto;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: $black;
     padding: 20px 0 20px 15%;
     border-left: 4px solid $primaryGreen;
 
     @media (max-width: $secondBreak) {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       border-left: none;
       padding-left: 0;
     }
 
-    // @media (max-width: $thirdBreak) {
-    //     font-size: 0.8rem;
-    // }
+    @media (max-width: $thirdBreak) {
+        font-size: 0.8rem;
+    }
   }
 
   .form-container {

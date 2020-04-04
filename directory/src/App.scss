@@ -17,14 +17,14 @@
       border-bottom: 1px solid lightgrey;
 
       display: grid;
-      grid-template-columns: 15% 1fr 1fr 15%;
+      grid-template-columns: 10% 1fr 1fr 10%;
       padding: 15px 0;
       grid-template-areas: ". logo items .";
 
-      @media (max-width: $firstBreak) {
-        grid-template-areas: ". logo items .";
-        grid-template-columns: 10% 1fr 1fr 10%;
-      }
+      // @media (max-width: $firstBreak) {
+      //   grid-template-areas: ". logo items .";
+      //   grid-template-columns: 10% 1fr 1fr 10%;
+      // }
 
       @media (max-width: $secondBreak) {
         grid-template-columns: 5% 1fr 1fr 5%;
@@ -49,11 +49,11 @@
         align-items: center;
 
         .newentry {
-          font-size: 0.9rem;
+          font-size: 1rem;
           text-decoration: none;
           border: 1px solid $primaryGreen;
           border-radius: 4px;
-          padding: 9px 18px;
+          padding: 10px 20px;
           color: white;
           cursor: pointer;
           transition: all 0.2s ease;
@@ -61,8 +61,7 @@
           // margin-right: 10px;
 
           @media (max-width: $thirdBreak) {
-            font-size: 0.8rem;
-            padding: 7.5px 14px;
+            font-size: 0.9rem;
           }
 
           &:hover {
@@ -129,12 +128,12 @@
     background: $darkGreen;
 
     .footer-content {
-      margin-left: 15%;
+      margin-left: 10%;
       padding: 20px 0;
 
-      @media (max-width: $firstBreak) {
-        margin-left: 10%;
-      }
+      // @media (max-width: $firstBreak) {
+      //   margin-left: 10%;
+      // }
 
       @media (max-width: $secondBreak) {
         margin-left: 5%;
@@ -145,9 +144,9 @@
         font-size: 0.8rem;
         margin-bottom: 10px;
 
-        // @media (max-width: $thirdBreak) {
-        //   font-size: 0.7rem;
-        // }
+        @media (max-width: $thirdBreak) {
+          font-size: 0.8rem;
+        }
 
         &:last-of-type {
           margin-bottom: 0;

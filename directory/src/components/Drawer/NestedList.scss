@@ -6,8 +6,12 @@
 
     .drawer-title {
         padding: 20px 0px 20px 14px;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         color: $mediumGrey;
+
+        @media (max-width: $thirdBreak) {
+            font-size: 0.8rem;
+        }
     }
 
     a {
@@ -26,7 +30,11 @@
     
             cursor: pointer;
     
-            font-size: 0.8rem;
+            font-size: 0.9rem;
+
+            @media (max-width: $thirdBreak) {
+                font-size: 0.8rem;
+            }
     
             p {
                 margin-left: 10px;
@@ -54,7 +62,11 @@
 
         cursor: pointer;
 
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+
+        @media (max-width: $thirdBreak) {
+            font-size: 0.8rem;
+        }
 
         p {
             margin-left: 10px;
