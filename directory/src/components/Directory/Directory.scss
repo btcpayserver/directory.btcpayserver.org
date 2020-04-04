@@ -1,7 +1,7 @@
 @import "../../constants.scss";
 
 .directory-container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 
   @media (max-width: $firstBreak) {
@@ -19,10 +19,6 @@
     font-size: 1.5rem;
     font-weight: bold;
 
-    @media (max-width: $secondBreak) {
-      font-size: 1.6rem;
-    }
-
     @media (max-width: $thirdBreak) {
       font-size: 1.3rem;
     }
@@ -33,7 +29,11 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+
+    @media (max-width: $thirdBreak) {
+      font-size: 0.8rem;
+    }
 
     p {
       margin-right: 10px;
@@ -44,7 +44,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 30px;
-    grid-column-gap: 3%;
+    grid-column-gap: 4%;
 
     @media (max-width: $firstBreak) {
       grid-template-columns: 1fr 1fr;
@@ -70,13 +70,17 @@
         a {
           // color: $mediumGrey;
           color: $black;
-          font-size: 0.8rem;
+          font-size: 1rem;
           text-decoration: none;
           font-weight: bold;
           transition: all 0.2s ease-out;
 
           display: flex;
           align-items: center;
+
+          @media (max-width: $thirdBreak) {
+            font-size: 0.9rem;
+          }
 
           &:hover {
             color: $primaryGreen;
@@ -89,12 +93,12 @@
 
         p {
           margin-top: 15px;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           line-height: 1.4;
 
-          // @media (max-width: $thirdBreak) {
-          //   font-size: 0.8rem;
-          // }
+          @media (max-width: $thirdBreak) {
+            font-size: 0.8rem;
+          }
         }
       } //item-content
 

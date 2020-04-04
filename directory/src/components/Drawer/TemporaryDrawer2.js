@@ -11,7 +11,7 @@ import "./TemporaryDrawer2.scss";
 
 const useStyles = makeStyles({
   list: {
-    width: 300
+    width: 320
   },
   fullList: {
     width: "auto"

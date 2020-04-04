@@ -7,7 +7,7 @@
 
     .filter-button {
         font-family: "Open Sans", sans-serif;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         text-decoration: none;
         border: 1px solid $primaryGreen;
         border-radius: 20px;
@@ -21,8 +21,7 @@
         white-space: pre;
 
         @media (max-width: $thirdBreak) {
-          font-size: 0.6rem;
-          padding: 5px 12.5px;
+          font-size: 0.8rem;
         }
 
         &:hover {
