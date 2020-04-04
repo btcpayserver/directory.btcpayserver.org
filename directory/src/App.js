@@ -3,7 +3,7 @@ import "./App.scss";
 import { NavLink, Route } from "react-router-dom";
 import Directory from "./components/Directory/Directory";
 import NewEntry from "./components/NewEntry/NewEntry";
-import btcPayLogo from "./images/btcpay-directory-logo-rob.svg";
+import btcPayLogo from "./images/btcpay-directory-logo.svg";
 import darkModeImg from "./images/darkMode.svg";
 import TemporaryDrawer from "./components/Drawer/TemporaryDrawer";
 
