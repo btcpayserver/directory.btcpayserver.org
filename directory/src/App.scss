@@ -103,11 +103,7 @@
           cursor: pointer;
 
           &:hover {
-            svg {
-              style {
-                fill: black;
-              }
-            }
+            fill: red;
           }
 
           // @media (max-width: $secondBreak) {
@@ -162,9 +158,15 @@
 
   header {
     .navigation-menu {
+      border-bottom: 1px solid #444444;
+      
       .nav-items {
         .newentry {
           color: black;
+
+          &:hover {
+            color: black;
+          }
         }
       }
     }

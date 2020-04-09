@@ -145,7 +145,7 @@ const merchantSubcategories = [
 export default function NestedList(props) {
 
   return (
-    <div className="drawer-list">
+    <div className={`drawer-list drawer-list-${props.colorMode}`} >
       <p className="drawer-title">Categories</p>
 
       <a href={`/${props.colorMode}`}>

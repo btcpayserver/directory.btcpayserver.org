@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./NewEntry.scss";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { matchPath } from "react-router-dom";
 
 class NewEntry extends React.Component {
   constructor(props) {
@@ -83,8 +84,15 @@ class NewEntry extends React.Component {
   };
 
   render() {
+    const match = matchPath(this.props.history.location.pathname, {
+      // You can share this string as a constant if you want
+      path: "/:colorMode/newentry",
+    });
+
+    const colorMode = match ? match.params.colorMode : "light";
+
     return (
-      <div className="newentry-container">
+      <div className={`newentry-container newentry-container-${colorMode}`}>
         <p className="entry-title">
           Please provide your organization's details:
         </p>

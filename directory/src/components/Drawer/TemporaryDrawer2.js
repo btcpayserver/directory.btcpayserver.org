@@ -74,7 +74,7 @@ export default function TemporaryDrawer2(props) {
   );
 
   return (
-    <div className="filter-button-container">
+    <div className={`filter-button-container`}>
       <React.Fragment key={"right"}>
         <button className="filter-button" onClick={toggleDrawer("right", true)}>
           {props.subFilterName

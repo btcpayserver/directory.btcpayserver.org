@@ -6,13 +6,14 @@ import Directory from "./components/Directory/Directory";
 import NewEntry from "./components/NewEntry/NewEntry";
 import btcPayLogo from "./images/btcpay-directory-logo.svg";
 import btcPayLogoWhite from "./images/btcpay-directory-logo-white.png";
-import moonOutlined from "./images/moonOutlined.svg";
-import getOppositePath from "./helpers"
+import moonFilled from "./images/moonFilled.svg";
+import getOppositePath from "./helpers";
+import sunFilled2 from "./images/sunFilled2.svg";
 
 function App(props) {
   const match = matchPath(props.history.location.pathname, {
     // You can share this string as a constant if you want
-    path: "/:colorMode"
+    path: "/:colorMode",
   });
   // const [colorMode, setColorMode] = useState("light");
 
@@ -21,20 +22,34 @@ function App(props) {
   const darkGreen = "#1E7A44";
   const pickedColor = green;
   const colorMode = match ? match.params.colorMode : "light";
-  console.log(colorMode)
+  console.log(colorMode);
 
   return (
     <div className={`app app-${colorMode}`}>
       <header>
         <div className="navigation-menu">
           <a href={`/${colorMode}`}>
-            {colorMode === "light" ? <img src={btcPayLogo} /> : <img src={btcPayLogoWhite} />}
+            {colorMode === "light" ? (
+              <img src={btcPayLogo} />
+            ) : (
+              <img src={btcPayLogoWhite} />
+            )}
           </a>
           <div className="nav-items">
-            <NavLink className="newentry" exact to={"/newentry"}>
+            <NavLink className="newentry" exact to={`/${colorMode}/newentry`}>
               Submit an entry
             </NavLink>
-            <img src={moonOutlined} onClick={(e) => props.history.push(getOppositePath(props))} />
+            {colorMode === "light" ? (
+              <img
+                src={moonFilled}
+                onClick={(e) => props.history.push(getOppositePath(props))}
+              />
+            ) : (
+              <img
+                src={sunFilled2}
+                onClick={(e) => props.history.push(getOppositePath(props))}
+              />
+            )}
           </div>
         </div>
       </header>
@@ -43,11 +58,7 @@ function App(props) {
         <Route exact path="/">
           {<Redirect to="/light" />}
         </Route>
-        <Route
-          exact
-          path="/:colorMode"
-          component={Directory}
-        />
+        <Route exact path="/:colorMode" component={Directory} />
         <Route
           exact
           path="/:colorMode/filter/:filterName"
@@ -58,11 +69,7 @@ function App(props) {
           path="/:colorMode/filter/:filterName/:subFilterName"
           component={Directory}
         />
-        <Route
-          exact
-          path="/:colorMode/newentry"
-          component={NewEntry}
-        />
+        <Route exact path="/:colorMode/newentry" component={NewEntry} />
       </div>
 
       <footer>
