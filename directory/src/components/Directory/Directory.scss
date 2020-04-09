@@ -108,3 +108,28 @@
     } //item
   }
 }
+
+.directory-container-dark {
+  
+  .filters {
+    color: white;
+
+    .filter-button-container {
+      button {
+        color: black;
+      }
+    }
+  }
+
+  .list-container {
+    .item {
+      color: white;
+      
+      .item-content {
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}

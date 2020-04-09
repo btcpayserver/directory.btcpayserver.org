@@ -69,12 +69,12 @@ export default function TemporaryDrawer2(props) {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <NestedList />
+      <NestedList colorMode={props.colorMode}/>
     </div>
   );
 
   return (
-    <div className="filter-button-container">
+    <div className={`filter-button-container`}>
       <React.Fragment key={"right"}>
         <button className="filter-button" onClick={toggleDrawer("right", true)}>
           {props.subFilterName

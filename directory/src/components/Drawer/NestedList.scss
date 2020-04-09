@@ -85,3 +85,35 @@
         }
     }
 }
+
+.drawer-list-dark {
+    background: #444444;
+
+    .drawer-title {
+        color: white;
+    }
+
+    a {
+        color: white;
+
+        .list-item {
+            .icon {
+                color: white;
+            }
+
+            &:hover {
+                background-color: lighten(#444444, 10%);
+            }
+        }
+
+        .nested-list-item {
+            .icon {
+                color: white;
+            }
+
+            &:hover {
+                background-color: lighten(#444444, 10%);
+            }
+        }
+    }
+}

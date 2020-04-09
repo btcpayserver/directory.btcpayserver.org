@@ -113,7 +113,7 @@
             border: 1px solid $grey;
             padding: 0 7.5px;
             cursor: pointer;
-            color: $grey;
+            color: black;
             border-radius: 5px;
 
             background: linear-gradient(45deg, transparent 50%, $grey 50%),
@@ -217,6 +217,41 @@
         .success-true {
           display: block;
         }
+      }
+    } //form
+  }
+}
+
+.newentry-container-dark {
+  .entry-title {
+    color: white;
+  }
+
+  .form-container {
+    form {
+      label {
+        background: none;
+    
+        input {
+          background: none;
+          color: white;
+        }
+    
+        textarea {
+          background: none;
+          color: white;
+        }
+    
+        .select-container {
+    
+          select {
+            color: white;
+          }
+        }
+      } //label
+
+      button {
+        color: black;
       }
     } //form
   }
