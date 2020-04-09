@@ -1,6 +1,6 @@
 @import "constants.scss";
 
-.app {
+.app, .app-light {
   font-family: "Open Sans", sans-serif;
   font-size: 62.5%;
   box-sizing: border-box;
@@ -58,7 +58,6 @@
           cursor: pointer;
           transition: all 0.2s ease;
           background: $primaryGreen;
-          // margin-right: 10px;
 
           @media (max-width: $thirdBreak) {
             font-size: 0.9rem;
@@ -71,49 +70,50 @@
           }
         }
 
-        .drawer-button-container {
-          grid-area: items;
-          align-self: center;
+        // .drawer-button-container {
+        //   grid-area: items;
+        //   align-self: center;
 
-          display: flex;
-          align-items: center;
+        //   display: flex;
+        //   align-items: center;
   
-          .drawer-button {
-            display: flex;
-            align-items: center;
+        //   .drawer-button {
+        //     display: flex;
+        //     align-items: center;
 
-            border: none;
-            border-radius: 5px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            padding: 5px;
-            transition: ease .3s all;
-            outline: none;
+        //     border: none;
+        //     border-radius: 5px;
+        //     font-size: 0.9rem;
+        //     cursor: pointer;
+        //     padding: 5px;
+        //     transition: ease .3s all;
+        //     outline: none;
   
-            &:hover {
-              color: $primaryGreen;
-            }
-          }
-        }
-
-        // img {
-        //   height: 30px;
-        //   width: auto;
-        //   margin-left: 4%;
-
-        //   @media (max-width: $firstBreak) {
-        //     margin-left: 5%;
-        //   }
-
-        //   @media (max-width: $secondBreak) {
-        //     height: 27px;
-        //     margin-left: 5%;
-        //   }
-
-        //   @media (max-width: $thirdBreak) {
-        //     height: 22px;
+        //     &:hover {
+        //       color: $primaryGreen;
+        //     }
         //   }
         // }
+
+        img {
+          height: 14px;
+          width: auto;
+          margin-left: 25px;
+
+          cursor: pointer;
+
+          &:hover {
+            svg {
+              style {
+                fill: black;
+              }
+            }
+          }
+
+          // @media (max-width: $secondBreak) {
+          //   margin-left: 7.5%;
+          // }
+        }
       }
     }
   } //header
@@ -153,5 +153,24 @@
         }
       }
     }
+  }
+}
+
+.app-dark {
+  background: $darkBg;
+  color: white;
+
+  header {
+    .navigation-menu {
+      .nav-items {
+        .newentry {
+          color: black;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    background: $darkBg;
   }
 }

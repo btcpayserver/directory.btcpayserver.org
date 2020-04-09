@@ -1,40 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
+import { useParams, withRouter, matchPath } from "react-router-dom";
 import "./App.scss";
-import { NavLink, Route } from "react-router-dom";
+import { NavLink, Route, Redirect } from "react-router-dom";
 import Directory from "./components/Directory/Directory";
 import NewEntry from "./components/NewEntry/NewEntry";
 import btcPayLogo from "./images/btcpay-directory-logo.svg";
-import darkModeImg from "./images/darkMode.svg";
-import TemporaryDrawer from "./components/Drawer/TemporaryDrawer";
+import btcPayLogoWhite from "./images/btcpay-directory-logo-white.png";
+import moonOutlined from "./images/moonOutlined.svg";
+import getOppositePath from "./helpers"
 
-function App() {
+function App(props) {
+  const match = matchPath(props.history.location.pathname, {
+    // You can share this string as a constant if you want
+    path: "/:colorMode"
+  });
+  // const [colorMode, setColorMode] = useState("light");
+
   const green = "#51B13E";
   const black = "#262626";
   const darkGreen = "#1E7A44";
   const pickedColor = green;
+  const colorMode = match ? match.params.colorMode : "light";
+  console.log(colorMode)
 
   return (
-    <div className="app">
+    <div className={`app app-${colorMode}`}>
       <header>
         <div className="navigation-menu">
-          <a href="/">
-            <img src={btcPayLogo} />
+          <a href={`/${colorMode}`}>
+            {colorMode === "light" ? <img src={btcPayLogo} /> : <img src={btcPayLogoWhite} />}
           </a>
           <div className="nav-items">
             <NavLink className="newentry" exact to={"/newentry"}>
               Submit an entry
             </NavLink>
-            {/* <TemporaryDrawer /> */}
-            {/* <img src={darkModeImg} /> */}
+            <img src={moonOutlined} onClick={(e) => props.history.push(getOppositePath(props))} />
           </div>
         </div>
       </header>
 
       <div className="main-content">
-        <Route exact path="/" component={Directory} />
-        <Route exact path="/filter/:filterName" component={Directory} />
-        <Route exact path="/filter/:filterName/:subFilterName" component={Directory} />
-        <Route exact path="/newentry" component={NewEntry} />
+        <Route exact path="/">
+          {<Redirect to="/light" />}
+        </Route>
+        <Route
+          exact
+          path="/:colorMode"
+          component={Directory}
+        />
+        <Route
+          exact
+          path="/:colorMode/filter/:filterName"
+          component={Directory}
+        />
+        <Route
+          exact
+          path="/:colorMode/filter/:filterName/:subFilterName"
+          component={Directory}
+        />
+        <Route
+          exact
+          path="/:colorMode/newentry"
+          component={NewEntry}
+        />
       </div>
 
       <footer>
@@ -47,4 +75,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);

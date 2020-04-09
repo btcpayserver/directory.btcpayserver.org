@@ -142,40 +142,41 @@ const merchantSubcategories = [
   }
 ];
 
-export default function NestedList() {
+export default function NestedList(props) {
+
   return (
     <div className="drawer-list">
       <p className="drawer-title">Categories</p>
 
-      <a href="/">
+      <a href={`/${props.colorMode}`}>
         <div className="list-item">
           <SelectAllIcon className="icon" />
           <p>All</p>
         </div>
       </a>
 
-      <a href="/filter/apps">
+      <a href={`/${props.colorMode}/filter/apps`}>
         <div className="list-item">
           <AppsIcon className="icon" />
           <p>Apps</p>
         </div>
       </a>
 
-      <a href="/filter/hosts">
+      <a href={`/${props.colorMode}/filter/hosts`}>
         <div className="list-item">
           <StorageIcon className="icon" />
           <p>Hosts</p>
         </div>
       </a>
 
-      <a href="/filter/non-profits">
+      <a href={`/${props.colorMode}/filter/non-profits`}>
         <div className="list-item">
           <MoneyOffIcon className="icon" />
           <p>Non-profits</p>
         </div>
       </a>
 
-      <a href="/filter/merchants">
+      <a href={`/${props.colorMode}/filter/merchants`}>
         <div className="list-item">
           <StorefrontIcon className="icon" />
           <p>Merchants</p>
@@ -183,7 +184,7 @@ export default function NestedList() {
       </a>
 
       {merchantSubcategories.map(subCat => (
-        <a href={`/filter/merchants/${subCat.url}`}>
+        <a href={`/${props.colorMode}/filter/merchants/${subCat.url}`}>
           <div className="nested-list-item">
             {subCat.icon}
             <p>{subCat.name}</p>

@@ -24,14 +24,16 @@ function shuffle(array) {
   return array;
 }
 
-function Directory() {
-  let { filterName, subFilterName } = useParams();
+function Directory(props) {
+  let { colorMode, filterName, subFilterName } = useParams();
   const [dirList, setList] = useState(shuffle(list));
 
   const green = "#51B13E";
   const black = "#262626";
   const darkGreen = "#1E7A44";
   const pickedColor = green;
+
+  console.log(colorMode)
 
   useEffect(() => {
     if (subFilterName) {
@@ -51,17 +53,18 @@ function Directory() {
   }, [filterName, subFilterName]);
 
   return (
-    <div className="directory-container">
+    <div className={`directory-container directory-container-${colorMode}`}>
       <h2>Projects and organizations using BTCPay Server</h2>
       <div className="filters">
         <p>Showing:</p>
         {filterName ? (
           <TemporaryDrawer2
+            colorMode={colorMode}
             filterName={filterName}
             subFilterName={subFilterName}
           />
         ) : (
-          <TemporaryDrawer2 filterName="ALL" />
+          <TemporaryDrawer2 colorMode={colorMode} filterName="ALL" />
         )}
       </div>
       <div className="list-container">

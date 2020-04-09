@@ -69,7 +69,7 @@ export default function TemporaryDrawer2(props) {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <NestedList />
+      <NestedList colorMode={props.colorMode}/>
     </div>
   );
 
