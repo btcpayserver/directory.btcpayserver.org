@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp -r deploy/.??* build && sed 's|<head>|<head><script src=\"/gh-pages-spa.js\"></script>|' build/index.html > build/index-modified.html && mv build/index{-modified,}.html",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
