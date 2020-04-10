@@ -28,7 +28,7 @@ function App(props) {
     <div className={`app app-${colorMode}`}>
       <header>
         <div className="navigation-menu">
-          <a href={`/${colorMode}`}>
+          <a href={`${process.env.PUBLIC_URL}/${colorMode}`}>
             {colorMode === "light" ? (
               <img src={btcPayLogo} />
             ) : (
@@ -36,7 +36,7 @@ function App(props) {
             )}
           </a>
           <div className="nav-items">
-            <NavLink className="newentry" exact to={`/${colorMode}/newentry`}>
+            <NavLink className="newentry" exact to={`${process.env.PUBLIC_URL}/${colorMode}/newentry`}>
               New entry
             </NavLink>
             {colorMode === "light" ? (

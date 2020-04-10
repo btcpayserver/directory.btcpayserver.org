@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/directory.btcpayserver.org/static/css/main.53db9320.chunk.css",
-    "main.js": "/directory.btcpayserver.org/static/js/main.370a4237.chunk.js",
-    "main.js.map": "/directory.btcpayserver.org/static/js/main.370a4237.chunk.js.map",
+    "main.js": "/directory.btcpayserver.org/static/js/main.6ff86844.chunk.js",
+    "main.js.map": "/directory.btcpayserver.org/static/js/main.6ff86844.chunk.js.map",
     "runtime-main.js": "/directory.btcpayserver.org/static/js/runtime-main.b16a841f.js",
     "runtime-main.js.map": "/directory.btcpayserver.org/static/js/runtime-main.b16a841f.js.map",
     "static/js/2.37fe268a.chunk.js": "/directory.btcpayserver.org/static/js/2.37fe268a.chunk.js",
     "static/js/2.37fe268a.chunk.js.map": "/directory.btcpayserver.org/static/js/2.37fe268a.chunk.js.map",
     "index.html": "/directory.btcpayserver.org/index.html",
-    "precache-manifest.25fa8f7e6e711d09c0b712a63c562ed9.js": "/directory.btcpayserver.org/precache-manifest.25fa8f7e6e711d09c0b712a63c562ed9.js",
+    "precache-manifest.a00630dee996f82022c6e85474a2cfbc.js": "/directory.btcpayserver.org/precache-manifest.a00630dee996f82022c6e85474a2cfbc.js",
     "service-worker.js": "/directory.btcpayserver.org/service-worker.js",
     "static/css/main.53db9320.chunk.css.map": "/directory.btcpayserver.org/static/css/main.53db9320.chunk.css.map",
     "static/js/2.37fe268a.chunk.js.LICENSE.txt": "/directory.btcpayserver.org/static/js/2.37fe268a.chunk.js.LICENSE.txt",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.b16a841f.js",
     "static/js/2.37fe268a.chunk.js",
     "static/css/main.53db9320.chunk.css",
-    "static/js/main.370a4237.chunk.js"
+    "static/js/main.6ff86844.chunk.js"
   ]
 }
