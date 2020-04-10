@@ -36,6 +36,10 @@
         img {
           height: auto;
           width: 200px;
+
+          @media (max-width: $thirdBreak) {
+            width: 175px;
+          }
         }
       }
 
@@ -60,7 +64,7 @@
           background: $primaryGreen;
 
           @media (max-width: $thirdBreak) {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
           }
 
           &:hover {
