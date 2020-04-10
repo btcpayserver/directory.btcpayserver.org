@@ -36,7 +36,7 @@ function App(props) {
             )}
           </a>
           <div className="nav-items">
-            <NavLink className="newentry" exact to={`/${colorMode}/newentry`}>
+            <NavLink className="newentry" exact to={`${process.env.PUBLIC_URL}/${colorMode}/newentry`}>
               New entry
             </NavLink>
             {colorMode === "light" ? (
@@ -55,8 +55,8 @@ function App(props) {
       </header>
 
       <div className="main-content">
-        <Route exact path="/">
-          {<Redirect to="/light" />}
+        <Route exact path={`${process.env.PUBLIC_URL}/`}>
+          {<Redirect to={`${process.env.PUBLIC_URL}/light`} />}
         </Route>
         <Route exact path={`${process.env.PUBLIC_URL}/:colorMode`} component={Directory} />
         <Route

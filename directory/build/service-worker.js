@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/directory.btcpayserver.org/precache-manifest.e9340da6778657f40ccb10ae1338f176.js"
+  "/directory.btcpayserver.org/precache-manifest.e60a11e6b463d2b77f2bc3d655f82139.js"
 );
 
 self.addEventListener('message', (event) => {

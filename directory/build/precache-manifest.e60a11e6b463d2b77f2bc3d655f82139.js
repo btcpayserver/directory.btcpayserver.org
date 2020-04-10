@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c7231ea0994ec9709868cbc234e48f5a",
+    "revision": "9976d280144bc4223bf7a3a30d60568e",
     "url": "/directory.btcpayserver.org/index.html"
   },
   {
-    "revision": "a655edfbf490c9857174",
+    "revision": "11c384ec374fdb0cac26",
     "url": "/directory.btcpayserver.org/static/css/main.53db9320.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/directory.btcpayserver.org/static/js/2.37fe268a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a655edfbf490c9857174",
-    "url": "/directory.btcpayserver.org/static/js/main.0a504cd9.chunk.js"
+    "revision": "11c384ec374fdb0cac26",
+    "url": "/directory.btcpayserver.org/static/js/main.37bb262e.chunk.js"
   },
   {
     "revision": "aaafed1ae1a724d03192",
