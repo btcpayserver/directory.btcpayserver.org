@@ -106,8 +106,8 @@
             fill: red;
           }
 
-          @media (max-width: $thirdBreak) {
-            font-size: 15px;
+          @media (max-width: $secondBreak) {
+            font-size: 20px;
           }
 
           // @media (max-width: $secondBreak) {
