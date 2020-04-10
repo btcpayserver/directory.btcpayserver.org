@@ -37,7 +37,7 @@ function App(props) {
           </a>
           <div className="nav-items">
             <NavLink className="newentry" exact to={`/${colorMode}/newentry`}>
-              Submit an entry
+              New entry
             </NavLink>
             {colorMode === "light" ? (
               <img

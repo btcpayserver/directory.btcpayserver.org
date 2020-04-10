@@ -106,6 +106,10 @@
             fill: red;
           }
 
+          @media (max-width: $thirdBreak) {
+            font-size: 20px;
+          }
+
           // @media (max-width: $secondBreak) {
           //   margin-left: 7.5%;
           // }
