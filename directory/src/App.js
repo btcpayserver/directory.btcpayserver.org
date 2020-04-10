@@ -36,7 +36,7 @@ function App(props) {
             )}
           </a>
           <div className="nav-items">
-            <NavLink className="newentry" exact to={`${process.env.PUBLIC_URL}/${colorMode}/newentry`}>
+            <NavLink className="newentry" exact to={`/${colorMode}/newentry`}>
               New entry
             </NavLink>
             {colorMode === "light" ? (
