@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/directory.btcpayserver.org/static/css/main.53db9320.chunk.css",
+    "main.js": "/directory.btcpayserver.org/static/js/main.370a4237.chunk.js",
+    "main.js.map": "/directory.btcpayserver.org/static/js/main.370a4237.chunk.js.map",
+    "runtime-main.js": "/directory.btcpayserver.org/static/js/runtime-main.b16a841f.js",
+    "runtime-main.js.map": "/directory.btcpayserver.org/static/js/runtime-main.b16a841f.js.map",
+    "static/js/2.37fe268a.chunk.js": "/directory.btcpayserver.org/static/js/2.37fe268a.chunk.js",
+    "static/js/2.37fe268a.chunk.js.map": "/directory.btcpayserver.org/static/js/2.37fe268a.chunk.js.map",
+    "index.html": "/directory.btcpayserver.org/index.html",
+    "precache-manifest.25fa8f7e6e711d09c0b712a63c562ed9.js": "/directory.btcpayserver.org/precache-manifest.25fa8f7e6e711d09c0b712a63c562ed9.js",
+    "service-worker.js": "/directory.btcpayserver.org/service-worker.js",
+    "static/css/main.53db9320.chunk.css.map": "/directory.btcpayserver.org/static/css/main.53db9320.chunk.css.map",
+    "static/js/2.37fe268a.chunk.js.LICENSE.txt": "/directory.btcpayserver.org/static/js/2.37fe268a.chunk.js.LICENSE.txt",
+    "static/media/btcpay-directory-logo-white.png": "/directory.btcpayserver.org/static/media/btcpay-directory-logo-white.a51d790b.png",
+    "static/media/btcpay-directory-logo.svg": "/directory.btcpayserver.org/static/media/btcpay-directory-logo.6e3359f9.svg",
+    "static/media/moonFilled.svg": "/directory.btcpayserver.org/static/media/moonFilled.7fe50f25.svg",
+    "static/media/sunFilled2.svg": "/directory.btcpayserver.org/static/media/sunFilled2.eae3aacd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b16a841f.js",
+    "static/js/2.37fe268a.chunk.js",
+    "static/css/main.53db9320.chunk.css",
+    "static/js/main.370a4237.chunk.js"
+  ]
+}
