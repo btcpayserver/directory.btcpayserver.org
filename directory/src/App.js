@@ -58,18 +58,18 @@ function App(props) {
         <Route exact path="/">
           {<Redirect to="/light" />}
         </Route>
-        <Route exact path="/:colorMode" component={Directory} />
+        <Route exact path={`${process.env.PUBLIC_URL}/:colorMode`} component={Directory} />
         <Route
           exact
-          path="/:colorMode/filter/:filterName"
+          path={`${process.env.PUBLIC_URL}/filter/:filterName`}
           component={Directory}
         />
         <Route
           exact
-          path="/:colorMode/filter/:filterName/:subFilterName"
+          path={`${process.env.PUBLIC_URL}/:colorMode/filter/:filterName/:subFilterName`}
           component={Directory}
         />
-        <Route exact path="/:colorMode/newentry" component={NewEntry} />
+        <Route exact path={`${process.env.PUBLIC_URL}/:colorMode/newentry`} component={NewEntry} />
       </div>
 
       <footer>
