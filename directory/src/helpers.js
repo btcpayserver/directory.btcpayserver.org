@@ -1,7 +1,7 @@
 function getOppositePath(props) {
   const path = props.history.location.pathname;
   let oppositePath = ""
-  if (path.charAt(1) == "l") {
+  if (path.charAt(1) === "l") {
     const noColorPath = path.substring(7);
     oppositePath = `/dark/${noColorPath}`;
   } else {

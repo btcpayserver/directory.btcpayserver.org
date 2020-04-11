@@ -2,8 +2,6 @@ import React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import Button from "@material-ui/core/Button";
-import MenuIcon from "@material-ui/icons/Menu";
 
 import NestedList from "./NestedList";
 

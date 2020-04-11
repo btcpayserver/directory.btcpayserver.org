@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "./NewEntry.scss";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { matchPath } from "react-router-dom";
 
 class NewEntry extends React.Component {

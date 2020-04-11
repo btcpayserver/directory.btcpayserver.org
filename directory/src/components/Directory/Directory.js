@@ -28,13 +28,6 @@ function Directory(props) {
   let { colorMode, filterName, subFilterName } = useParams();
   const [dirList, setList] = useState(shuffle(list));
 
-  const green = "#51B13E";
-  const black = "#262626";
-  const darkGreen = "#1E7A44";
-  const pickedColor = green;
-
-  console.log(colorMode)
-
   useEffect(() => {
     if (subFilterName) {
       let completeList = shuffle(list);

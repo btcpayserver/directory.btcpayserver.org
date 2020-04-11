@@ -6,7 +6,7 @@ function DirectoryItem(props) {
   return (
     <div className="item">
       <div className="item-content">
-        <a target="_blank" href={props.user.url}>
+        <a href={props.user.url} target="_blank" rel="noopener noreferrer">
           {props.user.subType
             ? icons[props.user.subType]
             : icons[props.user.type]}

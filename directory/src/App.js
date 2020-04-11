@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useParams, withRouter, matchPath } from "react-router-dom";
+import React from "react";
+import { withRouter, matchPath } from "react-router-dom";
 import "./App.scss";
 import { NavLink, Route, Redirect } from "react-router-dom";
 import Directory from "./components/Directory/Directory";
@@ -17,23 +17,14 @@ function App(props) {
   });
   // const [colorMode, setColorMode] = useState("light");
 
-  const green = "#51B13E";
-  const black = "#262626";
-  const darkGreen = "#1E7A44";
-  const pickedColor = green;
   const colorMode = match ? match.params.colorMode : "light";
-  console.log(colorMode);
 
   return (
     <div className={`app app-${colorMode}`}>
       <header>
         <div className="navigation-menu">
           <a href={`${process.env.PUBLIC_URL}/${colorMode}`}>
-            {colorMode === "light" ? (
-              <img src={btcPayLogo} />
-            ) : (
-              <img src={btcPayLogoWhite} />
-            )}
+            <img src={colorMode === "light" ? btcPayLogo : btcPayLogoWhite} alt="BTCPayServer" />
           </a>
           <div className="nav-items">
             <NavLink className="newentry" exact to={`${process.env.PUBLIC_URL}/${colorMode}/newentry`}>
@@ -41,11 +32,13 @@ function App(props) {
             </NavLink>
             {colorMode === "light" ? (
               <img
+                alt="Dark mode"
                 src={moonFilled}
                 onClick={(e) => props.history.push(getOppositePath(props))}
               />
             ) : (
               <img
+                alt="Light mode"
                 src={sunFilled2}
                 onClick={(e) => props.history.push(getOppositePath(props))}
               />

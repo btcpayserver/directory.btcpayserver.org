@@ -2,7 +2,6 @@ import React from "react";
 import AppsIcon from "@material-ui/icons/Apps";
 import StorageIcon from "@material-ui/icons/Storage";
 import MoneyOffIcon from "@material-ui/icons/MoneyOff";
-import StorefrontIcon from "@material-ui/icons/Storefront";
 import PrintIcon from "@material-ui/icons/Print";
 import ExplicitIcon from "@material-ui/icons/Explicit";
 import DeckIcon from "@material-ui/icons/Deck";
