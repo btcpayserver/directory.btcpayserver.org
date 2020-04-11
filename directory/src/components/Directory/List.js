@@ -488,14 +488,6 @@ export const list = [
       "Crypto-Coffee.org offers crypto-currency themed coffee and stickers."
   },
   {
-    name: "Crypto Coffee",
-    url: "https://crypto-coffee.org/",
-    type: "merchants",
-    subType: "cryptocurrency-paraphernalia",
-    description:
-      "Crypto-Coffee.org offers crypto-currency themed coffee and stickers."
-  },
-  {
     name: "DG LAB Store",
     url: "https://lightning-store.jp/",
     type: "merchants",
@@ -861,13 +853,6 @@ export const list = [
       "DNSCrypt Poland provides free, non-logged and uncensored DNS encryption to anyone willing to use it. It is located in a Beyond Data Center in E24Cloud in Poznań, Poland. Open to any user in the world."
   },
   {
-    name: "DNSCrypt Poland",
-    url: "https://dnscrypt.pl/",
-    type: "non-profits",
-    description:
-      "DNSCrypt Poland provides free, non-logged and uncensored DNS encryption to anyone willing to use it. It is located in a Beyond Data Center in E24Cloud in Poznań, Poland. Open to any user in the world."
-  },
-  {
     name: "Nicolas Dorier’s Donation App",
     url: "https://donate.nicolas-dorier.com/",
     type: "non-profits",
@@ -894,13 +879,6 @@ export const list = [
     type: "non-profits",
     description:
       "The Bitcoin Association HK, fosters and promotes Bitcoin and its technology in Hong Kong. They accept LN donations."
-  },
-  {
-    name: "Pavlenex’s Donation App",
-    url: "https://pavlenex.com/",
-    type: "non-profits",
-    description:
-      "This is Pavlenex’s BTCPayServer donation app. Pavlenex is the marketing and video making machine of BTCPayServer. He also wrote most of the documentation that you can use to get started and discover the project."
   },
   {
     name: "Britttttk’s Donation App",
@@ -1018,14 +996,6 @@ export const list = [
     subType: "food",
     description:
       "Funabiki Shoten sells high quality oysters from around the Harima-Nada area of Japan’s Setouchi Inland Sea."
-  },
-  {
-    name: "Bikini-mitte",
-    url: "http://www.bikini-mitte.com/",
-    type: "merchants",
-    subType: "food",
-    description:
-      "Bikini-mitte is a Deli & Bar located in Munich, Germany that accepts Bitcoin through the Lightning Network."
   },
   {
     name: "Bikini-mitte",

@@ -184,7 +184,7 @@ export default function NestedList(props) {
       </NavLink>
 
       {merchantSubcategories.map(subCat => (
-        <NavLink to={`/filter/merchants/${subCat.url}`}>
+        <NavLink key={subCat.name} to={`/filter/merchants/${subCat.url}`}>
           <div className="nested-list-item">
             {subCat.icon}
             <p>{subCat.name}</p>
