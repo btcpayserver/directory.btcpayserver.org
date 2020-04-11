@@ -9,9 +9,20 @@ import btcPayLogoWhite from "./images/btcpay-directory-logo-white.png";
 import moonFilled from "./images/moonFilled.svg";
 import sunFilled2 from "./images/sunFilled2.svg";
 
-function App(props) {
-  const [colorMode, setColorMode] = useState(props.colorMode);
-  const switchColorMode = mode => {
+function App() {
+
+  const COLOR_MODES = ["light", "dark"];
+  const systemColorMode = window.matchMedia("(prefers-color-scheme: dark)")
+    .matches
+    ? "dark"
+    : "light";
+  const userColorMode = window.localStorage.getItem("colorMode");
+  const initialColorMode = COLOR_MODES.includes(userColorMode)
+    ? userColorMode
+    : systemColorMode;
+
+  const [colorMode, setColorMode] = useState(initialColorMode);
+  const switchColorMode = (mode) => {
     setColorMode(mode);
     window.localStorage.setItem("colorMode", mode);
   };
@@ -21,7 +32,10 @@ function App(props) {
       <header>
         <div className="navigation-menu">
           <NavLink exact to="/">
-            <img src={colorMode === "light" ? btcPayLogo : btcPayLogoWhite} alt="BTCPayServer" />
+            <img
+              src={colorMode === "light" ? btcPayLogo : btcPayLogoWhite}
+              alt="BTCPayServer"
+            />
           </NavLink>
           <div className="nav-items">
             <NavLink className="newentry" exact to="/newentry">
@@ -52,7 +66,7 @@ function App(props) {
         />
         <Route
           exact
-          path="filter/:filterName"
+          path="/filter/:filterName"
           render={(props) => <Directory {...props} colorMode={colorMode} />}
         />
         <Route
