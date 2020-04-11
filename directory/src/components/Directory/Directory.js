@@ -4,25 +4,7 @@ import { useParams } from "react-router-dom";
 import { list } from "./List";
 import DirectoryItem from "./DirectoryItem";
 import TemporaryDrawer2 from "../Drawer/TemporaryDrawer2";
-
-function shuffle(array) {
-  let currentIndex = array.length;
-  let temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-}
+import shuffle from "../../helpers"
 
 function Directory(props) {
   let { filterName, subFilterName } = useParams();
