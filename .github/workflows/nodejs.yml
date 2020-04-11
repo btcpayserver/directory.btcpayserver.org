@@ -23,7 +23,7 @@ jobs:
       run: |
         cd directory
         npm ci
-        npm run predeploy
+        npm run build
       env:
         CI: true
     - name: GitHub Pages Deploy
