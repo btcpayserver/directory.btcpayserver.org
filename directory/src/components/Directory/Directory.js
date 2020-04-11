@@ -1,28 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import "./Directory.scss";
 import { useParams } from "react-router-dom";
 import { list } from "./List";
 import DirectoryItem from "./DirectoryItem";
 import TemporaryDrawer2 from "../Drawer/TemporaryDrawer2";
 import shuffle from "../../helpers";
-import LazyLoad from "react-lazyload";
 import Loader from "react-loader-spinner";
+import LazyLoad, { forceCheck } from "react-lazyload";
+
+// const DirectoryItem = React.lazy(() => import("./DirectoryItem"));
 
 function Directory(props) {
   let { filterName, subFilterName } = useParams();
   const [dirList, setList] = useState(shuffle(list));
-  const { colorMode } = props
+  const { colorMode } = props;
+  setTimeout(forceCheck, 100)
 
   useEffect(() => {
     if (subFilterName) {
       let completeList = shuffle(list);
       let filteredList = completeList.filter(
-        user => user.subType === subFilterName
+        (user) => user.subType === subFilterName
       );
       setList(filteredList);
     } else if (filterName) {
       let completeList = shuffle(list);
-      let filteredList = completeList.filter(user => user.type === filterName);
+      let filteredList = completeList.filter(
+        (user) => user.type === filterName
+      );
       setList(filteredList);
     } else {
       let completeList = shuffle(list);
@@ -48,8 +53,19 @@ function Directory(props) {
       <div className="list-container">
         {/* dirList is the filtered list of companies - it contains only the companies
             that match the current filter */}
-        {dirList.map(user => (
-          <DirectoryItem user={user} />
+        {dirList.map((user) => (
+          <LazyLoad
+            height={0}
+            once
+            key={user.name}
+            placeholder={
+              colorMode === "light" ?
+              <Loader type="ThreeDots" color="#000000" height="15" width="30" /> :
+              <Loader type="ThreeDots" color="#ffffff" height="15" width="30" />
+            }
+          >
+            <DirectoryItem key={user.name} user={user} />
+          </LazyLoad>
         ))}
       </div>
     </div>
