@@ -4,7 +4,9 @@ import { useParams } from "react-router-dom";
 import { list } from "./List";
 import DirectoryItem from "./DirectoryItem";
 import TemporaryDrawer2 from "../Drawer/TemporaryDrawer2";
-import shuffle from "../../helpers"
+import shuffle from "../../helpers";
+import LazyLoad from "react-lazyload";
+import Loader from "react-loader-spinner";
 
 function Directory(props) {
   let { filterName, subFilterName } = useParams();
