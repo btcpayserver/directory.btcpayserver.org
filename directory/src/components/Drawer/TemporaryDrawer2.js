@@ -9,7 +9,7 @@ import "./TemporaryDrawer2.scss";
 
 const useStyles = makeStyles({
   list: {
-    width: 320
+    width: 375
   },
   fullList: {
     width: "auto"
