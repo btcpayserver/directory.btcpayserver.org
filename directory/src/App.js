@@ -24,11 +24,11 @@ function App(props) {
     <div className={`app app-${colorMode}`}>
       <header>
         <div className="navigation-menu">
-          <a href={`${process.env.PUBLIC_URL}/${colorMode}`}>
+          <a href={`/${colorMode}`}>
             <img src={colorMode === "light" ? btcPayLogo : btcPayLogoWhite} alt="BTCPayServer" />
           </a>
           <div className="nav-items">
-            <NavLink className="newentry" exact to={`${process.env.PUBLIC_URL}/${colorMode}/newentry`}>
+            <NavLink className="newentry" exact to={`/${colorMode}/newentry`}>
               New entry
             </NavLink>
             {colorMode === "light" ? (
@@ -49,21 +49,21 @@ function App(props) {
       </header>
 
       <div className="main-content">
-        <Route exact path={`${process.env.PUBLIC_URL}/`}>
-          {<Redirect to={`${process.env.PUBLIC_URL}/${systemColorMode}`} />}
+        <Route exact path={`/`}>
+          {<Redirect to={`/${systemColorMode}`} />}
         </Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/:colorMode`} component={Directory} />
+        <Route exact path={`/:colorMode`} component={Directory} />
         <Route
           exact
-          path={`${process.env.PUBLIC_URL}/filter/:filterName`}
+          path={`/filter/:filterName`}
           component={Directory}
         />
         <Route
           exact
-          path={`${process.env.PUBLIC_URL}/:colorMode/filter/:filterName/:subFilterName`}
+          path={`/:colorMode/filter/:filterName/:subFilterName`}
           component={Directory}
         />
-        <Route exact path={`${process.env.PUBLIC_URL}/:colorMode/newentry`} component={NewEntry} />
+        <Route exact path={`/:colorMode/newentry`} component={NewEntry} />
       </div>
 
       <footer>

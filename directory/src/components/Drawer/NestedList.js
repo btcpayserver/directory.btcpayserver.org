@@ -148,35 +148,35 @@ export default function NestedList(props) {
     <div className={`drawer-list drawer-list-${props.colorMode}`} >
       <p className="drawer-title">Categories</p>
 
-      <a href={`${process.env.PUBLIC_URL}/${props.colorMode}`}>
+      <a href={`/${props.colorMode}`}>
         <div className="list-item">
           <SelectAllIcon className="icon" />
           <p>All</p>
         </div>
       </a>
 
-      <a href={`${process.env.PUBLIC_URL}/${props.colorMode}/filter/apps`}>
+      <a href={`/${props.colorMode}/filter/apps`}>
         <div className="list-item">
           <AppsIcon className="icon" />
           <p>Apps</p>
         </div>
       </a>
 
-      <a href={`${process.env.PUBLIC_URL}/${props.colorMode}/filter/hosts`}>
+      <a href={`/${props.colorMode}/filter/hosts`}>
         <div className="list-item">
           <StorageIcon className="icon" />
           <p>Hosts</p>
         </div>
       </a>
 
-      <a href={`${process.env.PUBLIC_URL}/${props.colorMode}/filter/non-profits`}>
+      <a href={`/${props.colorMode}/filter/non-profits`}>
         <div className="list-item">
           <MoneyOffIcon className="icon" />
           <p>Non-profits</p>
         </div>
       </a>
 
-      <a href={`${process.env.PUBLIC_URL}/${props.colorMode}/filter/merchants`}>
+      <a href={`/${props.colorMode}/filter/merchants`}>
         <div className="list-item">
           <StorefrontIcon className="icon" />
           <p>Merchants</p>
@@ -184,7 +184,7 @@ export default function NestedList(props) {
       </a>
 
       {merchantSubcategories.map(subCat => (
-        <a href={`${process.env.PUBLIC_URL}/${props.colorMode}/filter/merchants/${subCat.url}`}>
+        <a href={`/${props.colorMode}/filter/merchants/${subCat.url}`}>
           <div className="nested-list-item">
             {subCat.icon}
             <p>{subCat.name}</p>
