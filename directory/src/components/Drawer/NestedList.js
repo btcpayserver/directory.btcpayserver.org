@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import SelectAllIcon from "@material-ui/icons/SelectAll";
 import AppsIcon from "@material-ui/icons/Apps";
 import StorageIcon from "@material-ui/icons/Storage";
@@ -143,53 +144,52 @@ const merchantSubcategories = [
 ];
 
 export default function NestedList(props) {
-
   return (
     <div className={`drawer-list drawer-list-${props.colorMode}`} >
       <p className="drawer-title">Categories</p>
 
-      <a href={`/${props.colorMode}`}>
+      <NavLink to="/">
         <div className="list-item">
           <SelectAllIcon className="icon" />
           <p>All</p>
         </div>
-      </a>
+      </NavLink>
 
-      <a href={`/${props.colorMode}/filter/apps`}>
+      <NavLink to="/filter/apps">
         <div className="list-item">
           <AppsIcon className="icon" />
           <p>Apps</p>
         </div>
-      </a>
+      </NavLink>
 
-      <a href={`/${props.colorMode}/filter/hosts`}>
+      <NavLink to="/filter/hosts">
         <div className="list-item">
           <StorageIcon className="icon" />
           <p>Hosts</p>
         </div>
-      </a>
+      </NavLink>
 
-      <a href={`/${props.colorMode}/filter/non-profits`}>
+      <NavLink to="/filter/non-profits">
         <div className="list-item">
           <MoneyOffIcon className="icon" />
           <p>Non-profits</p>
         </div>
-      </a>
+      </NavLink>
 
-      <a href={`/${props.colorMode}/filter/merchants`}>
+      <NavLink to="/filter/merchants">
         <div className="list-item">
           <StorefrontIcon className="icon" />
           <p>Merchants</p>
         </div>
-      </a>
+      </NavLink>
 
       {merchantSubcategories.map(subCat => (
-        <a href={`/${props.colorMode}/filter/merchants/${subCat.url}`}>
+        <NavLink to={`/filter/merchants/${subCat.url}`}>
           <div className="nested-list-item">
             {subCat.icon}
             <p>{subCat.name}</p>
           </div>
-        </a>
+        </NavLink>
       ))}
     </div>
   );

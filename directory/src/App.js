@@ -1,47 +1,43 @@
-import React from "react";
-import { withRouter, matchPath } from "react-router-dom";
+import React, { useState } from "react";
+import { withRouter } from "react-router-dom";
 import "./App.scss";
-import { NavLink, Route, Redirect } from "react-router-dom";
+import { NavLink, Route } from "react-router-dom";
 import Directory from "./components/Directory/Directory";
 import NewEntry from "./components/NewEntry/NewEntry";
 import btcPayLogo from "./images/btcpay-directory-logo.svg";
 import btcPayLogoWhite from "./images/btcpay-directory-logo-white.png";
 import moonFilled from "./images/moonFilled.svg";
-import getOppositePath from "./helpers";
 import sunFilled2 from "./images/sunFilled2.svg";
 
 function App(props) {
-  const match = matchPath(props.history.location.pathname, {
-    // You can share this string as a constant if you want
-    path: "/:colorMode",
-  });
-  // const [colorMode, setColorMode] = useState("light");
-
-  const systemColorMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  const colorMode = match ? match.params.colorMode : systemColorMode;
+  const [colorMode, setColorMode] = useState(props.colorMode);
+  const switchColorMode = mode => {
+    setColorMode(mode);
+    window.localStorage.setItem("colorMode", mode);
+  };
 
   return (
     <div className={`app app-${colorMode}`}>
       <header>
         <div className="navigation-menu">
-          <a href={`/${colorMode}`}>
+          <NavLink exact to="/">
             <img src={colorMode === "light" ? btcPayLogo : btcPayLogoWhite} alt="BTCPayServer" />
-          </a>
+          </NavLink>
           <div className="nav-items">
-            <NavLink className="newentry" exact to={`/${colorMode}/newentry`}>
+            <NavLink className="newentry" exact to="/newentry">
               New entry
             </NavLink>
             {colorMode === "light" ? (
               <img
                 alt="Dark mode"
                 src={moonFilled}
-                onClick={(e) => props.history.push(getOppositePath(props))}
+                onClick={(e) => switchColorMode("dark")}
               />
             ) : (
               <img
                 alt="Light mode"
                 src={sunFilled2}
-                onClick={(e) => props.history.push(getOppositePath(props))}
+                onClick={(e) => switchColorMode("light")}
               />
             )}
           </div>
@@ -49,21 +45,26 @@ function App(props) {
       </header>
 
       <div className="main-content">
-        <Route exact path={`/`}>
-          {<Redirect to={`/${systemColorMode}`} />}
-        </Route>
-        <Route exact path={`/:colorMode`} component={Directory} />
         <Route
           exact
-          path={`/filter/:filterName`}
-          component={Directory}
+          path="/"
+          render={(props) => <Directory {...props} colorMode={colorMode} />}
         />
         <Route
           exact
-          path={`/:colorMode/filter/:filterName/:subFilterName`}
-          component={Directory}
+          path="filter/:filterName"
+          render={(props) => <Directory {...props} colorMode={colorMode} />}
         />
-        <Route exact path={`/:colorMode/newentry`} component={NewEntry} />
+        <Route
+          exact
+          path="/filter/:filterName/:subFilterName"
+          render={(props) => <Directory {...props} colorMode={colorMode} />}
+        />
+        <Route
+          exact
+          path="/newentry"
+          render={(props) => <NewEntry {...props} colorMode={colorMode} />}
+        />
       </div>
 
       <footer>

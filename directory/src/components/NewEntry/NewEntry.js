@@ -1,6 +1,5 @@
 import React from "react";
 import "./NewEntry.scss";
-import { matchPath } from "react-router-dom";
 
 class NewEntry extends React.Component {
   constructor(props) {
@@ -83,12 +82,7 @@ class NewEntry extends React.Component {
   };
 
   render() {
-    const match = matchPath(this.props.history.location.pathname, {
-      // You can share this string as a constant if you want
-      path: "/:colorMode/newentry",
-    });
-
-    const colorMode = match ? match.params.colorMode : "light";
+    const { colorMode } = this.props;
 
     return (
       <div className={`newentry-container newentry-container-${colorMode}`}>

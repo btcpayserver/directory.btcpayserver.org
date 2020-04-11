@@ -25,8 +25,9 @@ function shuffle(array) {
 }
 
 function Directory(props) {
-  let { colorMode, filterName, subFilterName } = useParams();
+  let { filterName, subFilterName } = useParams();
   const [dirList, setList] = useState(shuffle(list));
+  const { colorMode } = props
 
   useEffect(() => {
     if (subFilterName) {
