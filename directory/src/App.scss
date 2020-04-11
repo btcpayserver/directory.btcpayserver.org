@@ -130,11 +130,11 @@
   }
 
   footer {
-    background: $darkGreen;
+    background: #003822;
 
     .footer-content {
-      margin-left: 10%;
-      padding: 20px 0;
+      margin: 0 10%;
+      padding: 60px 0 40px 0;
 
       // @media (max-width: $firstBreak) {
       //   margin-left: 10%;
@@ -144,20 +144,56 @@
         margin-left: 5%;
       }
 
-      p {
-        color: white;
-        font-size: 0.8rem;
-        margin-bottom: 10px;
+      .columns {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
 
-        @media (max-width: $thirdBreak) {
-          font-size: 0.8rem;
-        }
+        .column {
+          color: white;
+          display: flex;
+          flex-direction: column;
+          font-size: 1rem;
 
-        &:last-of-type {
-          margin-bottom: 0;
+          h2 {
+            font-weight: bold;
+            margin-bottom: 30px;
+          }
+
+          a {
+            color: darken(white, 20%);
+            text-decoration: none;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+
+            &:hover {
+              color: white;
+            }
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
         }
       }
-    }
+
+      .notes {
+
+        p {
+          color: white;
+          font-size: 0.9rem;
+          margin-bottom: 7.5px;
+  
+          @media (max-width: $thirdBreak) {
+            font-size: 0.8rem;
+          }
+  
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    } // footer-content
   }
 }
 
