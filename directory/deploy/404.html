@@ -23,7 +23,7 @@
       // https://username.github.io/repo-name/?p=/one/two&q=a=b~and~c=d#qwe
       // Otherwise, leave segmentCount as 0.
       var l = window.location;
-      var segmentCount = l.pathname.indexOf('/directory/') === -1 ? 0 : 1;
+      var segmentCount = l.pathname.indexOf('/directory.btcpayserver.org/') === -1 ? 0 : 1;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
         l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
