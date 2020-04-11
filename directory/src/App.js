@@ -10,7 +10,6 @@ import moonFilled from "./images/moonFilled.svg";
 import sunFilled2 from "./images/sunFilled2.svg";
 
 function App() {
-
   const COLOR_MODES = ["light", "dark"];
   const systemColorMode = window.matchMedia("(prefers-color-scheme: dark)")
     .matches
