@@ -17,7 +17,8 @@ function App(props) {
   });
   // const [colorMode, setColorMode] = useState("light");
 
-  const colorMode = match ? match.params.colorMode : "light";
+  const systemColorMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  const colorMode = match ? match.params.colorMode : systemColorMode;
 
   return (
     <div className={`app app-${colorMode}`}>
@@ -49,7 +50,7 @@ function App(props) {
 
       <div className="main-content">
         <Route exact path={`${process.env.PUBLIC_URL}/`}>
-          {<Redirect to={`${process.env.PUBLIC_URL}/light`} />}
+          {<Redirect to={`${process.env.PUBLIC_URL}/${systemColorMode}`} />}
         </Route>
         <Route exact path={`${process.env.PUBLIC_URL}/:colorMode`} component={Directory} />
         <Route
