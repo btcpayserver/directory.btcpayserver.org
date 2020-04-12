@@ -14,8 +14,8 @@
   }
 
   .entry-title {
-    width: 100%;
-    margin: 0 auto;
+    // width: 100%;
+    // margin: 0 auto;
     font-size: 0.9rem;
     color: $black;
     padding: 20px 0 20px 15%;
@@ -188,7 +188,7 @@
         font-size: 0.8rem;
         margin-top: 10px;
         height: 20px;
-        width: 100%;
+        // width: 100%;
         font-weight: bold;
 
         @media (max-width: $secondBreak) {
