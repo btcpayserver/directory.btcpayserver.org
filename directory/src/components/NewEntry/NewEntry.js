@@ -119,12 +119,33 @@ class NewEntry extends React.Component {
               Type *
               <div className="select-container">
                 <select onChange={e => this.handleSelect(e)} id="type">
-                  <option value="apps" defaultValue>
+                  <option value="App" defaultValue>
                     App
                   </option>
-                  <option value="hosts">Host</option>
-                  <option value="merchants">Merchant</option>
-                  <option value="non-profits">Non-ptofit</option>
+                  <option value="Host">Host</option>
+                  <option value="Non-profit">Non-ptofit</option>
+                  <option value="Merchant - 3D Printing">Merchant - 3D Printing</option>
+                  <option value="Merchant - Adult">Merchant - Adult</option>
+                  <option value="Merchant - Appliances and Furniture">Merchant - Appliances and Furniture</option>
+                  <option value="Merchant - Art">Merchant - Art</option>
+                  <option value="Merchant - Books">Merchant - Books</option>
+                  <option value="Merchant - Electronics">Merchant - Electronics</option>
+                  <option value="Merchant - Cryptocurrency Paraphernalia">Merchant - Cryptocurrency Paraphernalia</option>
+                  <option value="Merchant - Domain Names, Hosting and VPNs">Merchant - Domain Names, Hosting and VPNs</option>
+                  <option value="Merchant - Education">Merchant - Education</option>
+                  <option value="Merchant - Fashion">Merchant - Fashion</option>
+                  <option value="Merchant - Food">Merchant - Food</option>
+                  <option value="Merchant - Gambling">Merchant - Gambling</option>
+                  <option value="Merchant - Gift Cards">Merchant - Gift Cards</option>
+                  <option value="Merchant - Health and Household">Merchant - Health and Household</option>
+                  <option value="Merchant - Holiday and Travel">Merchant - Holiday and Travel</option>
+                  <option value="Merchant - Jewelry">Merchant - Jewelry</option>
+                  <option value="Merchant - Pets">Merchant - Pets</option>
+                  <option value="Merchant - Services">Merchant - Services</option>
+                  <option value="Merchant - Software and Video Games">Merchant - Software and Video Games</option>
+                  <option value="Merchant - Sports">Merchant - Sports</option>
+                  <option value="Merchant - Streaming">Merchant - Streaming</option>
+                  <option value="Merchant - Tools">Merchant - Tools</option>
                 </select>
               </div>
             </label>
