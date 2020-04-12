@@ -3,7 +3,7 @@ import "./Directory.scss";
 import { useParams } from "react-router-dom";
 import { list } from "./List";
 import DirectoryItem from "./DirectoryItem";
-import TemporaryDrawer2 from "../Drawer/TemporaryDrawer2";
+import TemporaryDrawer from "../Drawer/TemporaryDrawer";
 import shuffle from "../../helpers";
 import Loader from "react-loader-spinner";
 import LazyLoad, { forceCheck } from "react-lazyload";
@@ -41,13 +41,13 @@ function Directory(props) {
       <div className="filters">
         <p>Showing:</p>
         {filterName ? (
-          <TemporaryDrawer2
+          <TemporaryDrawer
             colorMode={colorMode}
             filterName={filterName}
             subFilterName={subFilterName}
           />
         ) : (
-          <TemporaryDrawer2 colorMode={colorMode} filterName="ALL" />
+          <TemporaryDrawer colorMode={colorMode} filterName="ALL" />
         )}
       </div>
       <div className="list-container">
