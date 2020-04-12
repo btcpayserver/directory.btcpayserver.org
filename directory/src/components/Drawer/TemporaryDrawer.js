@@ -2,22 +2,46 @@ import React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import Button from "@material-ui/core/Button";
-import MenuIcon from "@material-ui/icons/Menu";
 
 import NestedList from "./NestedList";
-import { Menu } from "@material-ui/core";
+
+import "./TemporaryDrawer.scss";
 
 const useStyles = makeStyles({
   list: {
-    width: 300
+    width: 330
   },
   fullList: {
     width: "auto"
   }
 });
 
-export default function TemporaryDrawer() {
+const subFilterToName = {
+  "3d-printing": "3D Printing",
+  adult: "Adult",
+  "appliances-furniture": "Appliances & Furniture",
+  art: "Art",
+  books: "Books",
+  electronics: "Electronics",
+  "cryptocurrency-paraphernalia": "Cryptocurrency Paraphernalia",
+  "domains-hosting-vpns": "Domain Names, Hosting & VPNs",
+  education: "Education",
+  fashion: "Fashion",
+  food: "Food",
+  gambling: "Gambling",
+  "gift-cards": "Gift Cards",
+  "health-household": "Health & Household",
+  "holiday-travel": "Holiday & Travel",
+  jewelry: "Jewelry",
+  pets: "Pets",
+  services: "Services",
+  "software-video-games": "Software & Video Games",
+  sports: "Sports",
+  streaming: "Streaming",
+  tools: "Tools"
+};
+
+export default function TemporaryDrawer2(props) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     right: false
@@ -43,15 +67,19 @@ export default function TemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <NestedList />
+      <NestedList colorMode={props.colorMode}/>
     </div>
   );
 
   return (
-    <div className="drawer-button-container">
+    <div className={`filter-button-container`}>
       <React.Fragment key={"right"}>
-        <button className="drawer-button" onClick={toggleDrawer("right", true)}>
-          <MenuIcon />
+        <button className="filter-button" onClick={toggleDrawer("right", true)}>
+          {props.subFilterName
+            ? `${props.filterName.toUpperCase()}  >  ${subFilterToName[
+                props.subFilterName
+              ].toUpperCase()}`
+            : props.filterName.toUpperCase()}
         </button>
         <Drawer
           anchor={"right"}
