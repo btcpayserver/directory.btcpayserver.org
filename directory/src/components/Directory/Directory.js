@@ -37,7 +37,7 @@ function Directory(props) {
 
   return (
     <div className={`directory-container directory-container-${colorMode}`}>
-      <h2>Projects and organizations using BTCPay Server</h2>
+      <h2>Merchants, projects and organizations using BTCPay Server</h2>
       <div className="filters">
         <p>Showing:</p>
         {filterName ? (
