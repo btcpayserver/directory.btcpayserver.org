@@ -232,14 +232,6 @@ export const list = [
       "D-Central is a one-stop shop for Bitcoin miners in Canada."
   },
   {
-    name: "Crypto Cloaks",
-    url: "https://www.cryptocloaks.com/",
-    type: "merchants",
-    subType: "3d-printing",
-    description:
-      "3D Printed Crypto Products."
-  },
-  {
     name: "Cherry Hotwife",
     url: "http://cherryhotwife.com/tour/",
     type: "merchants",
