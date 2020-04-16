@@ -408,6 +408,14 @@ export const list = [
       "libertymugs.com is a shop that sells mugs and uses Btcpay Server at checkout."
   },
   {
+    name: "CryptoCloaks",
+    url: "https://cryptocloaks.com/",
+    type: "merchants",
+    subType: "cryptocurrency-paraphernalia",
+    description:
+      "We design and manufacture 3D printed products for #Bitcoin and other Crypto Projects. Mounts / Cases / Nodes / and Art. http://buildyournode.com"
+  },
+  {
     name: "Guns n' Bitcoin",
     url: "https://gunsnbitcoin.com/",
     type: "merchants",
