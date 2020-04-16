@@ -65,7 +65,7 @@ class NewEntry extends React.Component {
 
       const issueTitle = `New entry submission - ${this.state.name}`;
 
-      const repoUrl = "https://github.com/joerlop/btcpay-directory/issues";
+      const repoUrl = "https://github.com/btcpayserver/directory.btcpayserver.org/issues";
 
       const newPageUrl = `${repoUrl}/new?title=${issueTitle}&body=${issueBody}`;
 
