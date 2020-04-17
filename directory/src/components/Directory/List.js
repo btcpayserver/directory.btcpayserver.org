@@ -1029,4 +1029,12 @@ export const list = [
     description:
       "Ramblingsales.com sells crypto apparel and uses BTCPay Server on checkout."
   },
+  {
+    name: "Pedro Gonçalves",
+    url: "http://piratehash.com/",
+    type: "merchants",
+    subType: "education",
+    description:
+      "Bitcoin curiosities."
+  },
 ];
