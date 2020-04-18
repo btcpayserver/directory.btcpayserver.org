@@ -1037,4 +1037,14 @@ export const list = [
     description:
       "Bitcoin curiosities."
   },
+  {
+    name: "Reckless Coffee",
+    url: "https://reckless.coffee",
+    type: "merchants",
+    subType: "food",
+    description:
+      "Specialty grade selection of coffees from Puerto Rico. Bitcoin-only. (P2EP enabled)."
+  },
+
+
 ];
