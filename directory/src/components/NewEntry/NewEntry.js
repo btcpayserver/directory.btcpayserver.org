@@ -92,7 +92,7 @@ class NewEntry extends React.Component {
         <div className="form-container">
           <form onSubmit={e => this.handleSubmit(e)}>
             <label htmlFor="name">
-              Name *
+              Company/Project Name *
               <input
                 value={this.state.name}
                 onChange={e => this.handleChange(e)}
