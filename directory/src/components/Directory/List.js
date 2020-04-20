@@ -1037,4 +1037,22 @@ export const list = [
     description:
       "Ramblingsales.com sells crypto apparel and uses BTCPay Server on checkout."
   },
+  {
+    name: "Pirate Hash",
+    url: "http://piratehash.com/",
+    type: "merchants",
+    subType: "education",
+    description:
+      "Bitcoin curiosities."
+  },
+  {
+    name: "Reckless Coffee",
+    url: "https://reckless.coffee",
+    type: "merchants",
+    subType: "food",
+    description:
+      "Specialty grade selection of coffees from Puerto Rico. Bitcoin-only. (P2EP enabled)."
+  },
+
+
 ];
