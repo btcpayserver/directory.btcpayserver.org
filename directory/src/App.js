@@ -103,7 +103,7 @@ function App() {
               <a href="https://blog.btcpayserver.org/">Blog</a>
               <a href="https://docs.btcpayserver.org/support-and-community/community">Social</a>
               <a href="https://docs.btcpayserver.org/support-and-community/contribute">Contribute</a>
-              <a href="https://btcpayserver.flat18.co.uk/donate/">Donate</a>
+              <a href="https://btcpayserver.org/donate/">Donate</a>
             </div>
           </div>
           <div className="notes">
