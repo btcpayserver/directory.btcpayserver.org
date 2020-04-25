@@ -1053,6 +1053,34 @@ export const list = [
     description:
       "Specialty grade selection of coffees from Puerto Rico. Bitcoin-only. (P2EP enabled)."
   },
+  {
+    name: "Happy to Give Back",
+    url: "https://happytogiveback.com/donate/#bitcoin-1",
+    type: "non-profits",
+    description:
+      "Aruba fundraising during the Covid-19 Crisis, Join CEDE Aruba and their new initiative Happy To Give Back and help the world fight COVID-19"
+  },
+  {
+    name: "Bitcoin Aruba",
+    url: "https://btc.aw/accept-bitcoin-everywhere/",
+    type: "hosts",
+    description:
+      "BTC.aw is a free BTCPay Server hosting provider for anybody. Bitcoin Aruba maintains the cost of hosting by receiving donations from users."
+  },
+  {
+    name: "Bitcoinheiros",
+    url: "https://bitcoinheiros.com/apoie/",
+    type: "non-profits",
+    description:
+      "Brazilian Portuguese Bitcoiners (bitcoinheiros) education-oriented community with videos, podcast and tutorials about the latest tech and best practices."
+  },
+  {
+    name: "BitcoinheirosPay",
+    url: "https://bitcoinheiros.com/pay/",
+    type: "hosts",
+    description:
+      "BTCPayServer Host with tutorials and support for Brazilian Portuguese Bitcoiners. Support for P2EP/Coinjoin."
+  },
 
 
 ];
