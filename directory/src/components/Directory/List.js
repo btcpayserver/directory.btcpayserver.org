@@ -1082,5 +1082,13 @@ export const list = [
     description:
       "BTCPayServer Host with tutorials and support for Brazilian Portuguese Bitcoiners. Support for P2EP/Coinjoin. PT-BR: Host de BTCPayServer gratuito com tutoriais e apoio para bitcoinheiros do Brasil. Aproveitem!"
   },
+  {
+    name: "BITSTREAM",
+    url: "https://bitstream.video",
+    type: "merchants",
+	subType: "streaming",
+    description:
+      "Create and schedule your live streaming events, set your price and get paid directly into your own wallet. No third parties, no fees. Working with BTCPay Server."
+  },
 
 ];
