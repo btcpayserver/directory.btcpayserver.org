@@ -123,7 +123,7 @@ class NewEntry extends React.Component {
                     App
                   </option>
                   <option value="Host">Host</option>
-                  <option value="Non-profit">Non-ptofit</option>
+                  <option value="Non-profit">Non-profit</option>
                   <option value="Merchant - 3D Printing">Merchant - 3D Printing</option>
                   <option value="Merchant - Adult">Merchant - Adult</option>
                   <option value="Merchant - Appliances and Furniture">Merchant - Appliances and Furniture</option>
