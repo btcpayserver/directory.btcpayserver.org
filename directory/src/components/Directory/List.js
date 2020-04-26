@@ -1060,7 +1060,7 @@ export const list = [
     description:
       "BTC.aw is a free BTCPay Server hosting provider for anybody. Bitcoin Aruba maintains the cost of hosting by receiving donations from users."
   },
-{
+  {
     name: "Happy to Give Back",
     url: "https://happytogiveback.com/donate/#bitcoin-1",
     type: "non-profit",
@@ -1090,5 +1090,36 @@ export const list = [
     description:
       "Create and schedule your live streaming events, set your price and get paid directly into your own wallet. No third parties, no fees. Working with BTCPay Server."
   },
-
+  {
+    name: "Whiterabbbit",
+    url: "https://whiterabbit.store/",
+    type: "merchants",
+	subType: "cryptocurrency paraphernalia",
+    description:
+      "Bitcoin coasters, bookmarks and other paraphernalia."
+  },
+  {
+    name: "Holycrab",
+    url: "https://www.holycrab.sg/",
+    type: "merchants",
+	subType: "food",
+    description:
+      "Holycrab’s signatures are the Orgasmic, Balsamic, Succumb and Devil’s crab."
+  },
+  {
+    name: "Kin-moo",
+    url: "https://kin-moo.com/",
+    type: "merchants",
+	subType: "food",
+    description:
+      "Featuring the quaint and tasty street-food culture of Thailand in a minimalist yet modern cafe set-up, KinMoo is also the 1st open-concept Thai kitchen in Singapore!"
+  },
+  {
+    name: "EIGHT Korean BBQ",
+    url: "https://www.8koreanbbq.com",
+    type: "merchants",
+	subType: "food",
+    description:
+      "E!GHT is named after its eponymous 8 Colours Set, which features thick, scrumptious slices of premium pork belly in an array of flavours."
+  },
 ];
