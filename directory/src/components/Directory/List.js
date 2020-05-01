@@ -1130,4 +1130,27 @@ export const list = [
     description:
       "domorder.com is a domain provider focused on low price gTLDs. BTC and Liquid (BTC and USDt) accepted here."
   },
+  {
+    name: "Seeders Instruments",
+    url: "https://www.seedersinstruments.com",
+    type: "merchants",
+	subType: "art",
+    description:
+      "Seeders Instruments specializes in building handmade banjos and guitars. In the store you can also find strings, accessories, and cases, primarily for banjos but also for guitars, as well as one-of-a-kind art made in between instrument projects."
+  },
+  {
+    name: "saveyoursatoshis.com",
+    url: "https://saveyoursatoshis.com",
+    type: "merchants",
+	subType: "gift-cards",
+    description:
+      "saveyoursatoshis.com sells discounted gift cards when paying in Bitcoin through their BTCPayServer !"
+  },
+  {
+    name: "btcpay.bid",
+    url: "https://btcpay.bid",
+    type: "host",
+    description:
+      "Assisting anyone wanting to accept BTC for donations, payments and etc on their website or in their storefront."
+  },
 ];
