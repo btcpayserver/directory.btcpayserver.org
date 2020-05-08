@@ -1153,4 +1153,12 @@ export const list = [
     description:
       "Assisting anyone wanting to accept BTC for donations, payments and etc on their website or in their storefront."
   },
+  {
+    name: "Paul.lol",
+    url: "https://paul.lol",
+    type: "merchants",
+	subType: "education",
+    description:
+      "Buy fake podcast ad reads for real Bitcoin !"
+  },
 ];
