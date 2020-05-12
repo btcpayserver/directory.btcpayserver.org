@@ -1161,4 +1161,20 @@ export const list = [
     description:
       "Buy fake podcast ad reads for real Bitcoin !"
   },
+  {
+    name: "Bitgild",
+    url: "https://www.bitgild.com",
+    type: "merchants",
+	subType: "jewelry",
+    description:
+      "Buy physical gold and silver with bitcoin."
+  },
+  {
+    name: "marcsteiner.tech",
+    url: "https://www.marcsteiner.tech",
+    type: "merchants",
+	subType: "books",
+    description:
+      "On marcsteiner.tech you can buy the German book 'Kryptos verwahren und vererben' (Crypto inheritance book) with BTCPay or read blog articles about Bitcoin related topics."
+  },
 ];
