@@ -1,3 +1,36 @@
+/* 
+**** Here is the list of types and subtypes to be used in this document.
+** Types:
+apps
+hosts
+non-profits
+merchants
+** Merchant Subtypes:
+3d-printing
+adult
+appliances-furniture
+art
+books
+electronics
+cryptocurrency-paraphernalia
+domains-hosting-vpns
+education
+fashion
+food
+gambling
+gift-cards
+health-household
+holiday-travel
+jewelry
+pets
+services
+software-video-games
+sports
+streaming
+tools
+*/
+
+
 export const list = [
   {
     name: "Gab",
@@ -1063,7 +1096,7 @@ export const list = [
   {
     name: "Happy to Give Back",
     url: "https://happytogiveback.com/donate/#bitcoin-1",
-    type: "non-profit",
+    type: "non-profits",
     description:
       "Aruba fundraising during the Covid-19 Crisis, Join CEDE Aruba and their new initiative Happy To Give Back and help the world fight COVID-19"
   },
@@ -1149,7 +1182,7 @@ export const list = [
   {
     name: "btcpay.bid",
     url: "https://btcpay.bid",
-    type: "host",
+    type: "hosts",
     description:
       "Assisting anyone wanting to accept BTC for donations, payments and etc on their website or in their storefront."
   },
