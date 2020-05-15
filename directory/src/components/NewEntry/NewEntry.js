@@ -87,12 +87,12 @@ class NewEntry extends React.Component {
     return (
       <div className={`newentry-container newentry-container-${colorMode}`}>
         <p className="entry-title">
-          Please provide your details or those of your organization:
+          Please provide your organization's details:
         </p>
         <div className="form-container">
           <form onSubmit={e => this.handleSubmit(e)}>
             <label htmlFor="name">
-              Your Name or Company/Project Name *
+              Company/Project Name *
               <input
                 value={this.state.name}
                 onChange={e => this.handleChange(e)}
@@ -119,33 +119,33 @@ class NewEntry extends React.Component {
               Type *
               <div className="select-container">
                 <select onChange={e => this.handleSelect(e)} id="type">
-                  <option value="apps" defaultValue>
+                  <option value="App" defaultValue>
                     App
                   </option>
-                  <option value="hosts">Host</option>
-                  <option value="non-profits">Non-ptofits</option>
-                  <option value="merchants - 3D printing">Merchant - 3D Printing</option>
-                  <option value="merchants - adult">Merchant - Adult</option>
-                  <option value="merchants - appliances-furniture">Merchant - Appliances and Furniture</option>
-                  <option value="merchants - art">Merchant - Art</option>
-                  <option value="merchants - books">Merchant - Books</option>
-                  <option value="merchants - electronics">Merchant - Electronics</option>
-                  <option value="merchants - cryptocurrency-paraphernalia">Merchant - Cryptocurrency Paraphernalia</option>
-                  <option value="merchants - domains-hosting-vpns">Merchant - Domain Names, Hosting and VPNs</option>
-                  <option value="merchants - education">Merchant - Education</option>
-                  <option value="merchants - fashion">Merchant - Fashion</option>
-                  <option value="merchants - food">Merchant - Food</option>
-                  <option value="merchants - gambling">Merchant - Gambling</option>
-                  <option value="merchants - gift Cards">Merchant - Gift Cards</option>
-                  <option value="merchants - health-household">Merchant - Health and Household</option>
-                  <option value="merchants - holiday-travel">Merchant - Holiday and Travel</option>
-                  <option value="merchants - jewelry">Merchant - Jewelry</option>
-                  <option value="merchants - pets">Merchant - Pets</option>
-                  <option value="merchants - services">Merchant - Services</option>
-                  <option value="merchants - software-video-games">Merchant - Software and Video Games</option>
-                  <option value="merchants - sports">Merchant - Sports</option>
-                  <option value="merchants - streaming">Merchant - Streaming</option>
-                  <option value="merchants - tools">Merchant - Tools</option>
+                  <option value="Host">Host</option>
+                  <option value="Non-profit">Non-ptofit</option>
+                  <option value="Merchant - 3D Printing">Merchant - 3D Printing</option>
+                  <option value="Merchant - Adult">Merchant - Adult</option>
+                  <option value="Merchant - Appliances and Furniture">Merchant - Appliances and Furniture</option>
+                  <option value="Merchant - Art">Merchant - Art</option>
+                  <option value="Merchant - Books">Merchant - Books</option>
+                  <option value="Merchant - Electronics">Merchant - Electronics</option>
+                  <option value="Merchant - Cryptocurrency Paraphernalia">Merchant - Cryptocurrency Paraphernalia</option>
+                  <option value="Merchant - Domain Names, Hosting and VPNs">Merchant - Domain Names, Hosting and VPNs</option>
+                  <option value="Merchant - Education">Merchant - Education</option>
+                  <option value="Merchant - Fashion">Merchant - Fashion</option>
+                  <option value="Merchant - Food">Merchant - Food</option>
+                  <option value="Merchant - Gambling">Merchant - Gambling</option>
+                  <option value="Merchant - Gift Cards">Merchant - Gift Cards</option>
+                  <option value="Merchant - Health and Household">Merchant - Health and Household</option>
+                  <option value="Merchant - Holiday and Travel">Merchant - Holiday and Travel</option>
+                  <option value="Merchant - Jewelry">Merchant - Jewelry</option>
+                  <option value="Merchant - Pets">Merchant - Pets</option>
+                  <option value="Merchant - Services">Merchant - Services</option>
+                  <option value="Merchant - Software and Video Games">Merchant - Software and Video Games</option>
+                  <option value="Merchant - Sports">Merchant - Sports</option>
+                  <option value="Merchant - Streaming">Merchant - Streaming</option>
+                  <option value="Merchant - Tools">Merchant - Tools</option>
                 </select>
               </div>
             </label>
