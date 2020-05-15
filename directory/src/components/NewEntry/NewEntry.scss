@@ -246,6 +246,7 @@
     
           select {
             color: white;
+            background: $darkBg; // explicitely set background here to fit it on Windows, see #51.
           }
         }
       } //label
