@@ -109,6 +109,7 @@ function App() {
           <div className="notes">
             <p>Content Released under MIT license.</p>
             <p>This website does not use cookies nor collect personal data.</p>
+			<p>Entries are self-submitted and provided for information purposes only.</p>
           </div>
         </div>
       </footer>
