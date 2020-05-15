@@ -1177,4 +1177,20 @@ export const list = [
     description:
       "On marcsteiner.tech you can buy the German book 'Kryptos verwahren und vererben' (Crypto inheritance book) with BTCPay or read blog articles about Bitcoin related topics."
   },
+  {
+    name: "TKS",
+    url: "https://thekratomsyndicate.com",
+    type: "merchants",
+	subType: "health-household",
+    description:
+      "Kratom teas, extracts and CBD."
+  },
+  {
+    name: "BTC Factura",
+    url: "https://www.btcfactura.com",
+    type: "merchants",
+	subType: "gift-cards",
+    description:
+      "BTC Factura provides an easy way to pay your Romanian bills and services with Bitcoin, since 2016. Home of the largest Bitcoin Lightning node in Romania."
+  },
 ];
