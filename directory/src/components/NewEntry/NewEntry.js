@@ -61,7 +61,7 @@ class NewEntry extends React.Component {
         success: true
       });
 
-      const issueBody = `New submission:%0A%0AName: ${this.state.name}%0AUrl: ${this.state.url}%0AType: ${this.state.type}%0ADescription: ${this.state.description}`;
+      const issueBody = `New submission:%0A%0AName: ${this.state.name}%0AUrl: ${this.state.url}%0ADescription: ${this.state.description}%0AType: ${this.state.type}`;
 
       const issueTitle = `New entry submission - ${this.state.name}`;
 
