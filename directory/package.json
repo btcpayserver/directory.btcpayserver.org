@@ -1,8 +1,12 @@
 {
-  "homepage": "https://directory.btcpayserver.org/",
-  "name": "directory",
-  "version": "0.1.0",
   "private": true,
+  "name": "btcpayserver-directory",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "BTCPay Server Directory",
+  "homepage": "https://directory.btcpayserver.org/",
+  "repository": "btcpayserver/directory.btcpayserver.org",
+  "bugs": "https://github.com/btcpayserver/directory.btcpayserver.org/issues",
   "dependencies": {
     "@material-ui/core": "^4.9.7",
     "@material-ui/icons": "^4.9.1",
