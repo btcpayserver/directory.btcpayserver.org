@@ -1226,4 +1226,19 @@ export const list = [
     description:
       "BTC Factura provides an easy way to pay your Romanian bills and services with Bitcoin, since 2016. Home of the largest Bitcoin Lightning node in Romania."
   },
+  {
+    name: "Arthasutra",
+    url: "https://arthasutra.org",
+    type: "merchants",
+	subType: "education",
+    description:
+      "A podcast for adults and children alike exploring the topics of economics, freedom and peace through stories old and new."
+  },{
+    name: "Indian Liberty Report",
+    url: "https://indianlibertyreport.com",
+    type: "merchants",
+	subType: "education",
+    description:
+      "News from India about peace, freedom and economics."
+  },
 ];
