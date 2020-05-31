@@ -1242,4 +1242,12 @@ export const list = [
     description:
       "News from India about peace, freedom and economics."
   },
+  {
+    name: "IdeasAreLikeFlames",
+    url: "https://ideasarelikeflames.com",
+    type: "merchants",
+	subType: "education",
+    description:
+      "Ideasarelikeflames.com is a collective based in Munich. We play with technology, explain it and help others use it."
+  },
 ];
