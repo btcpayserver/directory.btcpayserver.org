@@ -1256,4 +1256,12 @@ export const list = [
     type: "hosts",
     description: "3rd party host for anyone (esp. helping Indians) who want to accept Bitcoin but, does not want to take the hassel of the technicals or the government knocking on their door."
   },
+  {
+    name: "Refolio Property Management",
+    url: "https://www.refoliopropertymanagement.com",
+    type: "merchants",
+	subType: "services",
+    description:
+      "Established in 2013, Refolio, Inc. is a full service property management company specializing in residential real estate in Monterey County, California, USA."
+  },
 ];
