@@ -1272,4 +1272,11 @@ export const list = [
     description:
       "Bit T-Shirts sells art-on-a-shirt. The theme is IT (and pop culture), with clever and unique designs. From the geeks, for the geeks."
   },
+  {
+    name: "Human Rights Foundation - Bitcoin Development Fund",
+    url: "https://hrf.org/programs_posts/devfund/",
+    type: "non-profits",
+    description:
+      "The Human Rights Foundation has launched a fund to support software developers who are making the Bitcoin network more private, decentralized, and resilient so that it can better serve as a financial tool[...]."
+  },
 ];
