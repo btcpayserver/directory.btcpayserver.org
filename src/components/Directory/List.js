@@ -1264,4 +1264,12 @@ export const list = [
     description:
       "Established in 2013, Refolio, Inc. is a full service property management company specializing in residential real estate in Monterey County, California, USA."
   },
+  {
+    name: "Bit T-Shirts",
+    url: "https://bittshirts.com",
+    type: "merchants",
+	subType: "art",
+    description:
+      "Bit T-Shirts sells art-on-a-shirt. The theme is IT (and pop culture), with clever and unique designs. From the geeks, for the geeks."
+  },
 ];
