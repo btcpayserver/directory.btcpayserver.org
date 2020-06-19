@@ -40,13 +40,6 @@ export const list = [
       "A social network that champions free speech, individual liberty and the free flow of information online. All are welcome."
   },
   {
-    name: "goLightning.club",
-    url: "https://golightning.club/",
-    type: "apps",
-    description:
-      "Send on-chain and receive bitcoin over Lightning!"
-  },
-  {
     name: "ThunderSats",
     url: "https://thundersats.com/",
     type: "merchants",
@@ -721,14 +714,6 @@ export const list = [
       "Shift sells hardware wallets using BTCPayServer at checkout."
   },
   {
-    name: "Compudemano",
-    url: "https://www.compudemano.com/",
-    type: "merchants",
-    subType: "electronics",
-    description:
-      "Important partners of Apple and DJI in Colombia. Authorized Reseller, Service Provider and Certified Consultant."
-  },
-  {
     name: "Ynotek",
     url: "https://www.ynotek.com/",
     type: "merchants",
@@ -759,13 +744,6 @@ export const list = [
     subType: "art",
     description:
       "atelierdresemann.de showcases and sells art, as well as stamps."
-  },
-  {
-    name: "MerkleSig",
-    url: "https://merklesig.com/",
-    type: "hosts",
-    description:
-      "Merklesig offers a paid BTCPayServer hosting service."
   },
   {
     name: "Tradeniex.io",
@@ -930,7 +908,7 @@ export const list = [
   },
   {
     name: "Pavlenex’s Donation App",
-    url: "https://pavlenex.com/",
+    url: "https://fund.btcpayserver.org/apps/3bfwsFviwBfERPQvgqFFoz4aD8RG/pos/",
     type: "non-profits",
     description:
       "This is Pavlenex’s BTCPayServer donation app. Pavlenex is the marketing and video making machine of BTCPayServer. He also wrote most of the documentation that you can use to get started and discover the project."
@@ -949,14 +927,6 @@ export const list = [
     subType: "fashion",
     description:
       "Created in 2012 to give people the ability to help spread the message by wearing their liberty, this site sells T-shirts and tank-tops."
-  },
-  {
-    name: "Internet Superstore",
-    url: "https://internetsuper.store/",
-    type: "merchants",
-    subType: "fashion",
-    description:
-      "Internetsuper.store offers crypto and non-crypto related accessories, outerwear, and t-shirts."
   },
   {
     name: "BitcoinShirt Store",
@@ -1124,14 +1094,6 @@ export const list = [
       "Create and schedule your live streaming events, set your price and get paid directly into your own wallet. No third parties, no fees. Working with BTCPay Server."
   },
   {
-    name: "Whiterabbbit",
-    url: "https://whiterabbit.store/",
-    type: "merchants",
-	subType: "cryptocurrency-paraphernalia",
-    description:
-      "Bitcoin coasters, bookmarks and other paraphernalia."
-  },
-  {
     name: "Holycrab",
     url: "https://www.holycrab.sg/",
     type: "merchants",
@@ -1209,14 +1171,6 @@ export const list = [
 	subType: "books",
     description:
       "On marcsteiner.tech you can buy the German book 'Kryptos verwahren und vererben' (Crypto inheritance book) with BTCPay or read blog articles about Bitcoin related topics."
-  },
-  {
-    name: "TKS",
-    url: "https://thekratomsyndicate.com",
-    type: "merchants",
-	subType: "health-household",
-    description:
-      "Kratom teas, extracts and CBD."
   },
   {
     name: "BTC Factura",
