@@ -1234,7 +1234,7 @@ export const list = [
       "The Human Rights Foundation has launched a fund to support software developers who are making the Bitcoin network more private, decentralized, and resilient so that it can better serve as a financial tool[...]."
   },
   {
-    name: "Human Rights Foundation - Bitcoin Development Fund",
+    name: "SAIME",
     url: "http://www.saime.gob.ve/",
     type: "merchants",
 	subType: "services",
