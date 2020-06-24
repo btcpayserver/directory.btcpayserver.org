@@ -1233,4 +1233,12 @@ export const list = [
     description:
       "The Human Rights Foundation has launched a fund to support software developers who are making the Bitcoin network more private, decentralized, and resilient so that it can better serve as a financial tool[...]."
   },
+  {
+    name: "Human Rights Foundation - Bitcoin Development Fund",
+    url: "http://www.saime.gob.ve/",
+    type: "merchants",
+	subType: "services",
+    description:
+      "The SAIME is the official Venezuelan website for passeport issuance and renewal."
+  },
 ];
