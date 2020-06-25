@@ -1241,4 +1241,19 @@ export const list = [
     description:
       "The SAIME is the official Venezuelan website for passeport issuance and renewal."
   },
+  {
+    name: "Cryptowat.ch",
+    url: "https://cryptowat.ch/",
+    type: "merchants",
+	subType: "services",
+    description:
+      "Kraken.com uses BTCPayServer to pay for their cryptowat.ch product, a professional trading terminal."
+  },
+  {
+    name: "LN Piggy bank crowdfund",
+    url: "https://btcpay02.sparkpay.pt/apps/2UezRS57p92x6jTM7AxGsgAsQvXc/crowdfund/",
+    type: "apps",
+    description:
+      "A crowdfund for a LN piggy bank project, by Sparkpay.pt"
+  },
 ];
