@@ -1256,4 +1256,11 @@ export const list = [
     description:
       "A crowdfund for a LN piggy bank project, by Sparkpay.pt"
   },
+  {
+    name: "Ubolator's donation page",
+    url: "https://donate.umar-bolatov.com/",
+    type: "non-profits",
+    description:
+      "Ubolator's donation app page."
+  },
 ];
