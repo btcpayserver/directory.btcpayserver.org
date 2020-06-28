@@ -1263,4 +1263,12 @@ export const list = [
     description:
       "Ubolator's donation app page."
   },
+  {
+    name: "Brian Harrington",
+    url: "https://www.brianharrington.org/",
+    type: "merchants",
+	subType: "services",
+    description:
+      "Brian Harrington is a Marketing Consultant, Project Manager, Film Producer and a Bitcoiner.He uses a BTCPay Server payment button for donations at the bottom of his website."
+  },
 ];
