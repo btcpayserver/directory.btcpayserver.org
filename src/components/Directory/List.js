@@ -1256,4 +1256,19 @@ export const list = [
     description:
       "A crowdfund for a LN piggy bank project, by Sparkpay.pt"
   },
+  {
+    name: "Ubolator's donation page",
+    url: "https://donate.umar-bolatov.com/",
+    type: "non-profits",
+    description:
+      "Ubolator's donation app page."
+  },
+  {
+    name: "Brian Harrington",
+    url: "https://www.brianharrington.org/",
+    type: "merchants",
+	subType: "services",
+    description:
+      "Brian Harrington is a Marketing Consultant, Project Manager, Film Producer and a Bitcoiner.He uses a BTCPay Server payment button for donations at the bottom of his website."
+  },
 ];
