@@ -1269,6 +1269,20 @@ export const list = [
     type: "merchants",
 	subType: "services",
     description:
-      "Brian Harrington is a Marketing Consultant, Project Manager, Film Producer and a Bitcoiner.He uses a BTCPay Server payment button for donations at the bottom of his website."
+      "Brian Harrington is a Marketing Consultant, Project Manager, Film Producer and a Bitcoiner. He uses a BTCPay Server payment button for donations at the bottom of his website."
+  },
+  {
+    name: "Spoof Defender",
+    url: "https://spoofdefender.com/",
+    type: "merchants",
+	subType: "services",
+    description:
+      "Spoof Defender searches the web for affiliates that misuse your affiliate program. The subscription is paid in Bitcoin with BTCPay Server."
+  },{
+    name: "Blocksdemy/AcceptBTC Tech",
+    url: "https://blocksdemy.xyz/merchants/",
+    type: "hosts",
+    description:
+      "Offering BTCPay Server to online and offline Stores. We charge something small to be able to maintain our hosting."
   },
 ];
