@@ -1295,4 +1295,11 @@ export const list = [
     description:
       "SHAmory is a card game to discover Bitcoin while having fun. You can buy the game directly on the website using BTCPay Server at checkout."
   },
+  {
+    name: "Bitpaint donation page",
+    url: "https://btcpay177475.lndyn.com/",
+    type: "apps",
+    description:
+      "Bitpaint, creator of digital and physical Bitcoin content, has a BTCPay Server powered donation/tip page."
+  },
 ];
