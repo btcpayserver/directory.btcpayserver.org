@@ -753,13 +753,6 @@ export const list = [
       "Host for BTCPay Server"
   },
   {
-    name: "lpay.io",
-    url: "https://btcps.lpay.io/Account/Login",
-    type: "hosts",
-    description:
-      "lpay.io offers free BTCPayServer hosting services."
-  },
-  {
     name: "EXITPay",
     url: "https://exitpay.org/",
     type: "hosts",
@@ -1278,11 +1271,35 @@ export const list = [
 	subType: "services",
     description:
       "Spoof Defender searches the web for affiliates that misuse your affiliate program. The subscription is paid in Bitcoin with BTCPay Server."
-  },{
+  },
+  {
     name: "Blocksdemy/AcceptBTC Tech",
     url: "https://blocksdemy.xyz/merchants/",
     type: "hosts",
     description:
       "Offering BTCPay Server to online and offline Stores. We charge something small to be able to maintain our hosting."
+  },
+  {
+    name: "The Table Corner",
+    url: "https://www.maximalist.ovh/en/",
+    type: "merchants",
+	subType: "cryptocurrency-paraphernalia",
+    description:
+      "The Table Corner is a board game to discover Bitcoin while having fun. You can buy the game directly on the website using BTCPay Server at checkout."
+  },
+  {
+    name: "SHAmory",
+    url: "https://shamory.com/",
+    type: "merchants",
+	subType: "cryptocurrency-paraphernalia",
+    description:
+      "SHAmory is a card game to discover Bitcoin while having fun. You can buy the game directly on the website using BTCPay Server at checkout."
+  },
+  {
+    name: "Bitpaint donation page",
+    url: "https://btcpay177475.lndyn.com/",
+    type: "apps",
+    description:
+      "Bitpaint, creator of digital and physical Bitcoin content, has a BTCPay Server powered donation/tip page."
   },
 ];
