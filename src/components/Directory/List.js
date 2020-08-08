@@ -1302,4 +1302,19 @@ export const list = [
     description:
       "Bitpaint, creator of digital and physical Bitcoin content, has a BTCPay Server powered donation/tip page."
   },
+  {
+    name: "Lightning Junkies Store",
+    url: "https://store.lightningjunkies.net/",
+    type: "merchants",
+	subType: "fashion",
+    description:
+      "Get your Lightning Junkies merch fix !"
+  },
+  {
+    name: "BitcoinDuLiban",
+    url: "https://btcpay.bitcoinduliban.org/Account/Login",
+    type: "hosts",
+    description:
+      "BitcoinDuLiban.org is an educational website in English and Arabic. They offer BTCPay Server hosting."
+  },
 ];
