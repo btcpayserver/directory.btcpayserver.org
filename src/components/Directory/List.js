@@ -1317,4 +1317,11 @@ export const list = [
     description:
       "BitcoinDuLiban.org is an educational website in English and Arabic. They offer BTCPay Server hosting."
   },
+  {
+    name: "Riccardo Masutti's donation page",
+    url: "https://bitcoinsicurezzaprivacy.it/apps/cW6qkgjCD87TFFCBAHC3agGAC4t/pos",
+    type: "hosts",
+    description:
+      "Riccardo Masutti is a BTCPayServer contributor. His donation page is self-hhosted."
+  },
 ];
