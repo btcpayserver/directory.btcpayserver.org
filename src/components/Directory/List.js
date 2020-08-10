@@ -1317,4 +1317,25 @@ export const list = [
     description:
       "BitcoinDuLiban.org is an educational website in English and Arabic. They offer BTCPay Server hosting."
   },
+  {
+    name: "Riccardo Masutti's donation page",
+    url: "https://bitcoinsicurezzaprivacy.it/apps/cW6qkgjCD87TFFCBAHC3agGAC4t/pos",
+    type: "apps",
+    description:
+      "Riccardo Masutti is a BTCPayServer contributor. His donation page is self-hhosted."
+  },
+  {
+    name: "Bitcoin Aruba",
+    url: "https://btcpay.btc.aw/",
+    type: "hosts",
+    description:
+      "Bitcoin and Crypto enthusiast on the gorgeous island of Aruba that can act as a host."
+  },
+  {
+    name: "Nate's donation page",
+    url: "https://natepay.tempestboom.com/apps/27n4A8JwekzZ6CpjzWGqYaEEj2BB/pos",
+    type: "apps",
+    description:
+      "Nate's donation page. He's a Bitcoin enthusiast and knowledge sponge."
+  },
 ];
