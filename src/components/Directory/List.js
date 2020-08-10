@@ -1320,8 +1320,15 @@ export const list = [
   {
     name: "Riccardo Masutti's donation page",
     url: "https://bitcoinsicurezzaprivacy.it/apps/cW6qkgjCD87TFFCBAHC3agGAC4t/pos",
-    type: "hosts",
+    type: "apps",
     description:
       "Riccardo Masutti is a BTCPayServer contributor. His donation page is self-hhosted."
+  },
+  {
+    name: "Riccardo Masutti's donation page",
+    url: "https://btcpay.btc.aw/",
+    type: "hosts",
+    description:
+      "Bitcoin and Crypto enthusiast on the gorgeous island of Aruba that can act as a host."
   },
 ];
