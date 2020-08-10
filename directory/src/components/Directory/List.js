@@ -1082,12 +1082,5 @@ export const list = [
     description:
       "BTCPayServer Host with tutorials and support for Brazilian Portuguese Bitcoiners. Support for P2EP/Coinjoin. PT-BR: Host de BTCPayServer gratuito com tutoriais e apoio para bitcoinheiros do Brasil. Aproveitem!"
   },
-  {
-    name: "Riccardo Masutti's donation page",
-    url: "https://bitcoinsicurezzaprivacy.it/apps/cW6qkgjCD87TFFCBAHC3agGAC4t/pos",
-    type: "hosts",
-    description:
-      "Riccardo Masutti is a BTCPayServer contributor. His donation page is self-hhosted."
-  },
 
 ];
