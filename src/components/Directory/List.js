@@ -1338,4 +1338,12 @@ export const list = [
     description:
       "Nate's donation page. He's a Bitcoin enthusiast and knowledge sponge."
   },
+  {
+    name: "Citadel21",
+    url: "https://www.citadel21.com/donate",
+    type: "merchants",
+	subType: "cryptocurrency-paraphernalia",
+    description:
+      "Citadel21 produces Bitcoin related literature through their blog and website. You can donate to support their present and future projects through their BTCPayServer donation button."
+  },
 ];
