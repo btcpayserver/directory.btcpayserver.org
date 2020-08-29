@@ -69,8 +69,9 @@
           height: 40px;
           border-radius: 5px;
           border: 1px solid $grey;
-          padding: 0 7.5px;
+          padding: 0 10px;
           font-size: 0.8rem;
+          font-family: inherit;
 
           &:focus {
             outline: none;
@@ -104,14 +105,13 @@
             box-sizing: border-box;
             width: 100%;
             display: block;
-            font-family: "Open Sans";
             background: white;
             margin-top: 5px;
             margin-bottom: 15px;
             font-size: 0.8rem;
             height: 40px;
             border: 1px solid $grey;
-            padding: 0 7.5px;
+            padding: 0 10px;
             cursor: pointer;
             color: black;
             border-radius: 5px;
@@ -246,6 +246,7 @@
     
           select {
             color: white;
+            background: $darkBg; // explicitely set background here to fit it on Windows, see #51.
           }
         }
       } //label
