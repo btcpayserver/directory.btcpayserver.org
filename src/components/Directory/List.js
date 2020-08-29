@@ -1057,6 +1057,14 @@ export const list = [
       "BTC.aw is a free BTCPay Server hosting provider for anybody. Bitcoin Aruba maintains the cost of hosting by receiving donations from users."
   },
   {
+    name: "Bitcoin Aruba Merch Store",
+    url: "https://btcpay.btc.aw/apps/4HoaBMEywHSj3Y71S6zpvreyTkTG/pos/",
+    type: "merchants",
+    subType: "fashion",
+    description:
+      "Bitcoin Aruba Store, where you can buy shirts, hats, mugs, tank tops and protective masks from Bitcoin Aruba and pay with your BTC."
+  },
+  {
     name: "Happy to Give Back",
     url: "https://happytogiveback.com/donate/#bitcoin-1",
     type: "non-profits",
