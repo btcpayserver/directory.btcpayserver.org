@@ -1057,6 +1057,14 @@ export const list = [
       "BTC.aw is a free BTCPay Server hosting provider for anybody. Bitcoin Aruba maintains the cost of hosting by receiving donations from users."
   },
   {
+    name: "Bitcoin Aruba Merch Store",
+    url: "https://btcpay.btc.aw/apps/4HoaBMEywHSj3Y71S6zpvreyTkTG/pos/",
+    type: "merchants",
+    subType: "fashion",
+    description:
+      "Bitcoin Aruba Store, where you can buy shirts, hats, mugs, tank tops and protective masks from Bitcoin Aruba and pay with your BTC."
+  },
+  {
     name: "Happy to Give Back",
     url: "https://happytogiveback.com/donate/#bitcoin-1",
     type: "non-profits",
@@ -1345,5 +1353,20 @@ export const list = [
 	subType: "cryptocurrency-paraphernalia",
     description:
       "Citadel21 produces Bitcoin related literature through their blog and website. You can donate to support their present and future projects through their BTCPayServer donation button."
+  },
+  {
+    name: "CTRL Pew",
+    url: "https://www.ctrlpew.com/shop/",
+    type: "merchants",
+	subType: "3d-printing",
+    description:
+      "We sell patches and such related to 3D printing guns :D We dont sell 3D printed guns...yet. We do support developers who are designing and printing guns."
+  },
+  {
+    name: "Bittery.io",
+    url: "https://www.bittery.io/",
+    type: "hosts",
+    description:
+      "Bittery.io is kind of an experiment. We've took various open source technologies and made a platform for Bitcoin payments."
   },
 ];
