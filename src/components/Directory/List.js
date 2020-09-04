@@ -1369,4 +1369,11 @@ export const list = [
     description:
       "Bittery.io is kind of an experiment. We've took various open source technologies and made a platform for Bitcoin payments."
   },
+  {
+    name: "HRF.org Defend Belarus crowdfund",
+    url: "https://hrf.org/programs_posts/defend_belarus/",
+    type: "apps",
+    description:
+      "Help HRF raise funds for state factory workers, journalists and members of the state security apparatus who have been impacted by their support for democracy in Belarus."
+  },
 ];
