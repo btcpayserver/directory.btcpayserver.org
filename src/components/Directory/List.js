@@ -1376,4 +1376,19 @@ export const list = [
     description:
       "Help HRF raise funds for state factory workers, journalists and members of the state security apparatus who have been impacted by their support for democracy in Belarus."
   },
+  {
+    name: "Unhashedpodcat.com",
+    url: "https://www.unhashedpodcast.com/",
+    type: "merchants",
+  subType: "education",
+    description:
+      "Four guys cutting out the Bitcoin BS in this weekly podcast. They accept donations by using BTCPay Server."
+  },
+  {
+    name: "btcpay.billfodl.com",
+    url: "https://btcpay.billfodl.com/",
+    type: "hosts",
+    description:
+      "Billfodl's own BTCPay Server is open for registration."
+  },
 ];
