@@ -1391,4 +1391,12 @@ export const list = [
     description:
       "Billfodl's own BTCPay Server is open for registration."
   },
+  {
+    name: "BTCPins",
+    url: "https://btcpins.com/",
+    type: "merchants",
+  subType: "cryptocurrency-paraphernalia",
+    description:
+      "Bitcoin pins & stickers."
+  },
 ];
