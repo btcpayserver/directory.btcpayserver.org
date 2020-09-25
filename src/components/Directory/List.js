@@ -1391,4 +1391,19 @@ export const list = [
     description:
       "Billfodl's own BTCPay Server is open for registration."
   },
+  {
+    name: "BTCPins",
+    url: "https://btcpins.com/",
+    type: "merchants",
+  subType: "cryptocurrency-paraphernalia",
+    description:
+      "Bitcoin pins & stickers."
+  },
+  {
+    name: "Namecheap",
+    url: "https://www.namecheap.com/",
+    type: "domains-hosting-vpns",
+    description:
+      "Powering Internet freedom through domains, hosting, security, and more — everything you need to make more online, for less. Namecheap uses BTCPay Server in their top-up section."
+  },
 ];
