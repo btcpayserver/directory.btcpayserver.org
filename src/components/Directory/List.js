@@ -1406,4 +1406,20 @@ export const list = [
     description:
       "Powering Internet freedom through domains, hosting, security, and more — everything you need to make more online, for less. Namecheap uses BTCPay Server in their top-up section."
   },
+  {
+    name: "Le Maxine's bar",
+    url: "https://btcpay.bitcoin-lyon.fr/apps/2WoGzeFotWBpVRi5LwDBrNtu75Qb/pos",
+    type: "merchants",
+  subType: "food",
+    description:
+      "Maxine's is nestled in the 1st arrondissement of Lyon, on a street perpendicular to Burdeau Street and easily accessible from the station Croix Paquet. Maxine's will satisfy everyone's needs with its various drinks: wines, cocktails, spirits, beers and all at low prices. They use BTCPay Server as a Point of Sales solution. Official website: maxines.fr/en"
+  },
+  {
+    name: "GoneBuster",
+    url: "https://gonebuster.com/",
+    type: "merchants",
+  subType: "fashion",
+    description:
+      "GoneBuster Geek T-shirts are made in Lyon, designed by a crazy team and produced with 100% biological fabric."
+  },
 ];
