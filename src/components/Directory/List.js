@@ -1422,4 +1422,11 @@ export const list = [
     description:
       "GoneBuster Geek T-shirts are made in Lyon, designed by a crazy team and produced with 100% biological fabric."
   },
+  {
+    name: "BitVoucher.cz",
+    url: "https://bitvoucher.cz/",
+    type: "service",
+    description:
+      "Get vouchers for your favorite Czech services."
+  },
 ];
