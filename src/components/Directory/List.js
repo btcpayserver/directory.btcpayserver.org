@@ -1425,7 +1425,7 @@ export const list = [
   {
     name: "BitVoucher.cz",
     url: "https://bitvoucher.cz/",
-    type: "service",
+    type: "services",
     description:
       "Get vouchers for your favorite Czech services."
   },
