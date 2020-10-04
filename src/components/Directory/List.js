@@ -1429,4 +1429,19 @@ export const list = [
     description:
       "Get vouchers for your favorite Czech services."
   },
+  {
+    name: "Kerwelllness.com",
+    url: "https://kerwellness.com/",
+    type: "merchants",
+    subType: "adult",
+    description:
+      "Premium Grade CBD Product Collections, located in Illinois USA and shipping worldwide. They use the BTCPay Server Shopify integration at checkout."
+  },
+  {
+    name: "bitcoinacks.com",
+    url: "https://bitcoinacks.com/",
+    type: "non-profits",
+    description:
+      "Bitcoinacks.com by Pierre Rochard aggregates pull requests for upgrades to Bitcoin Core and lets users pay for the Bitcoin development they want to see. Payments can be made in the dashboard through a BTCPay Server invoice."
+  },
 ];
