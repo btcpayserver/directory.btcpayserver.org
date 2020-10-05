@@ -1460,4 +1460,12 @@ export const list = [
     description:
       "Bitcoin Art Gallery and sticker shop. Checkout and donation button are made using BTCPay Server."
   },
+  {
+    name: "Atlasarms",
+    url: "https://www.atlasarms.org/",
+    type: "merchants",
+    subType: "tools",
+    description:
+      "Atlasarms is an open-source project seeking to outflank the US regulators' definitions and imaginations in regards to armor penetrating ammunition. They accept donations using a custom BTCPay Server button."
+  },
 ];
