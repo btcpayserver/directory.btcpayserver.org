@@ -1452,4 +1452,12 @@ export const list = [
     description:
       "Education website and blog in Spanish for the newcomers and experienced Bitcoiners alike.They accept donations using a custom BTCPay Server donation button."
   },
+  {
+    name: "sendbitcoin.lol",
+    url: "https://sendbitcoin.lol/",
+    type: "merchants",
+    subType: "cryptocurrency-paraphernalia",
+    description:
+      "Bitcoin Art Gallery and sticker shop. Checkout and donation button are made using BTCPay Server."
+  },
 ];
