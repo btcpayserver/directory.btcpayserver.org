@@ -1450,7 +1450,7 @@ export const list = [
     type: "merchants",
     subType: "education",
     description:
-      "Education website and blog in Spanish for the newcomers and experienced Bitcoiners alike.They accept donations using a custom BTCPay Server donation button."
+      "Education website and blog in Spanish for the newcomers and experienced Bitcoiners alike. They accept donations using a custom BTCPay Server donation button."
   },
   {
     name: "sendbitcoin.lol",
