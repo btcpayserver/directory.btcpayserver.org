@@ -1476,4 +1476,12 @@ export const list = [
     description:
       "Evolve Wine brings you organic, sustainable wines. Our expert sommeliers curate the most delicious natural wines from family-owned West Coast wineries. Organic wines that are keto, vegan and paleo friendly"
   },
+  {
+    name: "BlackbullTrading Post",
+    url: "https://www.blackbulltradingpost.com/",
+    type: "merchants",
+    subType: "appliances-furniture",
+    description:
+      "Blackbull Trading Post - Retail source for Clothing, Electronics, Home"
+  },
 ];
