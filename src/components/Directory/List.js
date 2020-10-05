@@ -1444,4 +1444,12 @@ export const list = [
     description:
       "Bitcoinacks.com by Pierre Rochard aggregates pull requests for upgrades to Bitcoin Core and lets users pay for the Bitcoin development they want to see. Payments can be made in the dashboard through a BTCPay Server invoice."
   },
+  {
+    name: "Estudiobitcoin.com",
+    url: "https://estudiobitcoin.com/",
+    type: "merchants",
+    subType: "education",
+    description:
+      "Education website and blog in Spanish for the newcomers and experienced Bitcoiners alike.They accept donations using a custom BTCPay Server donation button."
+  },
 ];
