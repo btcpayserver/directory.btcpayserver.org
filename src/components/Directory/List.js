@@ -1468,4 +1468,12 @@ export const list = [
     description:
       "Atlasarms is an open-source project seeking to outflank the US regulators' definitions and imaginations in regards to armor penetrating ammunition. They accept donations using a custom BTCPay Server button."
   },
+  {
+    name: "Evolve Wine",
+    url: "https://evolvewineco.com/",
+    type: "merchants",
+    subType: "food",
+    description:
+      "Evolve Wine brings you organic, sustainable wines. Our expert sommeliers curate the most delicious natural wines from family-owned West Coast wineries. Organic wines that are keto, vegan and paleo friendly"
+  },
 ];
