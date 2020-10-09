@@ -1484,4 +1484,11 @@ export const list = [
     description:
       "Blackbull Trading Post - Retail source for Clothing, Electronics, Home"
   },
+  {
+    name: "BTCPay Merchant",
+    url: "https://btcpaymerchant.com/Account/Login/",
+    type: "hosts",
+    description:
+      "btcpaymerchant.com is a free, BTCPay Server hosting provider for stores, non-profits, or anyone that wants to accept bitcoin."
+  },
 ];
