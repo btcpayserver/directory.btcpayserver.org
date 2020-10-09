@@ -1486,7 +1486,7 @@ export const list = [
   },
   {
     name: "BTCPay Merchant",
-    url: "http://www.btcpaymerchant.com/",
+    url: "https://www.btcpaymerchant.com/",
     type: "hosts",
     description:
       "btcpaymerchant.com is a free, BTCPay Server hosting provider for stores, non-profits, or anyone that wants to accept bitcoin."
