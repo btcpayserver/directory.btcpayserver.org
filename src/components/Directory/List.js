@@ -1491,4 +1491,12 @@ export const list = [
     description:
       "btcpaymerchant.com is a free, BTCPay Server hosting provider for stores, non-profits, or anyone that wants to accept bitcoin."
   },
+  {
+    name: "Coins of Nakamoto",
+    url: "https://www.coinsofnakamoto.com/",
+    type: "merchants",
+    subType: "cryptocurrency-paraphernalia",
+    description:
+      "A small store that sells little Bitcoin related knick-knack. Some are fit for beginners (like the Satori's), some are fit for the serious collectors."
+  },
 ];
