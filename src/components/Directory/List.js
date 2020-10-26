@@ -1444,4 +1444,59 @@ export const list = [
     description:
       "Bitcoinacks.com by Pierre Rochard aggregates pull requests for upgrades to Bitcoin Core and lets users pay for the Bitcoin development they want to see. Payments can be made in the dashboard through a BTCPay Server invoice."
   },
+  {
+    name: "Estudiobitcoin.com",
+    url: "https://estudiobitcoin.com/",
+    type: "merchants",
+    subType: "education",
+    description:
+      "Education website and blog in Spanish for the newcomers and experienced Bitcoiners alike. They accept donations using a custom BTCPay Server donation button."
+  },
+  {
+    name: "sendbitcoin.lol",
+    url: "https://sendbitcoin.lol/",
+    type: "merchants",
+    subType: "cryptocurrency-paraphernalia",
+    description:
+      "Bitcoin Art Gallery and sticker shop. Checkout and donation button are made using BTCPay Server."
+  },
+  {
+    name: "Atlasarms",
+    url: "https://www.atlasarms.org/",
+    type: "merchants",
+    subType: "tools",
+    description:
+      "Atlasarms is an open-source project seeking to outflank the US regulators' definitions and imaginations in regards to armor penetrating ammunition. They accept donations using a custom BTCPay Server button."
+  },
+  {
+    name: "Evolve Wine",
+    url: "https://evolvewineco.com/",
+    type: "merchants",
+    subType: "food",
+    description:
+      "Evolve Wine brings you organic, sustainable wines. Our expert sommeliers curate the most delicious natural wines from family-owned West Coast wineries. Organic wines that are keto, vegan and paleo friendly"
+  },
+  {
+    name: "BlackbullTrading Post",
+    url: "https://www.blackbulltradingpost.com/",
+    type: "merchants",
+    subType: "appliances-furniture",
+    description:
+      "Blackbull Trading Post - Retail source for Clothing, Electronics, Home"
+  },
+  {
+    name: "BTCPay Merchant",
+    url: "https://btcpaymerchant.com/Account/Login/",
+    type: "hosts",
+    description:
+      "btcpaymerchant.com is a free, BTCPay Server hosting provider for stores, non-profits, or anyone that wants to accept bitcoin."
+  },
+  {
+    name: "Coins of Nakamoto",
+    url: "https://www.coinsofnakamoto.com/",
+    type: "merchants",
+    subType: "cryptocurrency-paraphernalia",
+    description:
+      "A small store that sells little Bitcoin related knick-knack. Some are fit for beginners (like the Satori's), some are fit for the serious collectors."
+  },
 ];

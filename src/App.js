@@ -86,30 +86,30 @@ function App() {
             <div className="column">
               <h2>Product</h2>
               <a href="https://docs.btcpayserver.org/">Introduction</a>
-              <a href="https://docs.btcpayserver.org/btcpay-basics/usecase">Use Case</a>
-              <a href="https://docs.btcpayserver.org/features/apps">Apps</a>
-              <a href="https://docs.btcpayserver.org/deployment/deployment">Deployment</a>
-              <a href="https://docs.btcpayserver.org/getting-started/registeraccount">Getting Started</a>
+              <a href="https://docs.btcpayserver.org/UseCase/">Use Case</a>
+              <a href="https://docs.btcpayserver.org/Apps/">Apps</a>
+              <a href="https://docs.btcpayserver.org/Deployment/">Deployment</a>
+              <a href="https://docs.btcpayserver.org/RegisterAccount/">Getting Started</a>
             </div>
             <div className="column">
               <h2>Resources</h2>
               <a href="https://github.com/btcpayserver/">GitHub</a>
               <a href="https://docs.btcpayserver.org/">Docs</a>
-              <a href="https://docs.btcpayserver.org/support-and-community/support">Support</a>
-              <a href="https://docs.btcpayserver.org/faq-and-common-issues/faq">FAQ</a>
+              <a href="https://docs.btcpayserver.org/Support/">Support</a>
+              <a href="https://docs.btcpayserver.org/FAQ/">FAQ</a>
             </div>
             <div className="column">
               <h2>Community</h2>
               <a href="https://blog.btcpayserver.org/">Blog</a>
-              <a href="https://docs.btcpayserver.org/support-and-community/community">Social</a>
-              <a href="https://docs.btcpayserver.org/support-and-community/contribute">Contribute</a>
+              <a href="https://docs.btcpayserver.org/Community/">Social</a>
+              <a href="https://docs.btcpayserver.org/Contribute/">Contribute</a>
               <a href="https://btcpayserver.org/donate/">Donate</a>
             </div>
           </div>
           <div className="notes">
             <p>Content Released under MIT license.</p>
             <p>This website does not use cookies nor collect personal data.</p>
-			<p>Entries are self-submitted and provided for information purposes only.</p>
+            <p>Entries are self-submitted and provided for information purposes only.</p>
           </div>
         </div>
       </footer>
