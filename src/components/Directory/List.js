@@ -1499,4 +1499,12 @@ export const list = [
     description:
       "A small store that sells little Bitcoin related knick-knack. Some are fit for beginners (like the Satori's), some are fit for the serious collectors."
   },
+  {
+    name: "Pizza Vegana",
+    url: "https://pizzavegana.com/",
+    type: "merchants",
+    subType: "food",
+    description:
+      "Get Vegan Pizzas delivered to your doorstep by paying with BTCPay Server."
+  },
 ];
