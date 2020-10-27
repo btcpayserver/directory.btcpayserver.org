@@ -1,4 +1,4 @@
-/* 
+/*
 **** Here is the list of types and subtypes to be used in this document.
 ** Types:
 apps
@@ -1204,12 +1204,6 @@ export const list = [
 	subType: "education",
     description:
       "Ideasarelikeflames.com is a collective based in Munich. We play with technology, explain it and help others use it."
-  },
-  {
-    name: "BTCPAY.IN",
-    url: "https://btcpay.in",
-    type: "hosts",
-    description: "3rd party host for anyone (esp. helping Indians) who want to accept Bitcoin but, does not want to take the hassel of the technicals or the government knocking on their door."
   },
   {
     name: "Refolio Property Management",
