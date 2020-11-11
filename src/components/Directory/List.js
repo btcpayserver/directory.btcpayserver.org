@@ -40,6 +40,13 @@ export const list = [
       "A social network that champions free speech, individual liberty and the free flow of information online. All are welcome."
   },
   {
+    name: "Spoof Defender",
+    url: "https://spoofdefender.com/?utm_source=btcpayserver",
+    type: "apps",
+    description:
+      "Saas to help you manage your affiliate program and bust the affiliates bidding on your brand terms."
+  },
+  {
     name: "ThunderSats",
     url: "https://thundersats.com/",
     type: "merchants",
