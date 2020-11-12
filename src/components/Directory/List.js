@@ -1509,4 +1509,12 @@ export const list = [
     description:
       "Experience The World's Finest Teas & Spices (Free US Shipping + Bitcoin Accepted)."
   },
+  {
+    name: "Too Free To Fail",
+    url: "https://toofreetofail.com/",
+    type: "merchants",
+    subType: "cryptocurrency-paraphernalia",
+    description:
+      "The iconic Hong Kong Bitcoin tram!"
+  },
 ];
