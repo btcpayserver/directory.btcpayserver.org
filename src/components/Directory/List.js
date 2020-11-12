@@ -1501,4 +1501,12 @@ export const list = [
     description:
       "Get Vegan Pizzas delivered to your doorstep by paying with BTCPay Server."
   },
+  {
+    name: "Too Free To Fail",
+    url: "https://toofreetofail.com/",
+    type: "merchants",
+    subType: "cryptocurrency-paraphernalia",
+    description:
+      "The iconic Hong Kong Bitcoin tram!"
+  },
 ];
