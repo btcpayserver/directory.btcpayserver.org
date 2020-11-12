@@ -1502,6 +1502,14 @@ export const list = [
       "Get Vegan Pizzas delivered to your doorstep by paying with BTCPay Server."
   },
   {
+    name: "Elephant Chateau",
+    url: "https://elephantchateau.com/",
+    type: "merchants",
+    subType: "food",
+    description:
+      "Experience The World's Finest Teas & Spices (Free US Shipping + Bitcoin Accepted)."
+  },
+  {
     name: "Too Free To Fail",
     url: "https://toofreetofail.com/",
     type: "merchants",
