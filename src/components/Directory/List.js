@@ -1525,4 +1525,12 @@ export const list = [
     description:
       "Sale of spare parts for televisions and induction and ceramic hobs. We have new and used spare parts. More than 10 years working with our clients guarantee our products and experience."
   },
+  {
+    name: "Axarquia Informatica",
+    url: "https://www.axarquiainformatica.com/",
+    type: "merchants",
+    subType: "electronics",
+    description:
+      "Sale of spare parts for televisions and induction and ceramic hobs. We have new and used spare parts. More than 10 years working with our clients guarantee our products and experience."
+  },
 ];
