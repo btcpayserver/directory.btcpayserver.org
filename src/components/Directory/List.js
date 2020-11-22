@@ -1517,4 +1517,12 @@ export const list = [
     description:
       "The iconic Hong Kong Bitcoin tram!"
   },
+  {
+    name: "Repuestos Tv",
+    url: "https://btcpay.dontv.es/apps/3YubHJCEzTvxnz91p3aWqnQ6Bcyh/pos",
+    type: "merchants",
+    subType: "electronics",
+    description:
+      "Sale of spare parts for televisions and induction and ceramic hobs. We have new and used spare parts. More than 10 years working with our clients guarantee our products and experience."
+  },
 ];
