@@ -1,4 +1,4 @@
-/* 
+/*
 **** Here is the list of types and subtypes to be used in this document.
 ** Types:
 apps
@@ -1206,12 +1206,6 @@ export const list = [
       "Ideasarelikeflames.com is a collective based in Munich. We play with technology, explain it and help others use it."
   },
   {
-    name: "BTCPAY.IN",
-    url: "https://btcpay.in",
-    type: "hosts",
-    description: "3rd party host for anyone (esp. helping Indians) who want to accept Bitcoin but, does not want to take the hassel of the technicals or the government knocking on their door."
-  },
-  {
     name: "Refolio Property Management",
     url: "https://www.refoliopropertymanagement.com",
     type: "merchants",
@@ -1498,5 +1492,29 @@ export const list = [
     subType: "cryptocurrency-paraphernalia",
     description:
       "A small store that sells little Bitcoin related knick-knack. Some are fit for beginners (like the Satori's), some are fit for the serious collectors."
+  },
+  {
+    name: "Pizza Vegana",
+    url: "https://pizzavegana.com/",
+    type: "merchants",
+    subType: "food",
+    description:
+      "Get Vegan Pizzas delivered to your doorstep by paying with BTCPay Server."
+  },
+  {
+    name: "Elephant Chateau",
+    url: "https://elephantchateau.com/",
+    type: "merchants",
+    subType: "food",
+    description:
+      "Experience The World's Finest Teas & Spices (Free US Shipping + Bitcoin Accepted)."
+  },
+  {
+    name: "Too Free To Fail",
+    url: "https://toofreetofail.com/",
+    type: "merchants",
+    subType: "cryptocurrency-paraphernalia",
+    description:
+      "The iconic Hong Kong Bitcoin tram!"
   },
 ];
