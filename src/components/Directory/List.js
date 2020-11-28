@@ -1533,4 +1533,12 @@ export const list = [
     description:
       "Sale of spare parts for televisions and induction and ceramic hobs. We have new and used spare parts. More than 10 years working with our clients guarantee our products and experience."
   },
+  {
+    name: "Bitcoin Ornaments",
+    url: "https://www.BitcoinOrnaments.com/",
+    type: "merchants",
+    subType: "3d-printing",
+    description:
+      "Resin 3D Printed Bitcoin Ornaments -Shipping within the US only-"
+  },
 ];
