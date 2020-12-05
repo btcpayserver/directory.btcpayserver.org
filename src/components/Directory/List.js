@@ -1541,4 +1541,12 @@ export const list = [
     description:
       "Resin 3D Printed Bitcoin Ornaments -Shipping within the US only-"
   },
+  {
+    name: "The tything coffee club",
+    url: "https://tythingcoffee.club/",
+    type: "merchants",
+    subType: "art",
+    description:
+      "Art, books, antiques and coffee."
+  },
 ];
