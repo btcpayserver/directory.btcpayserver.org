@@ -1549,4 +1549,11 @@ export const list = [
     description:
       "Art, books, antiques and coffee."
   },
+  {
+    name: "LAWGATE Consulting",
+    url: "https://lawgate-consulting.com/",
+    type: "hosts",
+    description:
+      "We are specialised in helping you realising complex and customized payment flows using BTCPay Server. We also provide help with setup, hosting and guide you through self-hosting if you wish to do so."
+  },
 ];
