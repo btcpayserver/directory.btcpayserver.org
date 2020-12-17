@@ -1556,4 +1556,12 @@ export const list = [
     description:
       "We are specialised in helping you realising complex and customized payment flows using BTCPay Server. We also provide help with setup, hosting and guide you through self-hosting if you wish to do so."
   },
+  {
+    name: "Foundation Devices",
+    url: "https://foundationdevices.com/",
+    type: "merchants",
+	subType: "electronics",
+    description:
+      "Foundation Devices is building open hardware for Bitcoin and a sovereign, decentralized Internet – starting with a Bitcoin hardware wallet called Passport."
+  },
 ];
