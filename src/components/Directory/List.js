@@ -1560,8 +1560,15 @@ export const list = [
     name: "Foundation Devices",
     url: "https://foundationdevices.com/",
     type: "merchants",
-	subType: "electronics",
+	  subType: "electronics",
     description:
       "Foundation Devices is building open hardware for Bitcoin and a sovereign, decentralized Internet – starting with a Bitcoin hardware wallet called Passport."
+  },
+  {
+    name: "BTCPayprovider.it",
+    url: "www.btcpayprovider.it",
+    type: "services",
+    description:
+      "BTCPay Server hosting and service provider in Italy."
   },
 ];
