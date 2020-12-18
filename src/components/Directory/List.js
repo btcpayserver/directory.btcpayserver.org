@@ -1566,7 +1566,7 @@ export const list = [
   },
   {
     name: "BTCPayprovider.it",
-    url: "https://www.btcpayprovider.it/",
+    url: "www.btcpayprovider.it",
     type: "services",
     description:
       "BTCPay Server hosting and service provider in Italy."
