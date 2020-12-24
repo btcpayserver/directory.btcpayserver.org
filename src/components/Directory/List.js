@@ -1571,4 +1571,11 @@ export const list = [
     description:
       "BTCPay Server hosting and service provider in Italy."
   },
+  {
+    name: "Crypto.ba",
+    url: "https://rxcpay.crypto.ba/",
+    type: "non-profits",
+    description:
+      "Crypto.ba is Balkan based blockchain educational forum that is providing BTCPAY services for free!"
+  },
 ];
