@@ -1578,4 +1578,12 @@ export const list = [
     description:
       "Crypto.ba is Balkan based blockchain educational forum that is providing BTCPAY services for free!"
   },
+  {
+    name: "Bitcoin Book Store",
+    url: "https://bitcoinbook.store/",
+    type: "merchants",
+    subType: "books",
+    description:
+      "Buy books for BTC"
+  },
 ];
