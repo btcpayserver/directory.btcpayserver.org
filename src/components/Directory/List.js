@@ -1586,4 +1586,11 @@ export const list = [
     description:
       "Buy books for BTC"
   },
+  {
+    name: "Consignator",
+    url: "https://consignator.online",
+    type: "hosts",
+    description:
+      "Consignator is the first European One Stop Shop bridge between EU and non-EU merchants allowing dropshipping and C2C transactions between Layer 2 and BTC."
+  },
 ];
