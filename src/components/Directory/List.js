@@ -1593,4 +1593,12 @@ export const list = [
     description:
       "Consignator is the first European One Stop Shop bridge between EU and non-EU merchants allowing dropshipping and C2C transactions between Layer 2 and BTC."
   },
+  {
+    name: "Satoshi's Page",
+    url: "https://satoshispage.com/",
+    type: "merchants",
+    subType: "books",
+    description:
+      "Buy author Victoria Collette Jones's book - How Bitcoin Fixes This - with Bitcoin using BTCPay Server directly on the website."
+  },
 ];
