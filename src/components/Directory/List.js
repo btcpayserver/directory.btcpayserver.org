@@ -1601,4 +1601,11 @@ export const list = [
     description:
       "Buy author Victoria Collette Jones's book - How Bitcoin Fixes This - with Bitcoin using BTCPay Server directly on the website."
   },
+  {
+    name: "Bitcoin for life",
+    url: "https://bitcoinforlife.duckdns.org/",
+    type: "non-profits",
+    description:
+      "Donate with Lightning or on-chain Bitcoin to send humanity to the stars. It's done by minimizing existential threats, like nuclear weapons."
+  },
 ];
