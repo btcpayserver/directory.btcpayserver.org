@@ -1608,4 +1608,11 @@ export const list = [
     description:
       "Donate with Lightning or on-chain Bitcoin to send humanity to the stars. It's done by minimizing existential threats, like nuclear weapons."
   },
+  {
+    name: "BTC for me",
+    url: "https://btcpayserver.me/",
+    type: "hosts",
+    description:
+      "btcpayserver.me is open for registration."
+  }
 ];
