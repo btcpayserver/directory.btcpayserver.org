@@ -1615,4 +1615,12 @@ export const list = [
     description:
       "btcpayserver.me is open for registration."
   }
+  {
+    name: "Diamondcard",
+    url: "https://www.diamondcard.us/",
+    type: "merchants",
+    subType: "services",
+    description:
+      "VOIP Service."
+  }
 ];
