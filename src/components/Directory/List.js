@@ -1614,7 +1614,7 @@ export const list = [
     type: "hosts",
     description:
       "btcpayserver.me is open for registration."
-  }
+  },
   {
     name: "Diamondcard",
     url: "https://www.diamondcard.us/",
