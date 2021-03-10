@@ -33,6 +33,13 @@ tools
 
 export const list = [
   {
+    name: "Towards Liberty",
+    url: "https://towardsliberty.com/",
+    type: "education",
+    description:
+      "The Agora Towards Liberty is a gathering place for peers to foster a holistic understanding of applied freedom strategies with tailor made education for your individual curiosity. Using the ancient Socratic method of truth discovery through reasoning and gathering with peers to discuss in depth any topic worth understanding."
+  },
+  {
     name: "Gab",
     url: "https://gab.com/",
     type: "apps",
