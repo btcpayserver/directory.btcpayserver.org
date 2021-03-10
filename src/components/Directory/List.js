@@ -1530,7 +1530,7 @@ export const list = [
     subType: "services",
     description:
       "VOIP Service."
-  }
+  },
   {
     name: "Nearly Done Publishing",
     url: "https://nearlydone.press/",
