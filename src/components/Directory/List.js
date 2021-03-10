@@ -40,14 +40,6 @@ export const list = [
       "A social network that champions free speech, individual liberty and the free flow of information online. All are welcome."
   },
   {
-    name: "ThunderSats",
-    url: "https://thundersats.com/",
-    type: "merchants",
-    subType: "gambling",
-    description:
-      "ThunderSats is a Provably Fair Miniature Roulette Game on top of the Bitcoin Lightning Network ⚡ No login required."
-  },
-  {
     name: "Lightning Slot Machine",
     url: "https://www.lightningslotmachine.com/",
     type: "merchants",
@@ -72,14 +64,6 @@ export const list = [
       "Coincards is the premium platform for living off Bitcoin and Altcoins."
   },
   {
-    name: "Rx Meds",
-    url: "https://rxmeds.io/",
-    type: "merchants",
-    subType: "health-household",
-    description:
-      "Most common generic medications available for a price of a coffee. Our mission is to make life saving medications should be affordable for everyone."
-  },
-  {
     name: "First Class CBD",
     url: "https://firstclass-cbd.ch/",
     type: "merchants",
@@ -102,14 +86,6 @@ export const list = [
     subType: "holiday-travel",
     description:
       "qtrip.com is a Bitcoin only travel agency and booking platform. It uses BTCPay Server for it’s backend."
-  },
-  {
-    name: "Harbourside",
-    url: "http://harboursidehongkong.com/",
-    type: "merchants",
-    subType: "holiday-travel",
-    description:
-      "Harbourside is a vacation rental website that uses BTCPayServer to accept Bitcoin."
   },
   {
     name: "Anthem Gold",
@@ -538,22 +514,6 @@ export const list = [
       "Coldbit is the most durable Bitcoin cold wallet. It lets you backup your BIP-39 seed words and passphrases on steel and store for decades, safe from fire or flood."
   },
   {
-    name: "Lux Node",
-    url: "https://luxnode.io/",
-    type: "merchants",
-    subType: "cryptocurrency-paraphernalia",
-    description:
-      "Luxnode.io provides BTCPay Server hosting plans, plug-and-play Bitcoin+Lightning+BTCPay Nodes and fashion articles."
-  },
-  {
-    name: "Satoshi's Toolbox",
-    url: "https://satoshistoolbox.com/",
-    type: "merchants",
-    subType: "cryptocurrency-paraphernalia",
-    description:
-      "Hardware, software, platforms & acounts for open-book banking on a Bitcoin Standard."
-  },
-  {
     name: "Holdlinox",
     url: "https://hodlinox.com/",
     type: "merchants",
@@ -672,14 +632,6 @@ export const list = [
     subType: "electronics",
     description:
       "Casa is a security company selling pre-configured, plug and play Lightning Network nodes and hardware wallets."
-  },
-  {
-    name: "Halong Mining",
-    url: "https://halongmining.com/",
-    type: "merchants",
-    subType: "electronics",
-    description:
-      "DragonMint Series miners, operating at 16TH with AsicBoost for greater power efficiency."
   },
   {
     name: "Nodl",
@@ -1143,13 +1095,6 @@ export const list = [
       "saveyoursatoshis.com sells discounted gift cards when paying in Bitcoin through their BTCPayServer !"
   },
   {
-    name: "btcpay.bid",
-    url: "https://btcpay.bid",
-    type: "hosts",
-    description:
-      "Assisting anyone wanting to accept BTC for donations, payments and etc on their website or in their storefront."
-  },
-  {
     name: "Paul.lol",
     url: "https://paul.lol",
     type: "merchants",
@@ -1245,13 +1190,6 @@ export const list = [
       "Kraken.com uses BTCPayServer to pay for their cryptowat.ch product, a professional trading terminal."
   },
   {
-    name: "LN Piggy bank crowdfund",
-    url: "https://btcpay02.sparkpay.pt/apps/2UezRS57p92x6jTM7AxGsgAsQvXc/crowdfund/",
-    type: "apps",
-    description:
-      "A crowdfund for a LN piggy bank project, by Sparkpay.pt"
-  },
-  {
     name: "Ubolator's donation page",
     url: "https://donate.umar-bolatov.com/",
     type: "non-profits",
@@ -1282,14 +1220,6 @@ export const list = [
       "Offering BTCPay Server to online and offline Stores. We charge something small to be able to maintain our hosting."
   },
   {
-    name: "The Table Corner",
-    url: "https://www.maximalist.ovh/en/",
-    type: "merchants",
-	subType: "cryptocurrency-paraphernalia",
-    description:
-      "The Table Corner is a board game to discover Bitcoin while having fun. You can buy the game directly on the website using BTCPay Server at checkout."
-  },
-  {
     name: "SHAmory",
     url: "https://shamory.com/",
     type: "merchants",
@@ -1311,20 +1241,6 @@ export const list = [
 	subType: "fashion",
     description:
       "Get your Lightning Junkies merch fix !"
-  },
-  {
-    name: "BitcoinDuLiban",
-    url: "https://btcpay.bitcoinduliban.org/Account/Login",
-    type: "hosts",
-    description:
-      "BitcoinDuLiban.org is an educational website in English and Arabic. They offer BTCPay Server hosting."
-  },
-  {
-    name: "Riccardo Masutti's donation page",
-    url: "https://bitcoinsicurezzaprivacy.it/apps/cW6qkgjCD87TFFCBAHC3agGAC4t/pos",
-    type: "apps",
-    description:
-      "Riccardo Masutti is a BTCPayServer contributor. His donation page is self-hhosted."
   },
   {
     name: "Bitcoin Aruba",
@@ -1518,28 +1434,12 @@ export const list = [
       "The iconic Hong Kong Bitcoin tram!"
   },
   {
-    name: "Repuestos Tv",
-    url: "https://btcpay.dontv.es/apps/3YubHJCEzTvxnz91p3aWqnQ6Bcyh/pos",
-    type: "merchants",
-    subType: "electronics",
-    description:
-      "Sale of spare parts for televisions and induction and ceramic hobs. We have new and used spare parts. More than 10 years working with our clients guarantee our products and experience."
-  },
-  {
     name: "Axarquia Informatica",
     url: "https://www.axarquiainformatica.com/",
     type: "merchants",
     subType: "electronics",
     description:
       "Sale of spare parts for televisions and induction and ceramic hobs. We have new and used spare parts. More than 10 years working with our clients guarantee our products and experience."
-  },
-  {
-    name: "Bitcoin Ornaments",
-    url: "https://www.BitcoinOrnaments.com/",
-    type: "merchants",
-    subType: "3d-printing",
-    description:
-      "Resin 3D Printed Bitcoin Ornaments -Shipping within the US only-"
   },
   {
     name: "The tything coffee club",
