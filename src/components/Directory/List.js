@@ -1531,4 +1531,12 @@ export const list = [
     description:
       "VOIP Service."
   }
+  {
+    name: "Nearly Done Publishing",
+    url: "https://nearlydone.press/",
+    type: "merchants",
+    subType: "books",
+    description:
+      "Ebook and audiobook publisher specialising in remote working."
+  }
 ];
