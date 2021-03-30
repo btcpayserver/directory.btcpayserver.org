@@ -1538,5 +1538,12 @@ export const list = [
     subType: "books",
     description:
       "Ebook and audiobook publisher specialising in remote working."
+  },
+  {
+    name: "btcpayU.pl",
+    url: "https://btcpayu.pl/",
+    type: "hosts",
+    description:
+      "BTCPay Server hosting provider for stores, non-profits and anyone who wants to accept bitcoin. It's hosted in Poland and targeted mainly for the polish users. The website maintains the cost of hosting by receiving donations from users."
   }
 ];
