@@ -1,17 +1,20 @@
-name: Node CI
+name: Build
 
 on:
+  # Run the build for pushes and pull requests targeting master
   push:
+    branches:
+      - master
+  pull_request:
     branches:
       - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
-        node-version: [12]
+        node-version: [14]
 
     steps:
     - uses: actions/checkout@v1
@@ -26,6 +29,7 @@ jobs:
       env:
         CI: true
     - name: GitHub Pages Deploy
+      if: success() && github.ref == 'refs/heads/master'
       uses: maxheld83/ghpages@v0.2.1
       env:
         BUILD_DIR: build/
