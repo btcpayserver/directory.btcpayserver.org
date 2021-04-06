@@ -1545,5 +1545,13 @@ export const list = [
     type: "hosts",
     description:
       "BTCPay Server hosting provider for stores, non-profits and anyone who wants to accept bitcoin. It's hosted in Poland and targeted mainly for the polish users. The website maintains the cost of hosting by receiving donations from users."
+  },
+  {
+    name: "Einundzwanzig",
+    url: "https://einundzwanzig.shop",
+    type: "merchants",
+    subType: "cryptocurrency-paraphernalia",
+    description:
+      "The Einundzwanzig Shop sells Bitcoin merchandising: Shirts, hoodies, coffee mugs, all the good stuff."
   }
 ];
