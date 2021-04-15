@@ -1561,5 +1561,13 @@ export const list = [
     subType: "food",
     description:
       "The first authentic Fast Casual Italian Restaurant in Memphis, Tennessee, USA."
+  },
+  {
+    name: "LN Art Co.",
+    url: "https://lnart.co",
+    type: "merchants",
+    subType: "art",
+    description:
+      "Historical works of art, beautifully printed on museum-grade Bamboo canvas. Exclusively via the bitcoin Lightning Network. Delivered worldwide."
   }
 ];
