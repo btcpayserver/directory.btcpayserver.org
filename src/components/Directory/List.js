@@ -1553,5 +1553,13 @@ export const list = [
     subType: "cryptocurrency-paraphernalia",
     description:
       "The Einundzwanzig Shop sells Bitcoin merchandising: Shirts, hoodies, coffee mugs, all the good stuff."
+  },
+  {
+    name: "Crazy Italians restaurant",
+    url: "https://btcpay.crazytalians.com/apps/2WpHGMM9W8ixKztCxpu9zEbfz7ff/pos",
+    type: "merchants",
+    subType: "food",
+    description:
+      "The first authentic Fast Casual Italian Restaurant in Memphis, Tennessee, USA."
   }
 ];
