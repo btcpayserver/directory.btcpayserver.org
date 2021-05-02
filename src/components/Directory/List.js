@@ -1569,5 +1569,36 @@ export const list = [
     subType: "art",
     description:
       "Historical works of art, beautifully printed on museum-grade Bamboo canvas. Exclusively via the bitcoin Lightning Network. Delivered worldwide."
+  },
+  {
+    name: "Ocean County Retina, PC",
+    url: "http://www.oceancountyretina.com",
+    type: "merchants",
+    subType: "health-household",
+    description:
+      "Medical practice accepting payment in Bitcoin."
+  },
+  {
+    name: "BlockCiphr",
+    url: "https://blockciphr.com/",
+    type: "merchants",
+    subType: "services",
+    description:
+      "BlockCiphr is a Professional Financial Services Network that offers open, borderless and anonymous access to digital money and next generation financial services."
+  },
+  {
+    name: "Fintech Systems",
+    url: "https://fintechsystems.ltd/",
+    type: "merchants",
+    subType: "services",
+    description:
+      "We develop and build platforms that are decentralized and devoid of any dependence on big tech or the traditional banking system."
+  },
+  {
+    name: "Fintech Systems BTCPay Host",
+    url: "https://btcpay.fintechsystems.ltd/",
+    type: "hosts",
+    description:
+      "We run a distributed infrastructure where we provide access to Blockchain Nodes, Market Data Servers, Messaging and Collaboration Services, Application and Database servers."
   }
 ];
