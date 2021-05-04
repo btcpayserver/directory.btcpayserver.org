@@ -1600,5 +1600,12 @@ export const list = [
     type: "hosts",
     description:
       "We run a distributed infrastructure where we provide access to Blockchain Nodes, Market Data Servers, Messaging and Collaboration Services, Application and Database servers."
+  },
+  {
+    name: "David Coen's BTCPay server",
+    url: "https://btcpay.davidcoen.it/",
+    type: "hosts",
+    description:
+      "btcpay.davidcoen.it is a free, BTCPay Server hosting provider for stores. The website tries to maintain the cost of hosting using fees from routing events on Lightning Network. Soon LN Bank will be available on this server, so stay tuned!"
   }
 ];
