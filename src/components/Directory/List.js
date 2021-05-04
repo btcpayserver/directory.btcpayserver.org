@@ -1606,6 +1606,6 @@ export const list = [
     url: "https://btcpay.davidcoen.it/",
     type: "hosts",
     description:
-      "btcpay.davidcoen.it is a free, BTCPay Server hosting provider for stores. The website tries to mantain the cost of hosting using fees from routing events on Lightning Network. Soon LN Bank will be available on this server, so stay tuned!"
+      "btcpay.davidcoen.it is a free, BTCPay Server hosting provider for stores. The website tries to maintain the cost of hosting using fees from routing events on Lightning Network. Soon LN Bank will be available on this server, so stay tuned!"
   }
 ];
