@@ -1607,5 +1607,21 @@ export const list = [
     type: "hosts",
     description:
       "btcpay.davidcoen.it is a free, BTCPay Server hosting provider for stores. The website tries to maintain the cost of hosting using fees from routing events on Lightning Network. Soon LN Bank will be available on this server, so stay tuned!"
+  },
+  {
+    name: "Hyke & Byke",
+    url: "https://www.hykeandbyke.com/",
+    type: "merchants",
+    subType: "holiday-travel",
+    description:
+      "Hyke & Byke was founded with one core mission: to get backpackers and outdoor enthusiasts premium, lightweight, comfortable gear for sleeping outside -- at the best price possible."
+  },
+  {
+    name: "Bitcoin Hat Guy",
+    url: "https://bitcoinhatguy.com/",
+    type: "merchants",
+    subType: "fashion",
+    description:
+      "Shop For Bitcoin Hats"
   }
 ];
