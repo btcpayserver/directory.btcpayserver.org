@@ -1623,5 +1623,13 @@ export const list = [
     subType: "fashion",
     description:
       "Shop For Bitcoin Hats"
+  },
+  {
+    name: "Roverba",
+    url: "https://btcpay.bitcoin-lyon.fr/apps/3XyJgVphLY17s5teYvoDh38qt1zj/pos",
+    type: "merchants",
+    subType: "domains-hosting-vpns",
+    description:
+      "Roverba offers cloud hosting and telecom services to businesses. Address: 7 rue des Maraichers, 69120 Vaulx-en-Velin."
   }
 ];
