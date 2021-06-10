@@ -706,13 +706,6 @@ export const list = [
       "atelierdresemann.de showcases and sells art, as well as stamps."
   },
   {
-    name: "Tradeniex.io",
-    url: "https://tradeniex.io/",
-    type: "hosts",
-    description:
-      "Host for BTCPay Server"
-  },
-  {
     name: "EXITPay",
     url: "https://exitpay.org/",
     type: "hosts",
