@@ -116,7 +116,7 @@ export const list = [
     url: "https://cryptoqo.io/",
     type: "hosts",
     description:
-      "Bitcoin/AltCoin payment processor with payouts to EU bank accounts."
+      "Bitcoin/AltCoin payment processor with payouts to EU bank accounts. Uses BTCPay Server under the hood."
   },
   {
     name: "Random.org",
