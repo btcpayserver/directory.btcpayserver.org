@@ -257,14 +257,6 @@ export const list = [
       "Cherryhotwife.com is an adult website that uses BTCPay Server to accept crypto for payment. NOT SAFE FOR WORK"
   },
   {
-    name: "HEPAYS",
-    url: "https://www.hepays.com/",
-    type: "merchants",
-    subType: "adult",
-    description:
-      "Free & VIP Online Dating."
-  },
-  {
     name: "Bgpipes.com",
     url: "https://www.bgpipes.com/#",
     type: "merchants",
