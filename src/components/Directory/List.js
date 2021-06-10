@@ -112,6 +112,13 @@ export const list = [
       "Clearcreekkennel.com is a kennel that uses BTCPayServer in it’s shop."
   },
   {
+    name: "cryptoqo.io",
+    url: "https://cryptoqo.io/",
+    type: "hosts",
+    description:
+      "Bitcoin/AltCoin payment processor with payouts to EU bank accounts. Uses BTCPay Server under the hood."
+  },
+  {
     name: "Random.org",
     url: "https://www.random.org/",
     type: "merchants",
