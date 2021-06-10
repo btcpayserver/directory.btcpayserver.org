@@ -1631,5 +1631,12 @@ export const list = [
     subType: "domains-hosting-vpns",
     description:
       "Roverba offers cloud hosting and telecom services to businesses. Address: 7 rue des Maraichers, 69120 Vaulx-en-Velin."
+  },
+  {
+    name: "Six910Pay",
+    url: "http://www.six910pay.com",
+    type: "hosts",
+    description:
+      "Six910Pay is based in Atlanta, GA USA and provides BTCPay Server at a very low cost. We do a free installation and free support on your full node."
   }
 ];
