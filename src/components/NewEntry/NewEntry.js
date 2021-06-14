@@ -104,7 +104,7 @@ class NewEntry extends React.Component {
               />
             </label>
             <label htmlFor="url">
-              URL *
+              URL - Don't forget http:// or https:// *
               <input
                 value={this.state.url}
                 onChange={e => this.handleChange(e)}
@@ -112,7 +112,7 @@ class NewEntry extends React.Component {
                 id="url"
                 name="url"
                 type="url"
-                placeholder="URL of your organization"
+                placeholder="https://URL_of_your_organization"
               />
             </label>
             <label htmlFor="type">
