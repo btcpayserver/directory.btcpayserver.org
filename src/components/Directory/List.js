@@ -33,6 +33,13 @@ tools
 
 export const list = [
   {
+    name: "Curfew",
+    url: "https://curfew.dk",
+    type: "merchants",
+    subType: "food",
+    description:
+      "With many modern twists Curfew succeeds in being both an eye gazing time capsule and a high-end cocktail bar with perhaps the best cocktails in town."
+  },  {
     name: "Towards Liberty",
     url: "https://towardsliberty.com/",
     type: "merchants",
