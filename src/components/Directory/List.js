@@ -1637,5 +1637,12 @@ export const list = [
     type: "hosts",
     description:
       "Six910Pay is based in Atlanta, GA USA and provides BTCPay Server at a very low cost. We do a free installation and free support on your full node."
+  },
+  {
+    name: "withBitcoin.org",
+    url: "https://withbitcoin.org/",
+    type: "hosts",
+    description:
+      "We're a host offering free BTCPay accounts and customization services for companies interested in doing business with Bitcoin. Managed accounts are available for a nominal fee, free for nonprofits."
   }
 ];
