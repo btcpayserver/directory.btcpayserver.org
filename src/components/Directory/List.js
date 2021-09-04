@@ -1644,5 +1644,50 @@ export const list = [
     type: "hosts",
     description:
       "We're a host offering free BTCPay accounts and customization services for companies interested in doing business with Bitcoin. Managed accounts are available for a nominal fee, free for nonprofits."
+  },
+  {
+    name: "whatUdoin",
+    url: "https://www.whatudoin.com",
+    type: "apps",
+    description:
+      "Find things to do around the world. Bitcoin accepted."
+  },
+  {
+    name: "WisPay Italy",
+    url: "www.wispay.it",
+    type: "hosts",
+    description:
+      "BTCPay Provider Italia."
+  },
+  {
+    name: "Bitcoin People",
+    url: "http://bitcoinpeople.it",
+    type: "hosts",
+    description:
+      "Bitcoin People is a software company based in North Italy Brescia. We code for Bitcoin and make it easy for people to use Bitcoin.We are studying BTCPay for months now and we absolutely love it."
+  },
+  {
+    name: "Hello Merch",
+    url: "https://hellomerch.com",
+    type: "merchants",
+    subType: "art",
+    description:
+      "Your favorite band's merch."
+  },
+  {
+    name: "Lightning Store",
+    url: "http://lightning.store",
+    type: "merchants",
+    subType: "cryptocurrency-paraphernalia",
+    description:
+      "Obscure."
+  },
+  {
+    name: "Lightning Music Store",
+    url: "http://lightningmusic.store",
+    type: "merchants",
+    subType: "art",
+    description:
+      "Download music using Lighting!"
   }
 ];
