@@ -1689,5 +1689,21 @@ export const list = [
     subType: "art",
     description:
       "Download music using Lighting!"
+  },
+  {
+    name: "Bouchon Comptoir Brunet",
+    url: "https://bouchonlyonnaisbrunet.com/en",
+    type: "merchants",
+    subType: "food",
+    description:
+      "Traditional local fresh food in Lyon, France."
+  },
+  {
+    name: "undercoverwallet.com",
+    url: "https://undercoverwallet.com",
+    type: "merchants",
+    subType: "cryptocurrency-paraphernalia",
+    description:
+      "Undercover Bitcoin hardware wallets."
   }
 ];
