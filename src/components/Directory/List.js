@@ -1664,7 +1664,7 @@ export const list = [
     url: "http://bitcoinpeople.it",
     type: "hosts",
     description:
-      "Bitcoin People is a software company based in North Italy Brescia. We code for Bitcoin and make it easy for people to use Bitcoin.We are studying BTCPay for months now and we absolutely love it."
+      "Bitcoin People is a software company based in North Italy Brescia. We code for Bitcoin and make it easy for people to use Bitcoin."
   },
   {
     name: "Hello Merch",
@@ -1705,5 +1705,13 @@ export const list = [
     subType: "cryptocurrency-paraphernalia",
     description:
       "Undercover Bitcoin hardware wallets."
+  },
+  {
+    name: "MyGiftCardSupply",
+    url: "https://www.mygiftcardsupply.com/",
+    type: "merchants",
+    subType: "gift-cards",
+    description:
+      "MyGiftCardSupply has been selling gift cards online since 2012. We specialize in US gift cards, allowing people to access digital entertainment from anywhere in the world. Gift cards such as Apple iTunes, Hulu, Spotify, Amazon and much more!"
   }
 ];
