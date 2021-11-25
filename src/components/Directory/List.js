@@ -1713,5 +1713,20 @@ export const list = [
     subType: "gift-cards",
     description:
       "MyGiftCardSupply has been selling gift cards online since 2012. We specialize in US gift cards, allowing people to access digital entertainment from anywhere in the world. Gift cards such as Apple iTunes, Hulu, Spotify, Amazon and much more!"
+  },
+  {
+    name: "Yeewu",
+    url: "https://yeewu.net/a-propos/",
+    type: "non-profits",
+    description:
+      "Yeewu is a mouvement of young senegaleses that are trying to revive the 'ceddo' spirit in youth minds. We write articles, make videos and educate young people about every aspect of the society. We teach people about bitcoin too."
+  },
+  {
+    name: "Crazyboxer",
+    url: "https://crazyboxer.com/",
+    type: "merchants",
+    subType: "fashion",
+    description:
+      "Crazy Boxer is a cool, crazy and colorful brand of boxers designed to revive your soul and add more fun to your day. From funky designs to crazy cartoons and retro brands, you’re guaranteed to find your favorite model in ourwide range of collections."
   }
 ];
