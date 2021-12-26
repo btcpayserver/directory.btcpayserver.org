@@ -1728,5 +1728,12 @@ export const list = [
     subType: "fashion",
     description:
       "Crazy Boxer is a cool, crazy and colorful brand of boxers designed to revive your soul and add more fun to your day. From funky designs to crazy cartoons and retro brands, you’re guaranteed to find your favorite model in ourwide range of collections."
+  },
+{
+    name: "CLUETA",
+    url: "https://btcpay.clueta.com/",
+    type: "host",
+    description:
+      "CLUETA provides CRYPTO payment gateway enabling Merchants to get cryptocurrency for their services, both online and physical business."
   }
 ];
