@@ -1733,7 +1733,6 @@ export const list = [
     name: "CLUETA",
     url: "https://btcpay.clueta.com/",
     type: "host",
-    subType: "cryptocurrency-paraphernalia",
     description:
       "CLUETA provides CRYPTO payment gateway enabling Merchants to get cryptocurrency for their services, both online and physical business."
   }
