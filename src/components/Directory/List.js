@@ -1578,27 +1578,27 @@ export const list = [
       "Medical practice accepting payment in Bitcoin."
   },
   {
-    name: "BlockCiphr",
-    url: "https://blockciphr.com/",
+    name: "Uncovr",
+    url: "https://uncovr.org/",
     type: "merchants",
     subType: "services",
     description:
-      "BlockCiphr is a Professional Financial Services Network that offers open, borderless and anonymous access to digital money and next generation financial services."
+      "A place to share and archive the information, thoughts and ideas that the cabal is censoring and surpressing."
   },
   {
-    name: "Fintech Systems",
-    url: "https://fintechsystems.ltd/",
+    name: "Librty Tools",
+    url: "https://librty.tools/",
     type: "merchants",
     subType: "services",
     description:
-      "We develop and build platforms that are decentralized and devoid of any dependence on big tech or the traditional banking system."
+      "Your activity and information inside big tech is now a liability. We are censored, shadow banned and exploited. Time to build our own future and move to platforms that are decentralised and devoid of any dependence on big tech or the traditional banking system."
   },
   {
-    name: "Fintech Systems BTCPay Host",
-    url: "https://btcpay.fintechsystems.ltd/",
+    name: "Librty Payment Server",
+    url: "https://payments.librty.tools/",
     type: "hosts",
     description:
-      "We run a distributed infrastructure where we provide access to Blockchain Nodes, Market Data Servers, Messaging and Collaboration Services, Application and Database servers."
+      "We run a distributed infrastructure where we provide access to Payment Services, Blockchain Nodes, Market Data Servers, Messaging and Collaboration Services, Application and Database servers."
   },
   {
     name: "David Coen's BTCPay server",
