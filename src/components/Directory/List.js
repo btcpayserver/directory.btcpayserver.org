@@ -747,13 +747,6 @@ export const list = [
       "Making BTCPay Server available for Merchants – Online and offline stores."
   },
   {
-    name: "kendesu.io",
-    url: "https://www.kendesu.io/",
-    type: "hosts",
-    description:
-      "Bitcoin payment processor."
-  },
-  {
     name: "Nakamoto Institute",
     url: "https://nakamotoinstitute.org/donate/",
     type: "non-profits",
