@@ -803,13 +803,6 @@ export const list = [
       "This is Flat18’s BTCPayServer donation app. He’s the website dev and UI master of the project."
   },
   {
-    name: "Redeemer Starkville",
-    url: "https://www.redeemerstarkville.org/",
-    type: "non-profits",
-    description:
-      "Christian church in Starkville, Mississippi that accepts bitcoin donations using a third-party BTCPay Server (kendesu.io)."
-  },
-  {
     name: "DNSCrypt Poland",
     url: "https://dnscrypt.pl/",
     type: "non-profits",
