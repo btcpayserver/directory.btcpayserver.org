@@ -747,13 +747,6 @@ export const list = [
       "Making BTCPay Server available for Merchants – Online and offline stores."
   },
   {
-    name: "kendesu.io",
-    url: "https://www.kendesu.io/",
-    type: "hosts",
-    description:
-      "Bitcoin payment processor."
-  },
-  {
     name: "Nakamoto Institute",
     url: "https://nakamotoinstitute.org/donate/",
     type: "non-profits",
@@ -808,13 +801,6 @@ export const list = [
     type: "non-profits",
     description:
       "This is Flat18’s BTCPayServer donation app. He’s the website dev and UI master of the project."
-  },
-  {
-    name: "Redeemer Starkville",
-    url: "https://www.redeemerstarkville.org/",
-    type: "non-profits",
-    description:
-      "Christian church in Starkville, Mississippi that accepts bitcoin donations using a third-party BTCPay Server (kendesu.io)."
   },
   {
     name: "DNSCrypt Poland",
