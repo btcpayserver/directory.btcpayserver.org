@@ -1787,11 +1787,10 @@ export const list = [
 },
 {
   name: "Nashville Hot Chicken",
-  url: "hhttps://hotchicken.org",
+  url: "https://hotchicken.org",
   type: "merchants",
   subType: "food",
   description:
-    "Description: QSR franchise specializing in Nashville style hot chicken sandwiches. We are on a mission to implement lightning payments at all our locations.
-"
+    "QSR franchise specializing in Nashville style hot chicken sandwiches. We are on a mission to implement lightning payments at all our locations."
 },
 ];
