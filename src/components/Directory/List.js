@@ -1715,11 +1715,83 @@ export const list = [
     description:
       "Crazy Boxer is a cool, crazy and colorful brand of boxers designed to revive your soul and add more fun to your day. From funky designs to crazy cartoons and retro brands, you’re guaranteed to find your favorite model in ourwide range of collections."
   },
-{
+ {
     name: "CLUETA",
     url: "https://btcpay.clueta.com/",
     type: "host",
     description:
       "CLUETA provides CRYPTO payment gateway enabling Merchants to get cryptocurrency for their services, both online and physical business."
-  }
+  },
+  {
+    name: "INDUSTRIE Barbershop",
+    url: "https://barbershopindustrie.fr/",
+    type: "merchants",
+    subType: "fashion",
+    description:
+      "Barber accepting bitcoin."
+  },
+  {
+    name: "Bitcoin-lyon",
+    url: "https://bitcoin-lyon.fr/accepter-bitcoin-dans-son-e-commerce.html",
+    type: "host",
+    description:
+      "Bitcoin-lyon is a french OTC desk & payment service provider. We offer btcpay server hosting and tailored solutions. On-chain and over the Lightning Network."
+  },
+  {
+    name: "FPGA Crypto Miner",
+    url: "https://fpgaminer.eu",
+    type: "merchants",
+    subType: "electronics",
+    description:
+      "FPGA Miner offers cutting edge crypto mining tech. We want to support projects in the space by helping to improve security for blockchains. FPGA Mining is energy efficient and flexible. Discover green mining of the future."
+  },
+{
+    name: "Snoepjes Bonbonmanufaktur",
+    url: "http://www.snoepjes.de",
+    type: "merchants",
+    subType: "food",
+    description:
+      "Rock Candy with Names and Logos in them - even the Bitcoin Logo :)"
+},
+{
+  name: "Matratzen Kontor",
+  url: "https://www.matratzen-kontor.de/",
+  type: "merchants",
+  subType: "health-household",
+  description:
+    "Mattresses made by experienced craftsmanship. Matratzen für Ihre Bedürfnisse."
+},
+{
+  name: "PacketBunker",
+  url: "https://packetbunker.com",
+  type: "merchants",
+  subType: "domains-hosting-vpns",
+  description:
+    "Host your internet based business at a provider that cares about Customers, and Data Freedom. At Packet Bunker, we excel and protecting our customers server and data."
+},
+{
+  name: "bitbetwin",
+  url: "https://bitbetwin.az",
+  type: "merchants",
+  subType: "gambling",
+  description:
+    "BitBetWin is an online sweepstakes platform based in Los Angeles, California. Our mission is to bring the latest and greatest online slot games."
+},
+{
+  name: "Coin Coach",
+  url: "https://www.coincoach.com.au/",
+  type: "merchants",
+  subType: "services",
+  description:
+    "Coin Coach installs and supports BTCPay Server for Australian businesses and organisations so they can accept payment in Bitcoin in their physical store or online."
+},
+{
+  name: "Nashville Hot Chicken",
+  url: "hhttps://hotchicken.org",
+  type: "merchants",
+  subType: "food",
+  description:
+    "Description: QSR franchise specializing in Nashville style hot chicken sandwiches. We are on a mission to implement lightning payments at all our locations.
+"
+},
 ];
