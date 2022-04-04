@@ -1830,7 +1830,7 @@ export const list = [
   url: "https://btcpay.bg",
   type: "hosts",
   description:
-    "Description: Helping local businesses in accepting BTC payments for their products and services via BTCPay Server."
+    "Helping local businesses in accepting BTC payments for their products and services via BTCPay Server."
 },
 {
   name: "Code Engine",
@@ -1853,6 +1853,14 @@ export const list = [
   url: "https://www.km-projektplan.de/biker-for-kids-cologne-e-v/",
   type: "non-profits",
   description:
-    "Biker For Kids Cologne e.V. freut sich über Ihre Spende per Bitcoin oder Lightning. Herzlich willkommen bei den Biker-Weihnachtsmännern.."
+    "Biker For Kids Cologne e.V. freut sich über Ihre Spende per Bitcoin oder Lightning. Herzlich willkommen bei den Biker-Weihnachtsmännern."
+},
+{
+  name: "FULMO",
+  url: "https://shop.fulmo.org",
+  type: "merchants",
+  subType: "electronics",
+  description:
+    "Buy Bitcoin Lightning Nodes, Lightning ATMs and other hardware related to the Bitcoin Lightning network."
 },
 ];
