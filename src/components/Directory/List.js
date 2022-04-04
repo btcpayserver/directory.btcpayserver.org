@@ -1099,7 +1099,7 @@ export const list = [
     name: "Bitgild",
     url: "https://www.bitgild.com",
     type: "merchants",
-	subType: "jewelry",
+    subType: "jewelry",
     description:
       "Buy physical gold and silver with bitcoin."
   },
@@ -1800,14 +1800,6 @@ export const list = [
   subType: "health-household",
   description:
     "Chroma manufactures and sells the most advanced UV, Near Infrared, and Red Light Therapy products in the world, in addition to best in class blue light blockers. BTC/LN payments receive a 12.9% discount on all items."
-},
-{
-  name: "Bitgild",
-  url: "https://www.bitgild.com",
-  type: "merchants",
-  subType: "jewelry",
-  description:
-    "Buy physical gold and silver with bitcoin."
 },
 {
   name: "Koined Store",
