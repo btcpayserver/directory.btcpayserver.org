@@ -14,23 +14,28 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14]
+        node-version: [16]
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install and build
-      run: |
-        npm ci
-        npm run build
-      env:
-        CI: true
-    - name: GitHub Pages Deploy
-      if: success() && github.ref == 'refs/heads/master'
-      uses: maxheld83/ghpages@v0.2.1
-      env:
-        BUILD_DIR: build/
-        GH_PAT: ${{ secrets.GH_PAT }}
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Setup Node
+      - name: Setup (Node.js ${{ matrix.node-version }})
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      # Install and build
+      - name: Install
+        run: npm ci
+      - name: Build
+        run: npm run build
+      # Deploy, limited to the master branch
+      - name: Deploy
+        if: success() && github.ref == 'refs/heads/master'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./build
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          cname: directory.btcpayserver.org
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
