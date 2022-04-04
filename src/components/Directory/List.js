@@ -1828,8 +1828,7 @@ export const list = [
 {
   name: "BTCPay Bulgaria",
   url: "https://btcpay.bg",
-  type: "apps",
-  subType: "hosts",
+  type: "hosts",
   description:
     "Description: Helping local businesses in accepting BTC payments for their products and services via BTCPay Server."
 },
@@ -1850,11 +1849,10 @@ export const list = [
     "Flowers are beautiful and make people happy. It shows appreciation for one another. Flowers are a waste of energy to grow, so it should be forbidden. We offer you flowers for your bitcoin."
 },
 {
-  name: "Bitcoin Brabant",
-  url: "https://bitcoinbrabant.com/",
-  type: "merchants",
-  subType: "electronics",
+  name: "Biker for Kids e.V.",
+  url: "https://www.km-projektplan.de/biker-for-kids-cologne-e-v/",
+  type: "non-profits",
   description:
-    "Mining stuff, official reseller of foundation passport and cryptotag."
+    "Biker For Kids Cologne e.V. freut sich über Ihre Spende per Bitcoin oder Lightning. Herzlich willkommen bei den Biker-Weihnachtsmännern.."
 },
 ];
