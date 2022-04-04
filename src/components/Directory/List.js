@@ -1853,7 +1853,7 @@ export const list = [
   name: "Bitcoin Brabant",
   url: "https://bitcoinbrabant.com/",
   type: "merchants",
-  subType: "helectronics",
+  subType: "electronics",
   description:
     "Mining stuff, official reseller of foundation passport and cryptotag."
 },
