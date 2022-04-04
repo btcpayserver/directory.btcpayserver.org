@@ -1820,7 +1820,7 @@ export const list = [
 {
   name: "Chef Marvin Gauci",
   url: "https://marvingauci.com",
-  type: "apps",
+  type: "merchants",
   subType: "food",
   description:
     "Malta’s gastronomic icon Chef Marvin Gauci, accepts bitcoin payments through BTCPay in all his restaurants."
