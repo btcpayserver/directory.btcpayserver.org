@@ -1099,7 +1099,7 @@ export const list = [
     name: "Bitgild",
     url: "https://www.bitgild.com",
     type: "merchants",
-	subType: "jewelry",
+    subType: "jewelry",
     description:
       "Buy physical gold and silver with bitcoin."
   },
@@ -1222,7 +1222,7 @@ export const list = [
   },
   {
     name: "Bitpaint donation page",
-    url: "https://btcpay177475.lndyn.com/",
+    url: "https://btcpay.bitpaint.club/",
     type: "apps",
     description:
       "Bitpaint, creator of digital and physical Bitcoin content, has a BTCPay Server powered donation/tip page."
@@ -1792,5 +1792,67 @@ export const list = [
   subType: "food",
   description:
     "QSR franchise specializing in Nashville style hot chicken sandwiches. We are on a mission to implement lightning payments at all our locations."
+},
+{
+  name: "Chroma",
+  url: "https://getchroma.co",
+  type: "merchants",
+  subType: "health-household",
+  description:
+    "Chroma manufactures and sells the most advanced UV, Near Infrared, and Red Light Therapy products in the world, in addition to best in class blue light blockers. BTC/LN payments receive a 12.9% discount on all items."
+},
+{
+  name: "Koined Store",
+  url: "https://koined.store",
+  type: "merchants",
+  subType: "cryptocurrency-paraphernalia",
+  description:
+    "Merch store accepting payments through our own BTCPayServer - No third party."
+},
+{
+  name: "Chef Marvin Gauci",
+  url: "https://marvingauci.com",
+  type: "merchants",
+  subType: "food",
+  description:
+    "Malta’s gastronomic icon Chef Marvin Gauci, accepts bitcoin payments through BTCPay in all his restaurants."
+},
+{
+  name: "BTCPay Bulgaria",
+  url: "https://btcpay.bg",
+  type: "hosts",
+  description:
+    "Helping local businesses in accepting BTC payments for their products and services via BTCPay Server."
+},
+{
+  name: "Code Engine",
+  url: "https://codeengine.com.au",
+  type: "merchants",
+  subType: "services",
+  description:
+    "Custom Software Solutions."
+},
+{
+  name: "Bitcoin Bloem",
+  url: "https://www.bitcoinbloem.com/",
+  type: "merchants",
+  subType: "health-household",
+  description:
+    "Flowers are beautiful and make people happy. It shows appreciation for one another. Flowers are a waste of energy to grow, so it should be forbidden. We offer you flowers for your bitcoin."
+},
+{
+  name: "Biker for Kids e.V.",
+  url: "https://www.km-projektplan.de/biker-for-kids-cologne-e-v/",
+  type: "non-profits",
+  description:
+    "Biker For Kids Cologne e.V. freut sich über Ihre Spende per Bitcoin oder Lightning. Herzlich willkommen bei den Biker-Weihnachtsmännern."
+},
+{
+  name: "FULMO",
+  url: "https://shop.fulmo.org",
+  type: "merchants",
+  subType: "electronics",
+  description:
+    "Buy Bitcoin Lightning Nodes, Lightning ATMs and other hardware related to the Bitcoin Lightning network."
 },
 ];
