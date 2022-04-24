@@ -14,7 +14,7 @@ function Directory(props) {
   let { filterName, subFilterName } = useParams();
   const [dirList, setList] = useState(shuffle(list));
   const { colorMode } = props;
-  setTimeout(forceCheck, 100)
+  setTimeout(forceCheck, 100);
 
   useEffect(() => {
     if (subFilterName) {
@@ -53,15 +53,27 @@ function Directory(props) {
       <div className="list-container">
         {/* dirList is the filtered list of companies - it contains only the companies
             that match the current filter */}
-        {dirList.map((user) => (
+        {dirList.map((user, i) => (
           <LazyLoad
             height={0}
             once
-            key={user.name}
+            key={i}
             placeholder={
-              colorMode === "light" ?
-              <Loader type="ThreeDots" color="#000000" height="15" width="30" /> :
-              <Loader type="ThreeDots" color="#ffffff" height="15" width="30" />
+              colorMode === "light" ? (
+                <Loader
+                  type="ThreeDots"
+                  color="#000000"
+                  height="15"
+                  width="30"
+                />
+              ) : (
+                <Loader
+                  type="ThreeDots"
+                  color="#ffffff"
+                  height="15"
+                  width="30"
+                />
+              )
             }
           >
             <DirectoryItem key={user.name} user={user} />
