@@ -1870,4 +1870,12 @@ export const list = [
   description:
     "We enjoy creating useful stuff using software."
 },
+{
+  name: "Btc Boutique",
+  url: "https://btc-boutique.com/",
+  type: "merchants",
+  subType: "cryptocurrency-paraphernalia",
+  description:
+    "Hi Bitcoin plebs! This is for you: Check out our Bitcoin wall art collection 🧡 Buy one of our high-quality Alu Dibond prints. Perfect for your home, office or meeting room."
+},
 ];
