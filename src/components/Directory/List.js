@@ -1855,4 +1855,19 @@ export const list = [
   description:
     "Buy Bitcoin Lightning Nodes, Lightning ATMs and other hardware related to the Bitcoin Lightning network."
 },
+{
+  name: "Consumer Choice Center",
+  url: "https://consumerchoicecenter.org/",
+  type: "non-profits",
+  description:
+    "The Consumer Choice Center is the consumer advocacy group supporting lifestyle freedom, innovation, privacy, science, and consumer choice."
+},
+{
+  name: "Kea Sigma Delta",
+  url: "https://keasigmadelta.com/",
+  type: "merchants",
+  subType: "software-video-games",
+  description:
+    "We enjoy creating useful stuff using software."
+},
 ];
