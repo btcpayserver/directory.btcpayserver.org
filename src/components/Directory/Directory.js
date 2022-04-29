@@ -14,7 +14,7 @@ function Directory(props) {
   let { filterName, subFilterName } = useParams();
   const [dirList, setList] = useState(shuffle(list));
   const { colorMode } = props;
-  setTimeout(forceCheck, 100)
+  setTimeout(forceCheck, 100);
 
   useEffect(() => {
     if (subFilterName) {
@@ -57,11 +57,14 @@ function Directory(props) {
           <LazyLoad
             height={0}
             once
-            key={user.name}
+            key={user.id}
             placeholder={
-              colorMode === "light" ?
-              <Loader type="ThreeDots" color="#000000" height="15" width="30" /> :
-              <Loader type="ThreeDots" color="#ffffff" height="15" width="30" />
+              <Loader
+                type="ThreeDots"
+                color={colorMode === "light" ? "#000000" : "#ffffff"}
+                height="15"
+                width="30"
+              />
             }
           >
             <DirectoryItem key={user.name} user={user} />
