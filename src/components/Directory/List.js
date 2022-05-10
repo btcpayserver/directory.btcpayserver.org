@@ -1064,14 +1064,6 @@ export const list = [
       "E!GHT is named after its eponymous 8 Colours Set, which features thick, scrumptious slices of premium pork belly in an array of flavours."
   },
   {
-    name: "Domorder.com",
-    url: "https://www.domorder.com",
-    type: "merchants",
-	subType: "domains-hosting-vpns",
-    description:
-      "domorder.com is a domain provider focused on low price gTLDs. BTC and Liquid (BTC and USDt) accepted here."
-  },
-  {
     name: "Seeders Instruments",
     url: "https://www.seedersinstruments.com",
     type: "merchants",
