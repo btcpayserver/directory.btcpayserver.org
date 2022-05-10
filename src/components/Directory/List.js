@@ -272,14 +272,6 @@ export const list = [
       "Bgpipes.com is a brick and mortar smoke shop with an online presence located in Huntington, USA. In business since 2010."
   },
   {
-    name: "Host4Crypto",
-    url: "https://www.host4crypto.com/",
-    type: "merchants",
-    subType: "domains-hosting-vpns",
-    description:
-      "Host4Crypto offers a large assortment of different web hosting plans and domain names."
-  },
-  {
     name: "CryptoHO.ST",
     url: "https://cryptoho.st/",
     type: "merchants",
