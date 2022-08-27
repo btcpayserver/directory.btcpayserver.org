@@ -4,13 +4,19 @@ import "./NewEntry.scss";
 class NewEntry extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       name: "",
       url: "",
       description: "",
+      twitter: "",
+      instagram: "",
+      github: "",
       type: "apps",
       errName: false,
       errUrl: false,
+      errTwitter: false,
+      errInstagram: false,
       errDescription: false,
       error: false,
       success: false
@@ -19,8 +25,7 @@ class NewEntry extends React.Component {
 
   handleChange = e => {
     e.preventDefault();
-    const capitalizedName =
-      e.target.name.charAt(0).toUpperCase() + e.target.name.substring(1);
+    const capitalizedName = e.target.name.charAt(0).toUpperCase() + e.target.name.substring(1);
 
     this.setState({
       ...this.state,
@@ -34,14 +39,22 @@ class NewEntry extends React.Component {
     const result = {
       name: this.state.name.trim() === "",
       url: this.state.url.trim() === "",
-      description: this.state.description.trim() === ""
+      description: this.state.description.trim() === "",
+      twitter: this.state.twitter.trim() === "",
+      instagram: this.state.instagram.trim() === "",
+      github: this.state.github.trim() === ""
     };
     return result;
   };
 
+  // Handles submits for name, url, and description
   handleSubmit = e => {
     e.preventDefault();
+
     const submitResult = this.evaluateInputs();
+
+    // social media will be optional here so will not be evaluated here
+    // if any evaluate to true (meaning they are empty), submit is unsuccesful
     if (submitResult.name || submitResult.url || submitResult.description) {
       this.setState({
         ...this.state,
@@ -51,6 +64,24 @@ class NewEntry extends React.Component {
         errUrl: submitResult.url,
         errDescription: submitResult.description
       });
+    } else if ( // Twitter format check
+      (!submitResult.twitter && !this.state.twitter.trim().startsWith('@')) || this.state.twitter.length === 1
+    ) {
+      this.setState({
+        ...this.state,
+        error: true,
+        success: false,
+        errTwitter: !submitResult.twitter
+      });
+    } else if ( // Instagram format check
+      (!submitResult.instagram && !this.state.instagram.trim().startsWith('@')) || this.state.instagram.length === 1
+    ) {
+      this.setState({
+        ...this.state,
+        error: true,
+        success: false,
+        errInstagram: !submitResult.instagram
+      });
     } else {
       this.setState({
         ...this.state,
@@ -58,10 +89,20 @@ class NewEntry extends React.Component {
         errName: false,
         errUrl: false,
         errDescription: false,
+        errTwitter: false,
+        errInstagram: false,
         success: true
       });
 
-      const issueBody = `New submission:%0A%0AName: ${this.state.name}%0AUrl: ${this.state.url}%0AType: ${this.state.type}%0ADescription: ${this.state.description}`;
+
+      const issueBody =
+        `New submission:%0A%0AName: ${this.state.name}
+          %0AUrl: ${this.state.url}
+          ${this.state.twitter ? `%0ATwitter: ${this.state.twitter}` : ''}
+          ${this.state.instagram ? `%0AInstagram: ${this.state.instagram}` : ''}
+          ${this.state.github ? `%0AGithub Repo: ${this.state.github}` : ''}
+          %0AType: ${this.state.type}
+          %0ADescription: ${this.state.description}`;
 
       const issueTitle = `New entry submission - ${this.state.name}`;
 
@@ -115,6 +156,47 @@ class NewEntry extends React.Component {
                 placeholder="https://URL_of_your_organization"
               />
             </label>
+
+            <label htmlFor="twitter">
+              Twitter - don't forget @ (optional)
+              <input
+                value={this.state.twitter}
+                onChange={e => this.handleChange(e)}
+                className={`input-error-${this.state.errTwitter}`}
+                id="twitter"
+                name="twitter"
+                type="text"
+                placeholder="@your_organization"
+              />
+            </label>
+
+            <label htmlFor="instagram">
+              Instagram - don't forget @ (optional)
+              <input
+                value={this.state.instagram}
+                onChange={e => this.handleChange(e)}
+                // !!! MAY GIVE ME ISSUES HERE Need highlighting
+                className={`input-error-${this.state.errInstagram}`}
+                id="instagram"
+                name="instagram"
+                type="text"
+                placeholder="@your_organization"
+              />
+            </label>
+
+            <label htmlFor="github">
+              GitHub Repo - Don't forget http:// or https:// (optional)
+              <input
+                value={this.state.github}
+                onChange={e => this.handleChange(e)}
+                className={`input-error-false`}
+                id="github"
+                name="github"
+                type="url"
+                placeholder="https://github_repo"
+              />
+            </label>
+              
             <label htmlFor="type">
               Type *
               <div className="select-container">
@@ -170,7 +252,10 @@ class NewEntry extends React.Component {
             </p>
             <div className="submission-result">
               <p className={`error error-${this.state.error}`}>
-                Please fill all the required fields.
+                {
+                  (this.state.errTwitter || this.state.errInstagram) ?
+                    "Please include the '@' symbol\nex: @your_organization" : 'Please fill all the required fields.'
+                }
               </p>
               <p className={`success success-${this.state.success}`}>
                 Please submit the new issue on Github.
