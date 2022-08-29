@@ -10,13 +10,11 @@ class NewEntry extends React.Component {
       url: "",
       description: "",
       twitter: "",
-      instagram: "",
       github: "",
       type: "apps",
       errName: false,
       errUrl: false,
       errTwitter: false,
-      errInstagram: false,
       errDescription: false,
       error: false,
       success: false
@@ -41,7 +39,6 @@ class NewEntry extends React.Component {
       url: this.state.url.trim() === "",
       description: this.state.description.trim() === "",
       twitter: this.state.twitter.trim() === "",
-      instagram: this.state.instagram.trim() === "",
       github: this.state.github.trim() === ""
     };
     return result;
@@ -73,15 +70,6 @@ class NewEntry extends React.Component {
         success: false,
         errTwitter: !submitResult.twitter
       });
-    } else if ( // Instagram format check
-      (!submitResult.instagram && !this.state.instagram.trim().startsWith('@')) || this.state.instagram.length === 1
-    ) {
-      this.setState({
-        ...this.state,
-        error: true,
-        success: false,
-        errInstagram: !submitResult.instagram
-      });
     } else {
       this.setState({
         ...this.state,
@@ -90,7 +78,6 @@ class NewEntry extends React.Component {
         errUrl: false,
         errDescription: false,
         errTwitter: false,
-        errInstagram: false,
         success: true
       });
 
@@ -99,7 +86,6 @@ class NewEntry extends React.Component {
         `New submission:%0A%0AName: ${this.state.name}
           %0AUrl: ${this.state.url}
           ${this.state.twitter ? `%0ATwitter: ${this.state.twitter}` : ''}
-          ${this.state.instagram ? `%0AInstagram: ${this.state.instagram}` : ''}
           ${this.state.github ? `%0AGithub Repo: ${this.state.github}` : ''}
           %0AType: ${this.state.type}
           %0ADescription: ${this.state.description}`;
@@ -165,20 +151,6 @@ class NewEntry extends React.Component {
                 className={`input-error-${this.state.errTwitter}`}
                 id="twitter"
                 name="twitter"
-                type="text"
-                placeholder="@your_organization"
-              />
-            </label>
-
-            <label htmlFor="instagram">
-              Instagram - don't forget @ (optional)
-              <input
-                value={this.state.instagram}
-                onChange={e => this.handleChange(e)}
-                // !!! MAY GIVE ME ISSUES HERE Need highlighting
-                className={`input-error-${this.state.errInstagram}`}
-                id="instagram"
-                name="instagram"
                 type="text"
                 placeholder="@your_organization"
               />
@@ -253,7 +225,7 @@ class NewEntry extends React.Component {
             <div className="submission-result">
               <p className={`error error-${this.state.error}`}>
                 {
-                  (this.state.errTwitter || this.state.errInstagram) ?
+                  (this.state.errTwitter) ?
                     "Please include the '@' symbol\nex: @your_organization" : 'Please fill all the required fields.'
                 }
               </p>

@@ -4,7 +4,6 @@ import { icons } from "./Icons";
 
 function DirectoryItem(props) {
   const formattedTwitter = props.user.twitter ? props.user.twitter.slice(1) : '';
-  const formattedInstagram = props.user.instagram ? props.user.instagram.slice(1) : '';
   return (
     <div className="item">
       <div className="item-content">
@@ -21,13 +20,6 @@ function DirectoryItem(props) {
             (props.user.twitter)
               ? <a className='social-media-icon' href={`https://twitter.com/${formattedTwitter}`} target="_blank" rel="noopener noreferrer">
                 {icons['twitter']}
-              </a>
-              : ''
-          }
-          {
-            (props.user.instagram)
-              ? <a className='social-media-icon' href={`https://instagram.com/${formattedInstagram}`} target="_blank" rel="noopener noreferrer">
-                {icons['instagram']}
               </a>
               : ''
           }

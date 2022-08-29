@@ -25,7 +25,6 @@ import SportsIcon from "@material-ui/icons/Sports";
 import ViewStreamIcon from "@material-ui/icons/ViewStream";
 import BuildIcon from "@material-ui/icons/Build";
 import TwitterIcon from "@material-ui/icons/Twitter";
-import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
 export const icons = {
@@ -55,6 +54,5 @@ export const icons = {
   streaming: <ViewStreamIcon />,
   tools: <BuildIcon />,
   twitter: <TwitterIcon />,
-  instagram: <InstagramIcon />,
   github: <GitHubIcon />
 }
