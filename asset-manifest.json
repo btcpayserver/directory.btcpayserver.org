@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.03630422.chunk.css",
-    "main.js": "/static/js/main.d579d108.chunk.js",
-    "main.js.map": "/static/js/main.d579d108.chunk.js.map",
+    "main.css": "/static/css/main.a66769b7.chunk.css",
+    "main.js": "/static/js/main.fdbb0c01.chunk.js",
+    "main.js.map": "/static/js/main.fdbb0c01.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b29dcf49.js",
     "runtime-main.js.map": "/static/js/runtime-main.b29dcf49.js.map",
-    "static/js/2.71dd6354.chunk.js": "/static/js/2.71dd6354.chunk.js",
-    "static/js/2.71dd6354.chunk.js.map": "/static/js/2.71dd6354.chunk.js.map",
+    "static/js/2.59c86c36.chunk.js": "/static/js/2.59c86c36.chunk.js",
+    "static/js/2.59c86c36.chunk.js.map": "/static/js/2.59c86c36.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.03630422.chunk.css.map": "/static/css/main.03630422.chunk.css.map",
-    "static/js/2.71dd6354.chunk.js.LICENSE.txt": "/static/js/2.71dd6354.chunk.js.LICENSE.txt",
+    "static/css/main.a66769b7.chunk.css.map": "/static/css/main.a66769b7.chunk.css.map",
+    "static/js/2.59c86c36.chunk.js.LICENSE.txt": "/static/js/2.59c86c36.chunk.js.LICENSE.txt",
     "static/media/btcpay-directory-logo-white.d809a188.png": "/static/media/btcpay-directory-logo-white.d809a188.png",
     "static/media/btcpay-directory-logo.6a437bbe.svg": "/static/media/btcpay-directory-logo.6a437bbe.svg",
     "static/media/moonFilled.fe8ddf47.svg": "/static/media/moonFilled.fe8ddf47.svg",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b29dcf49.js",
-    "static/js/2.71dd6354.chunk.js",
-    "static/css/main.03630422.chunk.css",
-    "static/js/main.d579d108.chunk.js"
+    "static/js/2.59c86c36.chunk.js",
+    "static/css/main.a66769b7.chunk.css",
+    "static/js/main.fdbb0c01.chunk.js"
   ]
 }
