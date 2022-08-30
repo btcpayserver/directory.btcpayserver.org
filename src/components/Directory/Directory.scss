@@ -91,6 +91,13 @@
           }
         }
 
+        .social-media-icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+            padding-top: 1%;
+        }
+
         p {
           margin-top: 15px;
           font-size: 0.9rem;
