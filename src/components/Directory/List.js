@@ -746,13 +746,6 @@ export const list = [
       "Founded in 2013, Nakamoto Institute is an educational resource for everything Bitcoin. In-depth researches to Satoshi Nakamoto quotes and forum posts archive."
   },
   {
-    name: "BTCPayServer Crowdfund Showcase",
-    url: "https://btcpay.kukks.org/apps/pMb1bieuysP3MH2d2s9Yi11Pvb/crowdfund",
-    type: "non-profits",
-    description:
-      "This is a live showcase of the crowdfunding app available in BTCPayServer. Donations go to the BTCPayServer project. No middlemen, no fees."
-  },
-  {
     name: "Blockchain Philanthropy Foundation",
     url: "https://giving.blockchainphilanthropy.org/",
     type: "non-profits",
@@ -838,10 +831,10 @@ export const list = [
   },
   {
     name: "Pavlenex’s Donation App",
-    url: "https://fund.btcpayserver.org/apps/3bfwsFviwBfERPQvgqFFoz4aD8RG/pos/",
+    url: "https://donate.pavlenex.com",
     type: "non-profits",
     description:
-      "This is Pavlenex’s BTCPayServer donation app. Pavlenex is the marketing and video making machine of BTCPayServer. He also wrote most of the documentation that you can use to get started and discover the project."
+      "This is Pavlenex’s BTCPayServer donation app."
   },
   {
     name: "Kukks’s Donation App",
