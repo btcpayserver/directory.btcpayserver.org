@@ -1855,4 +1855,35 @@ export const list = [
   description:
     "Hi Bitcoin plebs! This is for you: Check out our Bitcoin wall art collection 🧡 Buy one of our high-quality Alu Dibond prints. Perfect for your home, office or meeting room."
 },
+{
+  name: "Arbol de maple",
+  url: "http://www.arboldemaple.com/",
+  type: "merchants",
+  subType: "appliances-furniture",
+  description:
+    "Fabrica de muebles para niños, para centros infantiles y para el hogar.",
+},
+{
+  name: "Richelle Steyn (DOE Idea)",
+  url: "https://richellesteyn.co.za/",
+  type: "merchants",
+  subType: "services",
+  description:
+    "Decentralised Open Economy (DOE) advocate. Bitcoin payments and transactions using the self-hosted BTCPAY server (DOE Idea). Third party BTCPAY hosting services. Graphic design and video editing services.",
+},
+{
+  name: "Guarde Cripto",
+  url: "https://www.guardecripto.com.br/",
+  type: "merchants",
+  subType: "electronics",
+  description: 
+    "Store of hard wallets.",
+},
+{
+  name: "ONG Bitcoin Chile",
+  url: "https://achicrip.org/servicios/transbit/",
+  type: "hosts",
+  description:
+    "Trans₿IT es nuestra solución que ofrecemos a comercios que quieran recibir pagos P2P en Bitcoin, sin comisiones, sin custodia y sin KYC. Ofrecemos documentación y soporte técnico completamente en español. Basado en la implementación de BTCPay Server.",
+},
 ];
