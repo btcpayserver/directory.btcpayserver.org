@@ -1886,4 +1886,33 @@ export const list = [
   description:
     "Trans₿IT es nuestra solución que ofrecemos a comercios que quieran recibir pagos P2P en Bitcoin, sin comisiones, sin custodia y sin KYC. Ofrecemos documentación y soporte técnico completamente en español. Basado en la implementación de BTCPay Server.",
 },
+{
+  name: "Old City Bitcoiners",
+  url: "https://www.oldcity-bitcoiners.info/",
+  type: "non-profits",
+  description:
+    "We are a bitcoin-only meetup in St. Augustine FL. All our meetup announcements have a donate button at the bottom. We use BTCPay server for monthly crowdfunding goals.",
+},
+{
+  name: "Rad Web Hosting",
+  url: "https://radwebhosting.com/",
+  type: "merchants",
+  subType: "domains-hosting-vpns",
+  description:
+    "Rad Web Hosting is a leading provider of web hosting, VPS servers, and dedicated servers solutions with multiple USA data centers. Founded in Dallas, Texas in 2014, Rad Web Hosting has steadily grown into a top VPS provider.",
+},
+{
+  name: "AllArk",
+  url: "https://allark.io/",
+  type: "Apps",
+  description:
+    "An online store to buy Games and Electronics! Free Shipping in the US/Canada :)",
+},
+{
+  name: "We BTC",
+  url: "https://webtc.io/",
+  type: "hosts",
+  description:
+    "We BTC is facilitating the adoption of bitcoin by providing Bitcoin Merchant Services using BTCPay Server",
+},
 ];
