@@ -1915,4 +1915,11 @@ export const list = [
   description:
     "We BTC is facilitating the adoption of bitcoin by providing Bitcoin Merchant Services using BTCPay Server",
 },
+{
+  name: "Youtube Recommendation Modifier",
+  url: "https://microsoftedge.microsoft.com/addons/detail/youtube-recommendation-mo/lifhdhloggjmjfbhbgnjfjbhjfidinol",
+  type: "non-profits",
+  description:
+    "A chrome extension that gives power💪 to the user to modify their YouTube homepage Recommendation in order to increase their productivity 😎. It is free of charge. We created it because we badly needed it for our own use, and wanted to share it with the world 😊.",
+},
 ];
