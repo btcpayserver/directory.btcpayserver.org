@@ -8,6 +8,7 @@ import btcPayLogo from "./images/btcpay-directory-logo.svg";
 import btcPayLogoWhite from "./images/btcpay-directory-logo-white.png";
 import moonFilled from "./images/moonFilled.svg";
 import sunFilled2 from "./images/sunFilled2.svg";
+import Supporter from "./components/Supporters/Supporter";
 
 function App() {
   const COLOR_MODES = ["light", "dark"];
@@ -78,6 +79,7 @@ function App() {
           path="/newentry"
           render={(props) => <NewEntry {...props} colorMode={colorMode} />}
         />
+        <Supporter />
       </div>
 
       <footer>
