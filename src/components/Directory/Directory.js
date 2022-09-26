@@ -57,7 +57,7 @@ function Directory(props) {
           <LazyLoad
             height={0}
             once
-            key={user.id}
+            key={user.url}
             placeholder={
               <Loader
                 type="ThreeDots"
