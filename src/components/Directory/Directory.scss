@@ -67,27 +67,37 @@
       .item-content {
         margin-bottom: 10px;
 
-        a {
-          // color: $mediumGrey;
-          color: $black;
-          font-size: 1rem;
-          text-decoration: none;
-          font-weight: bold;
-          transition: all 0.2s ease-out;
-
+        .icon-title-tor{
           display: flex;
-          align-items: center;
+          a {
+            // color: $mediumGrey;
+            color: $black;
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.2s ease-out;
 
-          @media (max-width: $thirdBreak) {
-            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+
+            @media (max-width: $thirdBreak) {
+              font-size: 0.9rem;
+            }
+
+            &:hover {
+              color: $primaryGreen;
+            }
+
+            svg {
+              margin-right: 5px;
+            }
           }
 
-          &:hover {
-            color: $primaryGreen;
-          }
-
-          svg {
-            margin-right: 5px;
+          .onionIcon {
+            margin-left: auto;
+            svg{
+              width: 40px;
+            }
           }
         }
 
