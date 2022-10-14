@@ -1923,4 +1923,36 @@ export const list = [
   description:
     "A chrome extension that gives power💪 to the user to modify their YouTube homepage Recommendation in order to increase their productivity 😎. It is free of charge. We created it because we badly needed it for our own use, and wanted to share it with the world 😊.",
 },
+{
+  name: "Cryptony BTCPayServer",
+  url: "https://cryptony.app/pos",
+  type: "hosts",
+  description:
+    "We have a server where you can register and use BTCPayServer for freeFor all the tools of Cryptony you can visit the website - http://cryptony.app/",
+},
+{
+  name: "Alicia Waldrop",
+  url: "https://Www.candles.com",
+  type: "merchants",
+  subType: "tools",
+  description:
+    "Candles",
+},
+{
+  name: "La Industria Handmade",
+  url: "https://www.laindustriahandmade.com/",
+  type: "merchants",
+  subType: "fashion",
+  description:
+    "Textile Accessories with Minimalist Design + Maximum Functionality (Tobacco Pouches, Tote Bags, Gift Ideas, ...) Worldwide Shipping. Accepting BTC and LN via BTCPay Server at checkout.",
+},
+{
+  name: "SeedSticks",
+  url: "https://seedsticks.org",
+  type: "merchants",
+  subType: "cryptocurrency-paraphernalia",
+  twitter: "@seedsticks_org",
+  description:
+    "Create your Bitcoin Seed Phrase without having to trust a third party random number generator.",
+},
 ];
