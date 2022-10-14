@@ -89,7 +89,9 @@ function App() {
               <a href="https://docs.btcpayserver.org/UseCase/">Use Case</a>
               <a href="https://docs.btcpayserver.org/Apps/">Apps</a>
               <a href="https://docs.btcpayserver.org/Deployment/">Deployment</a>
-              <a href="https://docs.btcpayserver.org/RegisterAccount/">Getting Started</a>
+              <a href="https://docs.btcpayserver.org/RegisterAccount/">
+                Getting Started
+              </a>
             </div>
             <div className="column">
               <h2>Resources</h2>
@@ -109,7 +111,10 @@ function App() {
           <div className="notes">
             <p>Content Released under MIT license.</p>
             <p>This website does not use cookies nor collect personal data.</p>
-            <p>Entries are self-submitted and provided for information purposes only.</p>
+            <p>
+              Entries are self-submitted and provided for information purposes
+              only.
+            </p>
           </div>
         </div>
       </footer>

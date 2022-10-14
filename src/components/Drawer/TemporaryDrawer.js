@@ -9,11 +9,11 @@ import "./TemporaryDrawer.scss";
 
 const useStyles = makeStyles({
   list: {
-    width: 330
+    width: 330,
   },
   fullList: {
-    width: "auto"
-  }
+    width: "auto",
+  },
 });
 
 const subFilterToName = {
@@ -38,16 +38,16 @@ const subFilterToName = {
   "software-video-games": "Software & Video Games",
   sports: "Sports",
   streaming: "Streaming",
-  tools: "Tools"
+  tools: "Tools",
 };
 
 export default function TemporaryDrawer2(props) {
   const classes = useStyles();
   const [state, setState] = React.useState({
-    right: false
+    right: false,
   });
 
-  const toggleDrawer = (anchor, open) => event => {
+  const toggleDrawer = (anchor, open) => (event) => {
     if (
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
@@ -58,16 +58,16 @@ export default function TemporaryDrawer2(props) {
     setState({ ...state, [anchor]: open });
   };
 
-  const list = anchor => (
+  const list = (anchor) => (
     <div
       className={clsx(classes.list, {
-        [classes.fullList]: anchor === "top" || anchor === "bottom"
+        [classes.fullList]: anchor === "top" || anchor === "bottom",
       })}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <NestedList colorMode={props.colorMode}/>
+      <NestedList colorMode={props.colorMode} />
     </div>
   );
 

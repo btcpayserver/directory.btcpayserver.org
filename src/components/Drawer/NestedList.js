@@ -34,118 +34,118 @@ const merchantSubcategories = [
   {
     name: "3D Printing",
     icon: <PrintIcon className="icon" />,
-    url: "3d-printing"
+    url: "3d-printing",
   },
   {
     name: "Adult",
     icon: <ExplicitIcon className="icon" />,
-    url: "adult"
+    url: "adult",
   },
   {
     name: "Appliances & Furniture",
     icon: <DeckIcon className="icon" />,
-    url: "appliances-furniture"
+    url: "appliances-furniture",
   },
   {
     name: "Art",
     icon: <ArtTrackIcon className="icon" />,
-    url: "art"
+    url: "art",
   },
   {
     name: "Books",
     icon: <BookIcon className="icon" />,
-    url: "books"
+    url: "books",
   },
   {
     name: "Electronics",
     icon: <ComputerIcon className="icon" />,
-    url: "electronics"
+    url: "electronics",
   },
   {
     name: "Cryptocurrency Paraphernalia",
     icon: <ToysIcon className="icon" />,
-    url: "cryptocurrency-paraphernalia"
+    url: "cryptocurrency-paraphernalia",
   },
   {
     name: "Domain Names, Hosting & VPNs",
     icon: <VpnLockIcon className="icon" />,
-    url: "domains-hosting-vpns"
+    url: "domains-hosting-vpns",
   },
   {
     name: "Education",
     icon: <CastForEducationIcon className="icon" />,
-    url: "education"
+    url: "education",
   },
   {
     name: "Fashion",
     icon: <EmojiPeopleIcon className="icon" />,
-    url: "fashion"
+    url: "fashion",
   },
   {
     name: "Food",
     icon: <FastfoodIcon className="icon" />,
-    url: "food"
+    url: "food",
   },
   {
     name: "Gambling",
     icon: <CasinoIcon className="icon" />,
-    url: "gambling"
+    url: "gambling",
   },
   {
     name: "Gift Cards",
     icon: <CardGiftcardIcon className="icon" />,
-    url: "gift-cards"
+    url: "gift-cards",
   },
   {
     name: "Health & Household",
     icon: <HealingIcon className="icon" />,
-    url: "health-household"
+    url: "health-household",
   },
   {
     name: "Holiday & Travel",
     icon: <FlightTakeoffIcon className="icon" />,
-    url: "holiday-travel"
+    url: "holiday-travel",
   },
   {
     name: "Jewelry",
     icon: <WatchIcon className="icon" />,
-    url: "jewelry"
+    url: "jewelry",
   },
   {
     name: "Pets",
     icon: <PetsIcon className="icon" />,
-    url: "pets"
+    url: "pets",
   },
   {
     name: "Services",
     icon: <RoomServiceIcon className="icon" />,
-    url: "services"
+    url: "services",
   },
   {
     name: "Software & Video Games",
     icon: <VideogameAssetIcon className="icon" />,
-    url: "software-video-games"
+    url: "software-video-games",
   },
   {
     name: "Sports",
     icon: <SportsIcon className="icon" />,
-    url: "sports"
+    url: "sports",
   },
   {
     name: "Streaming",
     icon: <ViewStreamIcon className="icon" />,
-    url: "streaming"
+    url: "streaming",
   },
   {
     name: "Tools",
     icon: <BuildIcon className="icon" />,
-    url: "tools"
-  }
+    url: "tools",
+  },
 ];
 
 export default function NestedList(props) {
   return (
-    <div className={`drawer-list drawer-list-${props.colorMode}`} >
+    <div className={`drawer-list drawer-list-${props.colorMode}`}>
       <p className="drawer-title">Categories</p>
 
       <NavLink to="/">
@@ -183,7 +183,7 @@ export default function NestedList(props) {
         </div>
       </NavLink>
 
-      {merchantSubcategories.map(subCat => (
+      {merchantSubcategories.map((subCat) => (
         <NavLink key={subCat.name} to={`/filter/merchants/${subCat.url}`}>
           <div className="nested-list-item">
             {subCat.icon}

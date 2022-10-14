@@ -17,19 +17,20 @@ class NewEntry extends React.Component {
       errTwitter: false,
       errDescription: false,
       error: false,
-      success: false
+      success: false,
     };
   }
 
-  handleChange = e => {
+  handleChange = (e) => {
     e.preventDefault();
-    const capitalizedName = e.target.name.charAt(0).toUpperCase() + e.target.name.substring(1);
+    const capitalizedName =
+      e.target.name.charAt(0).toUpperCase() + e.target.name.substring(1);
 
     this.setState({
       ...this.state,
       [e.target.name]: e.target.value,
       error: false,
-      [`err${capitalizedName}`]: false
+      [`err${capitalizedName}`]: false,
     });
   };
 
@@ -39,13 +40,13 @@ class NewEntry extends React.Component {
       url: this.state.url.trim() === "",
       description: this.state.description.trim() === "",
       twitter: this.state.twitter.trim() === "",
-      github: this.state.github.trim() === ""
+      github: this.state.github.trim() === "",
     };
     return result;
   };
 
   // Handles submits for name, url, and description
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
 
     const submitResult = this.evaluateInputs();
@@ -59,16 +60,18 @@ class NewEntry extends React.Component {
         success: false,
         errName: submitResult.name,
         errUrl: submitResult.url,
-        errDescription: submitResult.description
+        errDescription: submitResult.description,
       });
-    } else if ( // Twitter format check
-      (!submitResult.twitter && !this.state.twitter.trim().startsWith('@')) || this.state.twitter.length === 1
+    } else if (
+      // Twitter format check
+      (!submitResult.twitter && !this.state.twitter.trim().startsWith("@")) ||
+      this.state.twitter.length === 1
     ) {
       this.setState({
         ...this.state,
         error: true,
         success: false,
-        errTwitter: !submitResult.twitter
+        errTwitter: !submitResult.twitter,
       });
     } else {
       this.setState({
@@ -78,21 +81,20 @@ class NewEntry extends React.Component {
         errUrl: false,
         errDescription: false,
         errTwitter: false,
-        success: true
+        success: true,
       });
 
-
-      const issueBody =
-        `New submission:%0A%0AName: ${this.state.name}
+      const issueBody = `New submission:%0A%0AName: ${this.state.name}
           %0AUrl: ${this.state.url}
-          ${this.state.twitter ? `%0ATwitter: ${this.state.twitter}` : ''}
-          ${this.state.github ? `%0AGithub Repo: ${this.state.github}` : ''}
+          ${this.state.twitter ? `%0ATwitter: ${this.state.twitter}` : ""}
+          ${this.state.github ? `%0AGithub Repo: ${this.state.github}` : ""}
           %0AType: ${this.state.type}
           %0ADescription: ${this.state.description}`;
 
       const issueTitle = `New entry submission - ${this.state.name}`;
 
-      const repoUrl = "https://github.com/btcpayserver/directory.btcpayserver.org/issues";
+      const repoUrl =
+        "https://github.com/btcpayserver/directory.btcpayserver.org/issues";
 
       const newPageUrl = `${repoUrl}/new?title=${issueTitle}&body=${issueBody}`;
 
@@ -100,11 +102,11 @@ class NewEntry extends React.Component {
     }
   };
 
-  handleSelect = e => {
+  handleSelect = (e) => {
     e.preventDefault();
     this.setState({
       ...this.state,
-      type: e.target.value
+      type: e.target.value,
     });
   };
 
@@ -117,12 +119,12 @@ class NewEntry extends React.Component {
           Please provide your details or those of your organization:
         </p>
         <div className="form-container">
-          <form onSubmit={e => this.handleSubmit(e)}>
+          <form onSubmit={(e) => this.handleSubmit(e)}>
             <label htmlFor="name">
               Your Name or Company/Project Name *
               <input
                 value={this.state.name}
-                onChange={e => this.handleChange(e)}
+                onChange={(e) => this.handleChange(e)}
                 className={`input-error-${this.state.errName}`}
                 id="name"
                 name="name"
@@ -134,7 +136,7 @@ class NewEntry extends React.Component {
               URL - Don't forget http:// or https:// *
               <input
                 value={this.state.url}
-                onChange={e => this.handleChange(e)}
+                onChange={(e) => this.handleChange(e)}
                 className={`input-error-${this.state.errUrl}`}
                 id="url"
                 name="url"
@@ -147,7 +149,7 @@ class NewEntry extends React.Component {
               Twitter - don't forget @ (optional)
               <input
                 value={this.state.twitter}
-                onChange={e => this.handleChange(e)}
+                onChange={(e) => this.handleChange(e)}
                 className={`input-error-${this.state.errTwitter}`}
                 id="twitter"
                 name="twitter"
@@ -160,7 +162,7 @@ class NewEntry extends React.Component {
               GitHub Repo - Don't forget http:// or https:// (optional)
               <input
                 value={this.state.github}
-                onChange={e => this.handleChange(e)}
+                onChange={(e) => this.handleChange(e)}
                 className={`input-error-false`}
                 id="github"
                 name="github"
@@ -168,37 +170,67 @@ class NewEntry extends React.Component {
                 placeholder="https://github_repo"
               />
             </label>
-              
+
             <label htmlFor="type">
               Type *
               <div className="select-container">
-                <select onChange={e => this.handleSelect(e)} id="type">
+                <select onChange={(e) => this.handleSelect(e)} id="type">
                   <option value="apps" defaultValue>
                     App
                   </option>
                   <option value="hosts">Host</option>
                   <option value="non-profits">Non-profits</option>
-                  <option value="merchants - 3D printing">Merchant - 3D Printing</option>
+                  <option value="merchants - 3D printing">
+                    Merchant - 3D Printing
+                  </option>
                   <option value="merchants - adult">Merchant - Adult</option>
-                  <option value="merchants - appliances-furniture">Merchant - Appliances and Furniture</option>
+                  <option value="merchants - appliances-furniture">
+                    Merchant - Appliances and Furniture
+                  </option>
                   <option value="merchants - art">Merchant - Art</option>
                   <option value="merchants - books">Merchant - Books</option>
-                  <option value="merchants - electronics">Merchant - Electronics</option>
-                  <option value="merchants - cryptocurrency-paraphernalia">Merchant - Cryptocurrency Paraphernalia</option>
-                  <option value="merchants - domains-hosting-vpns">Merchant - Domain Names, Hosting and VPNs</option>
-                  <option value="merchants - education">Merchant - Education</option>
-                  <option value="merchants - fashion">Merchant - Fashion</option>
+                  <option value="merchants - electronics">
+                    Merchant - Electronics
+                  </option>
+                  <option value="merchants - cryptocurrency-paraphernalia">
+                    Merchant - Cryptocurrency Paraphernalia
+                  </option>
+                  <option value="merchants - domains-hosting-vpns">
+                    Merchant - Domain Names, Hosting and VPNs
+                  </option>
+                  <option value="merchants - education">
+                    Merchant - Education
+                  </option>
+                  <option value="merchants - fashion">
+                    Merchant - Fashion
+                  </option>
                   <option value="merchants - food">Merchant - Food</option>
-                  <option value="merchants - gambling">Merchant - Gambling</option>
-                  <option value="merchants - gift Cards">Merchant - Gift Cards</option>
-                  <option value="merchants - health-household">Merchant - Health and Household</option>
-                  <option value="merchants - holiday-travel">Merchant - Holiday and Travel</option>
-                  <option value="merchants - jewelry">Merchant - Jewelry</option>
+                  <option value="merchants - gambling">
+                    Merchant - Gambling
+                  </option>
+                  <option value="merchants - gift Cards">
+                    Merchant - Gift Cards
+                  </option>
+                  <option value="merchants - health-household">
+                    Merchant - Health and Household
+                  </option>
+                  <option value="merchants - holiday-travel">
+                    Merchant - Holiday and Travel
+                  </option>
+                  <option value="merchants - jewelry">
+                    Merchant - Jewelry
+                  </option>
                   <option value="merchants - pets">Merchant - Pets</option>
-                  <option value="merchants - services">Merchant - Services</option>
-                  <option value="merchants - software-video-games">Merchant - Software and Video Games</option>
+                  <option value="merchants - services">
+                    Merchant - Services
+                  </option>
+                  <option value="merchants - software-video-games">
+                    Merchant - Software and Video Games
+                  </option>
                   <option value="merchants - sports">Merchant - Sports</option>
-                  <option value="merchants - streaming">Merchant - Streaming</option>
+                  <option value="merchants - streaming">
+                    Merchant - Streaming
+                  </option>
                   <option value="merchants - tools">Merchant - Tools</option>
                 </select>
               </div>
@@ -207,7 +239,7 @@ class NewEntry extends React.Component {
               Description *
               <textarea
                 value={this.state.description}
-                onChange={e => this.handleChange(e)}
+                onChange={(e) => this.handleChange(e)}
                 className={`description input-error-${this.state.errDescription}`}
                 id="description"
                 name="description"
@@ -217,17 +249,16 @@ class NewEntry extends React.Component {
                 <p>{`${this.state.description.length} / 250`}</p>
               </div>
             </label>
-            <button onClick={e => this.handleSubmit(e)}>Submit</button>
+            <button onClick={(e) => this.handleSubmit(e)}>Submit</button>
             <p className="note">
               Note: You'll need a Github account to be able to submit a new
               entry.
             </p>
             <div className="submission-result">
               <p className={`error error-${this.state.error}`}>
-                {
-                  (this.state.errTwitter) ?
-                    "Please include the '@' symbol\nex: @your_organization" : 'Please fill all the required fields.'
-                }
+                {this.state.errTwitter
+                  ? "Please include the '@' symbol\nex: @your_organization"
+                  : "Please fill all the required fields."}
               </p>
               <p className={`success success-${this.state.success}`}>
                 Please submit the new issue on Github.

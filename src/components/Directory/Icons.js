@@ -54,5 +54,5 @@ export const icons = {
   streaming: <ViewStreamIcon />,
   tools: <BuildIcon />,
   twitter: <TwitterIcon />,
-  github: <GitHubIcon />
-}
+  github: <GitHubIcon />,
+};
