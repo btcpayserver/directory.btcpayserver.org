@@ -1917,6 +1917,13 @@ export const list = [
     "We BTC is facilitating the adoption of bitcoin by providing Bitcoin Merchant Services using BTCPay Server",
 },
 {
+  name: "The Kratom Syndicate",
+  url: "https://thekratomsyndicate.com/",
+  type: "merchants",
+  description:
+    "Selling the best Kratom powders and extracts online using BTCPay Server",
+},
+{
   name: "Youtube Recommendation Modifier",
   url: "https://microsoftedge.microsoft.com/addons/detail/youtube-recommendation-mo/lifhdhloggjmjfbhbgnjfjbhjfidinol",
   type: "non-profits",
