@@ -1923,4 +1923,26 @@ export const list = [
   description:
     "A chrome extension that gives power💪 to the user to modify their YouTube homepage Recommendation in order to increase their productivity 😎. It is free of charge. We created it because we badly needed it for our own use, and wanted to share it with the world 😊.",
 },
+{
+  name: "Gianlock BTCPay server",
+  url: "https://btcpay.gianlock.xyz/",
+  type: "hosts",
+  description:
+    "btcpay.gianlock.xyz is a free, BTCPay Server hosting provider for stores. Helping local businesses in accepting BTC payments.",
+},
+{
+  name: "Steak Club EU",
+  url: "https://satoshis.market/",
+  type: "merchants",
+  subType: "food",
+  description:
+    "The best Dry-Aged Beef in Europe. American Owned/Operated",
+},
+{
+  name: "LNPayments",
+  url: "https://www.lnpayments.org/",
+  type: "hosts",
+  description:
+    "Our focus is to provide any one person or company with the ability to have their own BTCPayServer instance for their needs.We help the customer setup the node from scratch and provide managed support if needed.",
+},
 ];
