@@ -104,14 +104,6 @@ export const list = [
       "qtrip.com is a Bitcoin only travel agency and booking platform. It uses BTCPay Server for it’s backend."
   },
   {
-    name: "Anthem Gold",
-    url: "https://buy.anthemgold.com/",
-    type: "merchants",
-    subType: "jewelry",
-    description:
-      "We are the first fully insured, securely vaulted fully backed asset token available to United States Citizens. We leverage BTCPay Server to allow Bitcoin payments with a C-Lightning implementation for payments under 10.01 USD!"
-  },
-  {
     name: "ClearCreekKennel.com",
     url: "https://www.clearcreekkennel.com/",
     type: "merchants",
@@ -207,13 +199,6 @@ export const list = [
       "samen-maier.at is a gardening shop that uses BTCPayServer to accept BTC."
   },
   {
-    name: "klokit",
-    url: "https://klokit.co/m/6260",
-    type: "apps",
-    description:
-      "klokit displays the value of your recorded time in Bitcoin as well as your native currency, and also enables you to receive payment in Bitcoin."
-  },
-  {
     name: "LNswapBot",
     url: "https://t.me/LNswapBot",
     type: "apps",
@@ -255,14 +240,6 @@ export const list = [
     subType: "electronics",
     description:
       "D-Central is a one-stop shop for Bitcoin miners in Canada."
-  },
-  {
-    name: "Cherry Hotwife",
-    url: "http://cherryhotwife.com/tour/",
-    type: "merchants",
-    subType: "adult",
-    description:
-      "Cherryhotwife.com is an adult website that uses BTCPay Server to accept crypto for payment. NOT SAFE FOR WORK"
   },
   {
     name: "Bgpipes.com",
@@ -319,14 +296,6 @@ export const list = [
     subType: "domains-hosting-vpns",
     description:
       "Hourly Billed KVM Cloud Servers with Snapshots, Block Storage, and More."
-  },
-  {
-    name: "Coin Douji",
-    url: "https://douji.gembox.work/",
-    type: "merchants",
-    subType: "education",
-    description:
-      "Coin Douji is an educational website with “how-to” type articles."
   },
   {
     name: "Ministry of Nodes",
@@ -577,14 +546,6 @@ export const list = [
       "Branding & logo design services for organisations, teams, streamers and gamers. Accepting cryptocurrencies and using BTCPay Server for the premades shop."
   },
   {
-    name: "Crafts for Sats",
-    url: "https://craftsforsats.com/",
-    type: "merchants",
-    subType: "art",
-    description:
-      "Hand made crafts and decorations for sale for bitcoin only through btcpayserver."
-  },
-  {
     name: "Kiosk",
     url: "http://shop.k-i-o-s-k.com/",
     type: "merchants",
@@ -733,13 +694,6 @@ export const list = [
       "Ultimate BTC Payment Processor with 0 fees. Merchant Panel. Direct BTC payments to your own wallet. No Third-party. For your online and physical store. Develop to work with open source BTCPay Server."
   },
   {
-    name: "Acceptbtctech",
-    url: "https://acceptbtc.tech/Account/Login",
-    type: "hosts",
-    description:
-      "Making BTCPay Server available for Merchants – Online and offline stores."
-  },
-  {
     name: "Nakamoto Institute",
     url: "https://nakamotoinstitute.org/donate/",
     type: "non-profits",
@@ -851,14 +805,6 @@ export const list = [
     subType: "fashion",
     description:
       "Created in 2012 to give people the ability to help spread the message by wearing their liberty, this site sells T-shirts and tank-tops."
-  },
-  {
-    name: "BitcoinShirt Store",
-    url: "https://bitcoinshirt.co/",
-    type: "merchants",
-    subType: "fashion",
-    description:
-      "Bitcoin merchandise store specialized in selling high-quality Bitcoin T-Shirts, Mugs, Hoodies and more. Worldwide shipping."
   },
   {
     name: "Printed Threads",
@@ -1018,14 +964,6 @@ export const list = [
       "BTCPayServer Host with tutorials and support for Brazilian Portuguese Bitcoiners. Support for P2EP/Coinjoin. PT-BR: Host de BTCPayServer gratuito com tutoriais e apoio para bitcoinheiros do Brasil. Aproveitem!"
   },
   {
-    name: "BITSTREAM",
-    url: "https://bitstream.video",
-    type: "merchants",
-	subType: "streaming",
-    description:
-      "Create and schedule your live streaming events, set your price and get paid directly into your own wallet. No third parties, no fees. Working with BTCPay Server."
-  },
-  {
     name: "Holycrab",
     url: "https://www.holycrab.sg/",
     type: "merchants",
@@ -1056,14 +994,6 @@ export const list = [
 	subType: "art",
     description:
       "Seeders Instruments specializes in building handmade banjos and guitars. In the store you can also find strings, accessories, and cases, primarily for banjos but also for guitars, as well as one-of-a-kind art made in between instrument projects."
-  },
-  {
-    name: "saveyoursatoshis.com",
-    url: "https://saveyoursatoshis.com",
-    type: "merchants",
-	subType: "gift-cards",
-    description:
-      "saveyoursatoshis.com sells discounted gift cards when paying in Bitcoin through their BTCPayServer !"
   },
   {
     name: "Paul.lol",
@@ -1122,14 +1052,6 @@ export const list = [
       "Ideasarelikeflames.com is a collective based in Munich. We play with technology, explain it and help others use it."
   },
   {
-    name: "Refolio Property Management",
-    url: "https://www.refoliopropertymanagement.com",
-    type: "merchants",
-	subType: "services",
-    description:
-      "Established in 2013, Refolio, Inc. is a full service property management company specializing in residential real estate in Monterey County, California, USA."
-  },
-  {
     name: "Bit T-Shirts",
     url: "https://bittshirts.com",
     type: "merchants",
@@ -1184,13 +1106,6 @@ export const list = [
       "Spoof Defender searches the web for affiliates that misuse your affiliate program. The subscription is paid in Bitcoin with BTCPay Server."
   },
   {
-    name: "Blocksdemy/AcceptBTC Tech",
-    url: "https://blocksdemy.xyz/merchants/",
-    type: "hosts",
-    description:
-      "Offering BTCPay Server to online and offline Stores. We charge something small to be able to maintain our hosting."
-  },
-  {
     name: "SHAmory",
     url: "https://shamory.com/",
     type: "merchants",
@@ -1204,14 +1119,6 @@ export const list = [
     type: "apps",
     description:
       "Bitpaint, creator of digital and physical Bitcoin content, has a BTCPay Server powered donation/tip page."
-  },
-  {
-    name: "Lightning Junkies Store",
-    url: "https://store.lightningjunkies.net/",
-    type: "merchants",
-	subType: "fashion",
-    description:
-      "Get your Lightning Junkies merch fix !"
   },
   {
     name: "Bitcoin Aruba",
@@ -1242,13 +1149,6 @@ export const list = [
 	subType: "3d-printing",
     description:
       "We sell patches and such related to 3D printing guns :D We dont sell 3D printed guns...yet. We do support developers who are designing and printing guns."
-  },
-  {
-    name: "Bittery.io",
-    url: "https://www.bittery.io/",
-    type: "hosts",
-    description:
-      "Bittery.io is kind of an experiment. We've took various open source technologies and made a platform for Bitcoin payments."
   },
   {
     name: "HRF.org Defend Belarus crowdfund",
@@ -1358,14 +1258,6 @@ export const list = [
       "Evolve Wine brings you organic, sustainable wines. Our expert sommeliers curate the most delicious natural wines from family-owned West Coast wineries. Organic wines that are keto, vegan and paleo friendly"
   },
   {
-    name: "BlackbullTrading Post",
-    url: "https://www.blackbulltradingpost.com/",
-    type: "merchants",
-    subType: "appliances-furniture",
-    description:
-      "Blackbull Trading Post - Retail source for Clothing, Electronics, Home"
-  },
-  {
     name: "BTCPay Merchant",
     url: "https://btcpaymerchant.com/Account/Login/",
     type: "hosts",
@@ -1397,14 +1289,6 @@ export const list = [
       "Experience The World's Finest Teas & Spices (Free US Shipping + Bitcoin Accepted)."
   },
   {
-    name: "Too Free To Fail",
-    url: "https://toofreetofail.com/",
-    type: "merchants",
-    subType: "cryptocurrency-paraphernalia",
-    description:
-      "The iconic Hong Kong Bitcoin tram!"
-  },
-  {
     name: "Axarquia Informatica",
     url: "https://www.axarquiainformatica.com/",
     type: "merchants",
@@ -1421,13 +1305,6 @@ export const list = [
       "Art, books, antiques and coffee."
   },
   {
-    name: "LAWGATE Consulting",
-    url: "https://lawgate-consulting.com/",
-    type: "hosts",
-    description:
-      "We are specialised in helping you realising complex and customized payment flows using BTCPay Server. We also provide help with setup, hosting and guide you through self-hosting if you wish to do so."
-  },
-  {
     name: "Foundation Devices",
     url: "https://foundationdevices.com/",
     type: "merchants",
@@ -1436,33 +1313,11 @@ export const list = [
       "Foundation Devices is building open hardware for Bitcoin and a sovereign, decentralized Internet – starting with a Bitcoin hardware wallet called Passport."
   },
   {
-    name: "BTCPayprovider.it",
-    url: "www.btcpayprovider.it",
-    type: "services",
-    description:
-      "BTCPay Server hosting and service provider in Italy."
-  },
-  {
     name: "Crypto.ba",
     url: "https://rxcpay.crypto.ba/",
     type: "non-profits",
     description:
       "Crypto.ba is Balkan based blockchain educational forum that is providing BTCPAY services for free!"
-  },
-  {
-    name: "Bitcoin Book Store",
-    url: "https://bitcoinbook.store/",
-    type: "merchants",
-    subType: "books",
-    description:
-      "Buy books for BTC"
-  },
-  {
-    name: "Consignator",
-    url: "https://consignator.online",
-    type: "hosts",
-    description:
-      "Consignator is the first European One Stop Shop bridge between EU and non-EU merchants allowing dropshipping and C2C transactions between Layer 2 and BTC."
   },
   {
     name: "Satoshi's Page",
@@ -1493,21 +1348,6 @@ export const list = [
     subType: "services",
     description:
       "VOIP Service."
-  },
-  {
-    name: "Nearly Done Publishing",
-    url: "https://nearlydone.press/",
-    type: "merchants",
-    subType: "books",
-    description:
-      "Ebook and audiobook publisher specialising in remote working."
-  },
-  {
-    name: "btcpayU.pl",
-    url: "https://btcpayu.pl/",
-    type: "hosts",
-    description:
-      "BTCPay Server hosting provider for stores, non-profits and anyone who wants to accept bitcoin. It's hosted in Poland and targeted mainly for the polish users. The website maintains the cost of hosting by receiving donations from users."
   },
   {
     name: "Einundzwanzig",
@@ -1617,13 +1457,6 @@ export const list = [
       "Find things to do around the world. Bitcoin accepted."
   },
   {
-    name: "WisPay Italy",
-    url: "www.wispay.it",
-    type: "hosts",
-    description:
-      "BTCPay Provider Italia."
-  },
-  {
     name: "Bitcoin People",
     url: "http://bitcoinpeople.it",
     type: "hosts",
@@ -1692,13 +1525,6 @@ export const list = [
     subType: "fashion",
     description:
       "Crazy Boxer is a cool, crazy and colorful brand of boxers designed to revive your soul and add more fun to your day. From funky designs to crazy cartoons and retro brands, you’re guaranteed to find your favorite model in ourwide range of collections."
-  },
-  {
-    name: "CLUETA",
-    url: "https://btcpay.clueta.com/",
-    type: "host",
-    description:
-      "CLUETA provides CRYPTO payment gateway enabling Merchants to get cryptocurrency for their services, both online and physical business."
   },
   {
     name: "INDUSTRIE Barbershop",
@@ -1922,5 +1748,27 @@ export const list = [
   type: "non-profits",
   description:
     "A chrome extension that gives power💪 to the user to modify their YouTube homepage Recommendation in order to increase their productivity 😎. It is free of charge. We created it because we badly needed it for our own use, and wanted to share it with the world 😊.",
+},
+{
+  name: "Gianlock BTCPay server",
+  url: "https://btcpay.gianlock.xyz/",
+  type: "hosts",
+  description:
+    "btcpay.gianlock.xyz is a free, BTCPay Server hosting provider for stores. Helping local businesses in accepting BTC payments.",
+},
+{
+  name: "Steak Club EU",
+  url: "https://satoshis.market/",
+  type: "merchants",
+  subType: "food",
+  description:
+    "The best Dry-Aged Beef in Europe. American Owned/Operated",
+},
+{
+  name: "LNPayments",
+  url: "https://www.lnpayments.org/",
+  type: "hosts",
+  description:
+    "Our focus is to provide any one person or company with the ability to have their own BTCPayServer instance for their needs.We help the customer setup the node from scratch and provide managed support if needed.",
 },
 ];
