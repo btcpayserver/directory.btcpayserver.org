@@ -1771,4 +1771,12 @@ export const list = [
   description:
     "Our focus is to provide any one person or company with the ability to have their own BTCPayServer instance for their needs.We help the customer setup the node from scratch and provide managed support if needed.",
 },
+{
+  name: "Satoshihost",
+  url: "https://satoshihost.com/",
+  type: "merchants",
+  subType: "services",
+  description:
+    "Simple bitcoin hostingBitcoin and lightning paymentswhy pay for someone else's hosting? Pay only for what you use.",
+},
 ];
