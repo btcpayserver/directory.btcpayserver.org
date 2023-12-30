@@ -673,27 +673,6 @@ export const list = [
       "Exitpay.org is a free, BTCPay Server hosting provider for stores. The website maintains the cost of hosting by receiving donations from users."
   },
   {
-    name: "BTCPay Jungle",
-    url: "https://btcpayjungle.com/Account/Login",
-    type: "hosts",
-    description:
-      "BTCPay Jungle is a hosted, open-source cryptocurrency payment processor. It is secure, private, censorship-resistant and free."
-  },
-  {
-    name: "esky33 - BTCPay Jungle",
-    url: "https://btcpayjungle.com/apps/rNDJZatj44pN7YtpkT9p2EeCVy/pos",
-    type: "hosts",
-    description:
-      "Maintains & updates BTCPayJungle.com. Onboarding made easy, noobs, devs & artists etc with the real goal, all running their own BTCPay Node, the sooner the better!! Run your own node."
-  },
-  {
-    name: "Stream Servers LTD",
-    url: "https://btcpayments.net/en/",
-    type: "hosts",
-    description:
-      "Ultimate BTC Payment Processor with 0 fees. Merchant Panel. Direct BTC payments to your own wallet. No Third-party. For your online and physical store. Develop to work with open source BTCPay Server."
-  },
-  {
     name: "Nakamoto Institute",
     url: "https://nakamotoinstitute.org/donate/",
     type: "non-profits",
@@ -1166,13 +1145,6 @@ export const list = [
       "Four guys cutting out the Bitcoin BS in this weekly podcast. They accept donations by using BTCPay Server."
   },
   {
-    name: "btcpay.billfodl.com",
-    url: "https://btcpay.billfodl.com/",
-    type: "hosts",
-    description:
-      "Billfodl's own BTCPay Server is open for registration."
-  },
-  {
     name: "BTCPins",
     url: "https://btcpins.com/",
     type: "merchants",
@@ -1396,13 +1368,6 @@ export const list = [
     subType: "services",
     description:
       "Your activity and information inside big tech is now a liability. We are censored, shadow banned and exploited. Time to build our own future and move to platforms that are decentralised and devoid of any dependence on big tech or the traditional banking system."
-  },
-  {
-    name: "Librty Payment Server",
-    url: "https://payments.librty.tools/",
-    type: "hosts",
-    description:
-      "We run a distributed infrastructure where we provide access to Payment Services, Blockchain Nodes, Market Data Servers, Messaging and Collaboration Services, Application and Database servers."
   },
   {
     name: "David Coen's BTCPay server",
