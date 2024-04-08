@@ -1744,4 +1744,12 @@ export const list = [
   description:
     "Simple bitcoin hostingBitcoin and lightning paymentswhy pay for someone else's hosting? Pay only for what you use.",
 },
+{
+  name: "Skhron",
+  url: "https://skhron.com.ua/",
+  type: "merchants",
+  subType: "domains-hosting-vpnss",
+  description:
+    "Skhron is a privacy-focused VPS provider founded in Ukraine. Accepts on-chain and off-chain (Lightning) Bitcoin. Mirror is available at Tor network.",
+},
 ];
