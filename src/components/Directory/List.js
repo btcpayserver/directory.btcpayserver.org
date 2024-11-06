@@ -1501,10 +1501,10 @@ export const list = [
   },
   {
     name: "Bitcoin-lyon",
-    url: "https://bitcoin-lyon.fr/accepter-bitcoin-dans-son-e-commerce.html",
+    url: "https://bitcoin-lyon.fr/shop",
     type: "host",
     description:
-      "Bitcoin-lyon is a french OTC desk & payment service provider. We offer btcpay server hosting and tailored solutions. On-chain and over the Lightning Network."
+      "French Bitcoin broker, offering btcpay hosting and selling bitcoin hardware and goodies on our shop."
   },
   {
     name: "FPGA Crypto Miner",
@@ -1850,11 +1850,6 @@ export const list = [
   type: "merchants",
   subType: "art",
   description: "Here you find all my original oil paintings which often depict places I have visited that have particularly moved me, in a style inspired by impressionist masters, from past and contemporary.",
-},
-{
-  name: "bitcoin-lyon",
-  url: "https://bitcoin-lyon.fr/shop",
-  description: "French Bitcoin broker, offering btcpay hosting and selling bitcoin hardware and goodies on our shop.",
 },
 {
   name: "kasa21.pl",
