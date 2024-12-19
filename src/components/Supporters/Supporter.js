@@ -21,17 +21,7 @@ function Supporter() {
             </svg>
             <div className="image-text">OpenSats</div>
           </a>
-          {/* 3. Baillie Gifford */}
-          <a className="hover-underline" href="https://www.bailliegifford.com/">
-            <svg role="img" width="140" height="100">
-              <use
-                href="#supporter-bailliegifford"
-                style={{ fill: "currentcolor" }}
-              ></use>
-            </svg>
-            <div className="image-text">Baillie Gifford</div>
-          </a>
-          {/* 4. Tether */}
+          {/* 3. Tether */}
           <a className="hover-underline" href="https://tether.to/">
             <svg role="img" width="140" height="100">
               <use
@@ -41,7 +31,7 @@ function Supporter() {
             </svg>
             <div className="image-text">Tether</div>
           </a>
-          {/* 5. HRF */}
+          {/* 4. HRF */}
           <a className="hover-underline" href="https://hrf.org/">
             <svg
               role="img"
@@ -53,35 +43,35 @@ function Supporter() {
             </svg>
             <div className="image-text">HRF</div>
           </a>
-          {/* 6. LunaNode */}
+          {/* 5. LunaNode */}
           <a className="hover-underline" href="https://www.lunanode.com/">
             <svg role="img" width="100" height="100">
               <use href="#supporter-lunanode"></use>
             </svg>
             <div className="image-text">LunaNode</div>
           </a>
-          {/* 7. walletofsatoshi */}
+          {/* 6. walletofsatoshi */}
           <a className="hover-underline" href="https://walletofsatoshi.com/">
             <svg role="img" width="100" height="100">
               <use href="#supporter-walletofsatoshi"></use>
             </svg>
             <div className="image-text">Wallet of Satoshi</div>
           </a>
-          {/* 8. COINCARDS */}
+          {/* 7. COINCARDS */}
           <a className="hover-underline" href="https://coincards.com/">
             <svg role="img" width="130" height="100">
               <use href="#supporter-coincards"></use>
             </svg>
             <div className="image-text">Coincards</div>
           </a>
-          {/* 9. IVPN */}
+          {/* 8. IVPN */}
           <a className="hover-underline" href="https://www.ivpn.net/">
             <svg role="img" width="100" height="100">
               <use href="#supporter-ivpn"></use>
             </svg>
             <div className="image-text">IVPN</div>
           </a>
-          {/* 10. UNBANK */}
+          {/* 9. UNBANK */}
           <a className="hover-underline" href="https://www.unbank.com/">
             <svg role="img" width="120" height="50">
               <use
@@ -318,24 +308,6 @@ function Supporter() {
             />
           </symbol>
 
-          <symbol id="supporter-bailliegifford" viewBox="0 0 252.875 70.249">
-            <path
-              className="baillie1"
-              d="M366.764 291.907h4.554l-5.046 12.789h-4.553zM377.541 302.546h4.675l-.849 2.15h-9.229l5.046-12.789h4.554zM389.988 302.546h4.676l-.849 2.15h-9.229l5.045-12.789h4.554zM403.079 291.907h4.554l-5.046 12.789h-4.553zM418.795 302.487l-.871 2.209h-9.471l5.046-12.789h9.397l-.871 2.209h-4.844l-1.139 2.887h4.457l-.826 2.093h-4.457l-1.338 3.391zM445.115 294.349a6.207 6.207 0 0 0-2.213-.407c-3.344 0-4.898 3.391-5.35 4.535-.682 1.725-1.15 3.469.277 4.147.49.232 1.135.252 1.402.252l1.186-3.004h-1.648l.795-2.015h5.766l-2.4 6.084c-1.66.523-3.16.95-5.268.95-4.748 0-6.602-2.732-5.109-6.511 1.566-3.973 5.77-6.647 10.566-6.647 1.842 0 2.971.33 3.777.62l-1.781 1.996zM453.309 291.907h4.554l-5.045 12.789h-4.554zM458.684 304.696l5.045-12.789h9.398l-.871 2.209h-4.844l-1.269 3.217h4.457l-.871 2.209h-4.458l-2.033 5.154zM472.639 304.696l5.047-12.789h9.398l-.871 2.209h-4.846l-1.269 3.217h4.459l-.873 2.209h-4.457l-2.034 5.154z"
-              transform="translate(-293.5 -262.775)"
-            />
-            <path
-              d="M335.139 302.643c.557 0 1.187 0 1.747-.252.576-.232 1.106-.717 1.489-1.686.336-.854.189-1.279-.211-1.492-.376-.213-1.006-.213-1.612-.213h-.63l-1.438 3.643h.655zm2.154-5.523c.46 0 .993 0 1.521-.232.496-.213.986-.659 1.33-1.531.283-.717.162-1.085-.181-1.259-.319-.175-.852-.175-1.409-.175h-.63l-1.262 3.198h.631v-.001zm2.832-5.213c1.187 0 2.578.097 3.531.504.954.407 1.47 1.124.966 2.403-.727 1.841-2.749 2.732-4.501 3.12.502.077 1.378.252 2.05.698.647.445 1.06 1.182.578 2.403-.443 1.124-1.742 2.636-4.352 3.294-.995.252-2.107.368-4.481.368h-4.651l5.045-12.79h5.815zM350.689 300.201h2.833l.017-3.605-2.85 3.605zm6.664-8.294.792 12.79h-4.651l-.017-2.597h-4.288l-2.066 2.597h-3.149l10.714-12.79h2.665zM492.998 302.875c.922 0 2.209-.504 3.793-4.515 1.451-3.682 1.238-4.612-.047-4.612-1.283 0-2.363.775-3.955 4.806-1.07 2.713-1.316 4.321.209 4.321zm4.59-11.143c3.561 0 6.08 1.841 4.299 6.356-1.482 3.759-4.936 6.802-9.707 6.802-4.555 0-5.779-2.791-4.295-6.55 1.65-4.185 5.635-6.608 9.703-6.608zM512.328 293.922l-1.469 3.721h.484c1.502 0 2.234-.445 2.793-1.86.582-1.473.25-1.86-1.324-1.86h-.484v-.001zm1.254-2.015c2.398 0 3.312.078 4.168.426.814.33 1.785 1.124 1.166 2.694-.58 1.473-2.047 2.732-4.277 3.353l1.916 6.317h-4.893l-.965-5.29h-.533l-2.088 5.29h-4.408l5.047-12.79h4.867zM528.418 293.961l-3.424 8.682h.387c1.115 0 2.955.368 4.906-4.573 1.619-4.108.264-4.108-1.385-4.108h-.484v-.001zm.811-2.054c2.254 0 4.336 0 5.549 1.163 1.461 1.396.748 3.818.334 4.864-.727 1.841-2.406 4.748-6.227 6.143-1.24.446-2.498.62-5.09.62h-4.166l5.047-12.79h4.553z"
-              clip-rule="evenodd"
-              className="baillie2"
-              transform="translate(-293.5 -262.775)"
-            />
-            <path
-              d="M294 297.4c0-19.399 57.138-35.125 127.624-35.125 62.064 0 113.781 12.192 125.251 28.35-13.078-12.792-58.92-22.238-113.465-22.238-64.731 0-117.206 13.303-117.206 29.714 0 16.411 52.474 29.715 117.206 29.715 47.799 0 88.914-7.254 107.154-17.656-18.555 13.09-64.812 22.364-118.941 22.364C351.138 332.524 294 316.799 294 297.4z"
-              className="baillie3"
-              transform="translate(-293.5 -262.775)"
-            />
-          </symbol>
           <symbol id="supporter-lunanode" viewBox="0 0 194.219 193.977">
             <path
               className="luna-node1"
