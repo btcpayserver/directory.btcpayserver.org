@@ -825,6 +825,14 @@ export const list = [
     description:
       "Specialty grade selection of coffees from Puerto Rico. Bitcoin-only. (P2EP enabled)."
   },
+{
+    name: "DonorDevices",
+    url: "https://donordevices.com",
+    type: "merchants",
+    subType: "electronics",
+    description:
+      "Hard drives, SSDs and other data recovery tools shipped globally. Based in US."
+  },
   {
     name: "Bitcoin Aruba",
     url: "https://btc.aw/accept-bitcoin-everywhere/",
