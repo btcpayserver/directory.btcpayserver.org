@@ -1653,10 +1653,11 @@ export const list = [
   description: "Enjoy your smooth payment experience with BTCpayServer rooted on well connected routing node!",
 },
 {
-  name: "Buffalodyl BTCPay Server",
-  url: "https://btcpay.buffalodyl.com",
-  type: "hosts",
-  description: "Buffalodyl's free BTCPay Server. Supporting Payjoin and LNBank.",
+  name: "Butcher Block Cafe",
+  url: "https://block.buffalodyl.com",
+  type: "merchants",
+  subType: "food",
+  description: "The Butcher Block Cafe in Denver CO, accepting bitcoin since 2022",
 },
 {
   name: "Isolabellart",
