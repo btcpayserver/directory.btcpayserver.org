@@ -1741,4 +1741,12 @@ export const list = [
   type: "non-profits",
   description: "We support the adoption of Bitcoin in Cuba and the creation of circular economies in the region.",
 },
+{
+  name: "IncogNET LLC",
+  url: "https://incognet.io",
+  twitter: "@IncogNetLLC",
+  type: "merchants",
+  subType: "domains-hosting-vpns",
+  description: "Your privacy focused, free speech supporting ISP since 2020. Offering Web Hosting, KVM Virtual Servers, WireGuard VPN, Domain Registration and more!",
+},
 ];
