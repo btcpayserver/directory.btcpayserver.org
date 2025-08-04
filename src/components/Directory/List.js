@@ -1720,4 +1720,10 @@ export const list = [
   type: "apps",
   description: "Front end to accept Bitcoin payments on Android POS and mobile phones, available in google play https://play.google.com/store/apps/details?id=technoprepay.btcpay.pos",
 },
+{
+  name: "Beep Xtra Payment Systems",
+  url: "https://outlets.beepxtra.com",
+  type: "hosts",
+  description: "Beep Xtra Payment Systems aims to provide simplified solutions for retail crypto acceptance!",
+},
 ];
