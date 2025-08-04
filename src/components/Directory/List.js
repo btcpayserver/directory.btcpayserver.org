@@ -1756,4 +1756,12 @@ export const list = [
   type: "hosts",
   description: "We try to increase bitcoin adoption by making it easy for entrepreneurs to accept bitcoin within their company.",
 },
+{
+  name: "sats sats",
+  url: "https://sats-sats.com/",
+  twitter: "@s0mething_fun",
+  type: "merchants",
+  subType: "fashion",
+  description: "T-shirts and hats. If you are in Japan, we will deliver your items anonymously.",
+},
 ];
