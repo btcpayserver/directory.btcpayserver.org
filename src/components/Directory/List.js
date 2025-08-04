@@ -1733,4 +1733,12 @@ export const list = [
   subType: "food",
   description: "Trading pure honey, maple syrup and other homemade & homegrown products for Bitcoin!",
 },
+{
+  name: "Cuba Bitcoin",
+  url: "https://btcpay.cubabitcoin.org",
+  twitter: "@Cuba_BTC",
+  github: "https://github.com/ProyectoCubaBitcoin",
+  type: "non-profits",
+  description: "We support the adoption of Bitcoin in Cuba and the creation of circular economies in the region.",
+},
 ];
