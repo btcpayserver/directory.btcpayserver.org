@@ -1726,4 +1726,11 @@ export const list = [
   type: "hosts",
   description: "Beep Xtra Payment Systems aims to provide simplified solutions for retail crypto acceptance!",
 },
+{
+  name: "SweetSats",
+  url: "https://sweetsats.io/",
+  type: "merchants",
+  subType: "food",
+  description: "Trading pure honey, maple syrup and other homemade & homegrown products for Bitcoin!",
+},
 ];
