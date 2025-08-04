@@ -1749,4 +1749,11 @@ export const list = [
   subType: "domains-hosting-vpns",
   description: "Your privacy focused, free speech supporting ISP since 2020. Offering Web Hosting, KVM Virtual Servers, WireGuard VPN, Domain Registration and more!",
 },
+{
+  name: "Lightning Checkout",
+  url: "https://lightningcheckout.tech",
+  twitter: "@lncheckout",
+  type: "hosts",
+  description: "We try to increase bitcoin adoption by making it easy for entrepreneurs to accept bitcoin within their company.",
+},
 ];
