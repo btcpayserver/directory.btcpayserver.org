@@ -1764,4 +1764,12 @@ export const list = [
   subType: "fashion",
   description: "T-shirts and hats. If you are in Japan, we will deliver your items anonymously.",
 },
+{
+  name: "PikaSim",
+  url: "https://pikasim.com",
+  twitter: "@PikaSim",
+  type: "merchants",
+  subType: "holiday-travel",
+  description: "Privacy-focused eSIM provider for 170+ countries. No account required, no ID upload. Accepts Bitcoin on-chain, Lightning Network, and Monero via self-hosted BTCPay Server.",
+},
 ];
