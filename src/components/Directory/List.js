@@ -106,7 +106,7 @@ export const list = [
   {
     name: "BTCPay Server Hosting",
     url: "https://www.privacyauditor.institute/btcpayserver-hosting/",
-	twitter: "@privacy_auditor"
+	twitter: "@privacy_auditor",
     type: "hosts",
     description:
       "Low-cost BTCPay Server hosting — from Privacy Auditor Institute — Dutch expats in El Salvador — the world's first Bitcoin nation — with privacy-first infrastructure on secure, encrypted Flokinet servers in free-speech Iceland."
