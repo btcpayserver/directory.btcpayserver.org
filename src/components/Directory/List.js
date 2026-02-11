@@ -104,6 +104,14 @@ export const list = [
       "Clearcreekkennel.com is a kennel that uses BTCPayServer in it’s shop."
   },
   {
+    name: "BTCPay Server Hosting",
+    url: "https://www.privacyauditor.institute/btcpayserver-hosting/",
+	twitter: "@privacy_auditor",
+    type: "hosts",
+    description:
+      "Low-cost BTCPay Server hosting — from Privacy Auditor Institute — Dutch expats in El Salvador — the world's first Bitcoin nation — with privacy-first infrastructure on secure, encrypted Flokinet servers in free-speech Iceland."
+  },
+  {
     name: "cryptoqo.io",
     url: "https://cryptoqo.io/",
     type: "hosts",
