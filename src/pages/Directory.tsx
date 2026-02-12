@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect, useCallback } from "react";
 import merchantsData from "@/data/merchants.json";
 import type { Merchant } from "@/data/categories";
-import { typeMap } from "@/data/categories";
+import { typeMap, mainTypes, merchantSubTypes, hostedBtcpayCountries } from "@/data/categories";
 import MerchantCard from "@/components/MerchantCard";
 import DirectoryFilters from "@/components/DirectoryFilters";
 import Navbar from "@/components/Navbar";
@@ -30,13 +30,24 @@ function shuffle<T>(array: T[]): T[] {
 }
 
 // URL hash helpers for shareable filter state
+const validTypes = new Set<string>(mainTypes);
+const validSubs = new Set<string>([
+  ...merchantSubTypes,
+  ...Object.keys(hostedBtcpayCountries),
+]);
+
 function parseHash(): { type: string; sub: string | null; q: string } {
   const params = new URLSearchParams(window.location.hash.slice(1));
-  return {
-    type: params.get("type") || "All",
-    sub: params.get("sub") || null,
-    q: params.get("q") || "",
-  };
+
+  const rawType = params.get("type") || "All";
+  const type = validTypes.has(rawType) ? rawType : "All";
+
+  const rawSub = params.get("sub") || null;
+  const sub = rawSub && validSubs.has(rawSub) ? rawSub : null;
+
+  const q = params.get("q") || "";
+
+  return { type, sub, q };
 }
 
 function updateHash(type: string, sub: string | null, q: string) {

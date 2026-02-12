@@ -1,0 +1,4 @@
+Contact: https://github.com/btcpayserver/btcpayserver/security/policy
+Expires: 2027-02-12T00:00:00.000Z
+Preferred-Languages: en
+Policy: https://github.com/btcpayserver/btcpayserver/security/policy

@@ -2,6 +2,7 @@ import type { Merchant } from "@/data/categories";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 import { subTypeLabels, countryFlag, hostedBtcpayCountries } from "@/data/categories";
+import { safeUrl } from "@/lib/url";
 
 interface MerchantCardProps {
   merchant: Merchant;
@@ -59,7 +60,7 @@ export default function MerchantCard({ merchant }: MerchantCardProps) {
 
       {/* Action */}
       <a
-        href={merchant.url}
+        href={safeUrl(merchant.url)}
         target="_blank"
         rel="noreferrer"
         className="absolute inset-0 z-10 focus:outline-none focus:ring-2 focus:ring-primary/50 rounded-2xl sm:rounded-3xl"

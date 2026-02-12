@@ -1,6 +1,7 @@
 import { Github, Twitter } from "lucide-react";
 import SupporterSprite from "@/components/SupporterSprite";
 import { supporters } from "@/data/supporters";
+import { safeUrl } from "@/lib/url";
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
             {supporters.map((s) => (
               <a
                 key={s.svgId}
-                href={s.url}
+                href={safeUrl(s.url)}
                 target="_blank"
                 rel="noreferrer"
                 title={s.name}

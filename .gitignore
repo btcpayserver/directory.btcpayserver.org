@@ -2,3 +2,18 @@ node_modules
 dist
 .vite
 *.local
+
+# Environment files
+.env
+.env.*
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
