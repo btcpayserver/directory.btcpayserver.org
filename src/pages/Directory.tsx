@@ -120,13 +120,12 @@ export default function DirectoryPage() {
 
         <div className="container mx-auto px-6 relative z-10 text-center">
           <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
-            Spend Bitcoin <br className="hidden md:block" />
-            <span className="bg-gradient-to-r from-primary to-emerald-600 bg-clip-text text-transparent">Anywhere.</span>
+            ₿itcoin is<br className="hidden md:block" />
+            <span className="bg-gradient-to-r from-primary to-emerald-600 bg-clip-text text-transparent">Money.</span>
           </h1>
 
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
-            The definitive list of merchants, creators, and organizations empowering the circular economy with BTCPay Server.
-          </p>
+            Discover merchants, creators, and organizations accepting Bitcoin with BTCPay Server, and support circular economies.          </p>
 
           <div className="flex flex-wrap justify-center gap-4 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-300">
             <Button

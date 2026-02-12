@@ -39,12 +39,6 @@ export default function Navbar({ searchQuery, setSearchQuery }: NavbarProps) {
 
         <div className="flex items-center gap-3">
           <ThemeToggle />
-
-          <Button variant="ghost" size="sm" className="hidden sm:flex rounded-full hover:bg-muted/50 font-medium" asChild>
-            <a href="https://docs.btcpayserver.org" target="_blank" rel="noreferrer">
-              Documentation
-            </a>
-          </Button>
           <Button size="sm" className="rounded-full px-5 font-semibold text-primary-foreground hover:opacity-90 transition-all shadow-lg shadow-primary/20 bg-primary hover:bg-primary/90" asChild>
             <a href="https://github.com/btcpayserver/directory.btcpayserver.org/issues/new?template=submission.md" target="_blank" rel="noreferrer">
               Submit Store
