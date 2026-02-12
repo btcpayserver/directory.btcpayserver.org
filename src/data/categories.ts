@@ -101,6 +101,5 @@ export const hostedBtcpayCountries: Record<string, string> = {
   IS: "Iceland",
   IT: "Italy",
   NL: "Netherlands",
-  SV: "El Salvador",
   US: "United States",
 };

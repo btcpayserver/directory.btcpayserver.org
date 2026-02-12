@@ -13,14 +13,14 @@ export default function MerchantCard({ merchant }: MerchantCardProps) {
     : merchant.type.charAt(0).toUpperCase() + merchant.type.slice(1);
 
   return (
-    <div className="group relative flex flex-col h-full bg-card/40 hover:bg-card/80 backdrop-blur-md border border-white/5 hover:border-primary/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
+    <div className="group relative flex flex-col h-full bg-card/60 hover:bg-card/80 backdrop-blur-md border border-border/40 hover:border-primary/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
       {/* Category Pill */}
       <div className="mb-3 sm:mb-4 flex justify-between items-start">
-        <Badge variant="secondary" className="rounded-full px-2.5 sm:px-3 py-0.5 sm:py-1 text-xs font-medium bg-muted/50 border border-white/5 backdrop-blur-sm group-hover:bg-primary/10 group-hover:text-primary transition-colors">
+        <Badge variant="secondary" className="rounded-full px-2.5 sm:px-3 py-0.5 sm:py-1 text-xs font-medium bg-muted/60 border border-border/40 backdrop-blur-sm group-hover:bg-primary/10 group-hover:text-primary transition-colors">
           {displayCategory}
         </Badge>
 
-        <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-muted/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-muted/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
            <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
         </div>
       </div>
@@ -37,21 +37,21 @@ export default function MerchantCard({ merchant }: MerchantCardProps) {
 
       {/* Tags - show type + country flag + optional social indicators */}
       <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
-        <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground/70 bg-muted/30 px-2 py-0.5 sm:py-1 rounded-md border border-white/5">
+        <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground bg-muted/50 px-2 py-0.5 sm:py-1 rounded-md border border-border/40">
           {merchant.type}
         </span>
         {merchant.country && (
-          <span className="text-[10px] tracking-wider font-semibold text-muted-foreground/70 bg-muted/30 px-2 py-0.5 sm:py-1 rounded-md border border-white/5">
+          <span className="text-[10px] tracking-wider font-semibold text-muted-foreground bg-muted/50 px-2 py-0.5 sm:py-1 rounded-md border border-border/40">
             {countryFlag(merchant.country)} {hostedBtcpayCountries[merchant.country] || merchant.country}
           </span>
         )}
         {merchant.twitter && (
-          <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground/70 bg-muted/30 px-2 py-0.5 sm:py-1 rounded-md border border-white/5">
+          <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground bg-muted/50 px-2 py-0.5 sm:py-1 rounded-md border border-border/40">
             Twitter
           </span>
         )}
         {merchant.onionUrl && (
-          <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground/70 bg-muted/30 px-2 py-0.5 sm:py-1 rounded-md border border-white/5">
+          <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground bg-muted/50 px-2 py-0.5 sm:py-1 rounded-md border border-border/40">
             Tor
           </span>
         )}

@@ -170,7 +170,7 @@ export default function DirectoryPage() {
                 placeholder="Search merchants..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full h-9 pl-9 pr-4 rounded-full bg-muted/40 border border-transparent focus:bg-background focus:border-primary/20 focus:ring-4 focus:ring-primary/10 outline-none transition-all duration-300 text-sm placeholder:text-muted-foreground/70"
+                className="w-full h-9 pl-9 pr-4 rounded-full bg-muted/50 border border-transparent focus:bg-background focus:border-primary/20 focus:ring-4 focus:ring-primary/10 outline-none transition-all duration-300 text-sm placeholder:text-muted-foreground"
               />
             </div>
             <Sheet>
@@ -248,7 +248,7 @@ export default function DirectoryPage() {
             )}
 
             {filteredMerchants.length === 0 && (
-              <div className="text-center py-16 sm:py-32 bg-card/40 rounded-2xl sm:rounded-3xl border border-dashed border-muted-foreground/20 backdrop-blur-sm">
+              <div className="text-center py-16 sm:py-32 bg-card/60 rounded-2xl sm:rounded-3xl border border-dashed border-muted-foreground/30 backdrop-blur-sm">
                 <div className="bg-muted/50 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <SlidersHorizontal className="w-6 h-6 sm:w-8 sm:h-8 text-muted-foreground" />
                 </div>

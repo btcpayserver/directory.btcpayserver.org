@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="border-t mt-auto">
       {/* Supporters */}
-      <div className="bg-muted/20">
+      <div>
         <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-10">
           <SupporterSprite />
           <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-4 sm:gap-6 items-center justify-items-center">

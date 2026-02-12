@@ -27,7 +27,7 @@ export default function DirectoryFilters({
 
   return (
     <div className={cn("space-y-6", className)}>
-      <div className="bg-card/40 backdrop-blur-xl border border-white/5 rounded-3xl p-6 shadow-sm">
+      <div className="bg-card/60 backdrop-blur-xl border border-border/40 rounded-3xl p-6 shadow-sm">
         <h3 className="font-display font-bold text-lg mb-6 px-2">Categories</h3>
         <div className="space-y-1">
           {mainTypes.map((type) => (
@@ -51,7 +51,7 @@ export default function DirectoryFilters({
 
         {/* Merchant subtypes - shown when Merchants is selected */}
         {selectedType === "Merchants" && (
-          <div className="mt-4 pt-4 border-t border-white/5">
+          <div className="mt-4 pt-4 border-t border-border/40">
             <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider px-2 mb-3">
               Subcategories
             </p>
@@ -76,7 +76,7 @@ export default function DirectoryFilters({
 
         {/* Country filter - shown when Hosted BTCPay is selected */}
         {selectedType === "Hosted BTCPay" && (
-          <div className="mt-4 pt-4 border-t border-white/5">
+          <div className="mt-4 pt-4 border-t border-border/40">
             <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider px-2 mb-3">
               Country
             </p>
