@@ -69,9 +69,13 @@ export default function DirectoryPage() {
       const typeValue = typeMap[selectedType];
       const matchesType = selectedType === "All" || merchant.type === typeValue;
 
-      // Subtype filter
+      // Subtype / country filter (country is used for Hosted BTCPay)
+      const isHostedBtcpay = selectedType === "Hosted BTCPay";
       const matchesSubType =
-        !selectedSubType || merchant.subType === selectedSubType;
+        !selectedSubType ||
+        (isHostedBtcpay
+          ? merchant.country === selectedSubType
+          : merchant.subType === selectedSubType);
 
       // Search filter
       const matchesSearch =

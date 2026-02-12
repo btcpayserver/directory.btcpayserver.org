@@ -1,4 +1,4 @@
-import { mainTypes, merchantSubTypes, subTypeLabels } from "@/data/categories";
+import { mainTypes, merchantSubTypes, subTypeLabels, hostedBtcpayCountries, countryFlag } from "@/data/categories";
 import { cn } from "@/lib/utils";
 
 interface DirectoryFiltersProps {
@@ -68,6 +68,31 @@ export default function DirectoryFilters({
                   )}
                 >
                   {subTypeLabels[subType] || subType}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Country filter - shown when Hosted BTCPay is selected */}
+        {selectedType === "Hosted BTCPay" && (
+          <div className="mt-4 pt-4 border-t border-white/5">
+            <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider px-2 mb-3">
+              Country
+            </p>
+            <div className="space-y-0.5 max-h-64 overflow-y-auto">
+              {Object.entries(hostedBtcpayCountries).map(([code, name]) => (
+                <button
+                  key={code}
+                  onClick={() => handleSubTypeClick(code)}
+                  className={cn(
+                    "w-full text-left px-3 py-2 rounded-xl text-xs font-medium transition-all duration-200",
+                    selectedSubType === code
+                      ? "bg-primary/10 text-primary"
+                      : "text-muted-foreground hover:bg-muted/30 hover:text-foreground"
+                  )}
+                >
+                  {countryFlag(code)} {name}
                 </button>
               ))}
             </div>

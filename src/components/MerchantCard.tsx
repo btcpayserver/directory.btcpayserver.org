@@ -1,7 +1,7 @@
 import type { Merchant } from "@/data/categories";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
-import { subTypeLabels } from "@/data/categories";
+import { subTypeLabels, countryFlag, hostedBtcpayCountries } from "@/data/categories";
 
 interface MerchantCardProps {
   merchant: Merchant;
@@ -35,11 +35,16 @@ export default function MerchantCard({ merchant }: MerchantCardProps) {
         </p>
       </div>
 
-      {/* Tags - show type + optional social indicators */}
+      {/* Tags - show type + country flag + optional social indicators */}
       <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
         <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground/70 bg-muted/30 px-2 py-0.5 sm:py-1 rounded-md border border-white/5">
           {merchant.type}
         </span>
+        {merchant.country && (
+          <span className="text-[10px] tracking-wider font-semibold text-muted-foreground/70 bg-muted/30 px-2 py-0.5 sm:py-1 rounded-md border border-white/5">
+            {countryFlag(merchant.country)} {hostedBtcpayCountries[merchant.country] || merchant.country}
+          </span>
+        )}
         {merchant.twitter && (
           <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground/70 bg-muted/30 px-2 py-0.5 sm:py-1 rounded-md border border-white/5">
             Twitter

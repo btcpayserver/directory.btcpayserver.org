@@ -1,12 +1,5 @@
 [
   {
-    "name": "#sellstuff4crypto",
-    "url": "https://sellstuff4crypto.com/",
-    "description": "We make Bitcoin conversation starters 🧢👕💬",
-    "type": "merchants",
-    "subType": "cryptocurrency-paraphernalia"
-  },
-  {
     "name": "9 Bravos",
     "url": "https://livraria.9bravos.com.br/",
     "description": "Book store based in Brazil, founded in 2013. Focused on technology and sci-fi books.",
@@ -66,7 +59,8 @@
     "name": "Beep Xtra Payment Systems",
     "url": "https://outlets.beepxtra.com",
     "description": "Beep Xtra Payment Systems aims to provide simplified solutions for retail crypto acceptance!",
-    "type": "hosts"
+    "type": "merchants",
+    "subType": "payment-services"
   },
   {
     "name": "Bgpipes.com",
@@ -96,23 +90,18 @@
     "subType": "art"
   },
   {
-    "name": "bitbetwin",
-    "url": "https://bitbetwin.az",
-    "description": "BitBetWin is an online sweepstakes platform based in Los Angeles, California. Our mission is to bring the latest and greatest online slot games.",
-    "type": "merchants",
-    "subType": "gambling"
-  },
-  {
     "name": "Bitcoin Aruba",
     "url": "https://btc.aw/accept-bitcoin-everywhere/",
     "description": "BTC.aw is a free BTCPay Server hosting provider for anybody. Bitcoin Aruba maintains the cost of hosting by receiving donations from users.",
-    "type": "hosts"
+    "type": "hosted-btcpay",
+    "country": "AW"
   },
   {
     "name": "Bitcoin Aruba",
     "url": "https://btcpay.btc.aw/",
     "description": "Bitcoin and Crypto enthusiast on the gorgeous island of Aruba that can act as a host.",
-    "type": "hosts"
+    "type": "hosted-btcpay",
+    "country": "AW"
   },
   {
     "name": "Bitcoin Aruba Merch Store",
@@ -135,13 +124,6 @@
     "subType": "health-household"
   },
   {
-    "name": "Bitcoin Charities",
-    "url": "https://bitcoin-charities.org",
-    "description": "Platform for bringing bitcoin charities and bitcoiners together.",
-    "type": "apps",
-    "twitter": "@BtcCharities"
-  },
-  {
     "name": "Bitcoin Hat Guy",
     "url": "https://bitcoinhatguy.com/",
     "description": "Shop For Bitcoin Hats",
@@ -152,7 +134,8 @@
     "name": "Bitcoin People",
     "url": "http://bitcoinpeople.it",
     "description": "Bitcoin People is a software company based in North Italy Brescia. We code for Bitcoin and make it easy for people to use Bitcoin.",
-    "type": "hosts"
+    "type": "merchants",
+    "subType": "payment-services"
   },
   {
     "name": "Bitcoin Spot",
@@ -160,12 +143,6 @@
     "description": "bitcoinspot.gr is based in Greece and offers a selection of bitcoin and altcoin related merchandise, clothes and accessories.",
     "type": "merchants",
     "subType": "cryptocurrency-paraphernalia"
-  },
-  {
-    "name": "Bitcoin-lyon",
-    "url": "https://bitcoin-lyon.fr/shop",
-    "description": "French Bitcoin broker, offering btcpay hosting and selling bitcoin hardware and goodies on our shop.",
-    "type": "hosts"
   },
   {
     "name": "bitcoinacks.com",
@@ -184,7 +161,8 @@
     "name": "BitcoinheirosPay",
     "url": "https://bitcoinheiros.com/pay/",
     "description": "BTCPayServer Host with tutorials and support for Brazilian Portuguese Bitcoiners. Support for P2EP/Coinjoin. PT-BR: Host de BTCPayServer gratuito com tutoriais e apoio para bitcoinheiros do Brasil. Aproveitem!",
-    "type": "hosts"
+    "type": "hosted-btcpay",
+    "country": "BR"
   },
   {
     "name": "BitcoinZar",
@@ -214,19 +192,6 @@
     "subType": "art"
   },
   {
-    "name": "Bitpaint donation page",
-    "url": "https://btcpay.bitpaint.club/",
-    "description": "Bitpaint, creator of digital and physical Bitcoin content, has a BTCPay Server powered donation/tip page.",
-    "type": "apps"
-  },
-  {
-    "name": "BitVoucher.cz",
-    "url": "https://bitvoucher.cz/",
-    "description": "Get vouchers for your favorite Czech services.",
-    "type": "merchants",
-    "subType": "services"
-  },
-  {
     "name": "Blockchain Philanthropy Foundation",
     "url": "https://giving.blockchainphilanthropy.org/",
     "description": "Blockchainphilanthropy gives us the opportunity to support multiple charities with Bitcoin. They use BTCPayServer and 100% of the donations are sent to the charities.",
@@ -247,13 +212,6 @@
     "subType": "education"
   },
   {
-    "name": "Bosstalgia",
-    "url": "https://boss.bitbutler.io/",
-    "description": "Bosstalgia is one of the first Cannabis Extract companies in Canada to accept Bitcoin ONLY WITH NO fiat options. (No fiat zone).",
-    "type": "merchants",
-    "subType": "food"
-  },
-  {
     "name": "Bouchon Comptoir Brunet",
     "url": "https://bouchonlyonnaisbrunet.com/en",
     "description": "Traditional local fresh food in Lyon, France.",
@@ -268,24 +226,10 @@
     "subType": "food"
   },
   {
-    "name": "Brian Harrington",
-    "url": "https://www.brianharrington.org/",
-    "description": "Brian Harrington is a Marketing Consultant, Project Manager, Film Producer and a Bitcoiner. He uses a BTCPay Server payment button for donations at the bottom of his website.",
-    "type": "merchants",
-    "subType": "services"
-  },
-  {
     "name": "Britttttk’s Donation App",
     "url": "https://btcps0.com/",
     "description": "This is Britttttk’s BTCPayServer donation app. She manages all the translations that need be done for the BTCPayServer and contributes to the documentation.",
     "type": "non-profits"
-  },
-  {
-    "name": "Btc Boutique",
-    "url": "https://btc-boutique.com/",
-    "description": "Hi Bitcoin plebs! This is for you: Check out our Bitcoin wall art collection 🧡 Buy one of our high-quality Alu Dibond prints. Perfect for your home, office or meeting room.",
-    "type": "merchants",
-    "subType": "cryptocurrency-paraphernalia"
   },
   {
     "name": "BTC Factura",
@@ -298,20 +242,23 @@
     "name": "BTCPay Bulgaria",
     "url": "https://btcpay.bg",
     "description": "Helping local businesses in accepting BTC payments for their products and services via BTCPay Server.",
-    "type": "hosts"
+    "type": "hosted-btcpay",
+    "country": "BG"
   },
   {
     "name": "BTCPay Server Hosting",
     "url": "https://www.privacyauditor.institute/btcpayserver-hosting/",
     "description": "Low-cost BTCPay Server hosting — from Privacy Auditor Institute — Dutch expats in El Salvador — the world's first Bitcoin nation — with privacy-first infrastructure on secure, encrypted Flokinet servers in free-speech Iceland.",
-    "type": "hosts",
-    "twitter": "@privacy_auditor"
+    "type": "hosted-btcpay",
+    "twitter": "@privacy_auditor",
+    "country": "IS"
   },
   {
     "name": "btcpayprovider.com",
     "url": "https://btcpayprovider.com/",
     "description": "btcpayprovider.com is a BTCPay Server hosting provider.",
-    "type": "hosts"
+    "type": "hosted-btcpay",
+    "country": "GLOBAL"
   },
   {
     "name": "BTCPins",
@@ -340,13 +287,6 @@
     "description": "BuyCryptoNewsArticles primarily promotes the use of cryptocurrency and blockchain technology by the masses.",
     "type": "merchants",
     "subType": "cryptocurrency-paraphernalia"
-  },
-  {
-    "name": "Cannamodity",
-    "url": "https://cannamodity.com/",
-    "description": "We are the Amazon of Cannabis! And accepting CRYPTO ONLY!",
-    "type": "merchants",
-    "subType": "adult"
   },
   {
     "name": "CheapAir.com",
@@ -382,13 +322,6 @@
     "description": "Citadel21 produces Bitcoin related literature through their blog and website. You can donate to support their present and future projects through their BTCPayServer donation button.",
     "type": "merchants",
     "subType": "cryptocurrency-paraphernalia"
-  },
-  {
-    "name": "ClearCreekKennel.com",
-    "url": "https://www.clearcreekkennel.com/",
-    "description": "Clearcreekkennel.com is a kennel that uses BTCPayServer in it’s shop.",
-    "type": "merchants",
-    "subType": "pets"
   },
   {
     "name": "Code Engine",
@@ -440,20 +373,6 @@
     "type": "non-profits"
   },
   {
-    "name": "Crazy Italians restaurant",
-    "url": "https://btcpay.crazytalians.com/apps/2WpHGMM9W8ixKztCxpu9zEbfz7ff/pos",
-    "description": "The first authentic Fast Casual Italian Restaurant in Memphis, Tennessee, USA.",
-    "type": "merchants",
-    "subType": "food"
-  },
-  {
-    "name": "Crazyboxer",
-    "url": "https://crazyboxer.com/",
-    "description": "Crazy Boxer is a cool, crazy and colorful brand of boxers designed to revive your soul and add more fun to your day. From funky designs to crazy cartoons and retro brands, you’re guaranteed to find your favorite model in ourwide range of collections.",
-    "type": "merchants",
-    "subType": "fashion"
-  },
-  {
     "name": "Crypto Coffee",
     "url": "https://crypto-coffee.org/",
     "description": "Crypto-Coffee.org offers crypto-currency themed coffee and stickers.",
@@ -478,7 +397,8 @@
     "name": "cryptoqo.io",
     "url": "https://cryptoqo.io/",
     "description": "Bitcoin/AltCoin payment processor with payouts to EU bank accounts. Uses BTCPay Server under the hood.",
-    "type": "hosts"
+    "type": "merchants",
+    "subType": "payment-services"
   },
   {
     "name": "Cryptowat.ch",
@@ -527,7 +447,8 @@
     "name": "David Coen's BTCPay server",
     "url": "https://btcpay.davidcoen.it/",
     "description": "btcpay.davidcoen.it is a free, BTCPay Server hosting provider for stores. The website tries to maintain the cost of hosting using fees from routing events on Lightning Network. Soon LN Bank will be available on this server, so stay tuned!",
-    "type": "hosts"
+    "type": "hosted-btcpay",
+    "country": "IT"
   },
   {
     "name": "DentÜröm",
@@ -535,13 +456,6 @@
     "description": "Private dentistry",
     "type": "merchants",
     "subType": "health-household"
-  },
-  {
-    "name": "DG LAB Store",
-    "url": "https://lightning-store.jp/",
-    "description": "DG Lab has a store for testing and demonstration purposes that uses BTCPayServer at checkout.",
-    "type": "merchants",
-    "subType": "cryptocurrency-paraphernalia"
   },
   {
     "name": "Diamondcard",
@@ -622,7 +536,8 @@
     "name": "EXITPay",
     "url": "https://exitpay.org/",
     "description": "Exitpay.org is a free, BTCPay Server hosting provider for stores. The website maintains the cost of hosting by receiving donations from users.",
-    "type": "hosts"
+    "type": "hosted-btcpay",
+    "country": "GLOBAL"
   },
   {
     "name": "First Class CBD",
@@ -630,12 +545,6 @@
     "description": "CBD Oil & Extracts made in Switzerland.",
     "type": "merchants",
     "subType": "health-household"
-  },
-  {
-    "name": "Flat18’s Donation App",
-    "url": "https://flat18.co.uk/donate",
-    "description": "This is Flat18’s BTCPayServer donation app. He’s the website dev and UI master of the project.",
-    "type": "non-profits"
   },
   {
     "name": "Foundation Devices",
@@ -648,13 +557,6 @@
     "name": "FPGA Crypto Miner",
     "url": "https://fpgaminer.eu",
     "description": "FPGA Miner offers cutting edge crypto mining tech. We want to support projects in the space by helping to improve security for blockchains. FPGA Mining is energy efficient and flexible. Discover green mining of the future.",
-    "type": "merchants",
-    "subType": "electronics"
-  },
-  {
-    "name": "FULMO",
-    "url": "https://shop.fulmo.org",
-    "description": "Buy Bitcoin Lightning Nodes, Lightning ATMs and other hardware related to the Bitcoin Lightning network.",
     "type": "merchants",
     "subType": "electronics"
   },
@@ -689,7 +591,8 @@
     "name": "Gianlock BTCPay server",
     "url": "https://btcpay.gianlock.xyz/",
     "description": "btcpay.gianlock.xyz is a free, BTCPay Server hosting provider for stores. Helping local businesses in accepting BTC payments.",
-    "type": "hosts"
+    "type": "hosted-btcpay",
+    "country": "GLOBAL"
   },
   {
     "name": "GoGetFunding",
@@ -712,12 +615,6 @@
     "description": "gunsnbitcoin.com provides physical security products and crypto related accessories.",
     "type": "merchants",
     "subType": "cryptocurrency-paraphernalia"
-  },
-  {
-    "name": "Happy to Give Back",
-    "url": "https://happytogiveback.com/donate/#bitcoin-1",
-    "description": "Aruba fundraising during the Covid-19 Crisis, Join CEDE Aruba and their new initiative Happy To Give Back and help the world fight COVID-19",
-    "type": "non-profits"
   },
   {
     "name": "Hello Merch",
@@ -816,13 +713,6 @@
     "subType": "fashion"
   },
   {
-    "name": "Isolabellart",
-    "url": "https://isolabell.art/",
-    "description": "Here you find all my original oil paintings which often depict places I have visited that have particularly moved me, in a style inspired by impressionist masters, from past and contemporary.",
-    "type": "merchants",
-    "subType": "art"
-  },
-  {
     "name": "IVPN",
     "url": "https://www.ivpn.net/",
     "description": "IVPN is a VPN that doesn’t log, track or spy in any way. They accept Bitcoin by using BTCPayServer on their checkout.",
@@ -859,13 +749,6 @@
     "subType": "food"
   },
   {
-    "name": "kasa21.pl",
-    "url": "https://kasa21.pl",
-    "description": "Free BTCPayServer instance to play around, test, etc. Hosted in Poland and targeted mainly for users from the region.",
-    "type": "non-profits",
-    "twitter": "@kasa21_pl"
-  },
-  {
     "name": "Kea Sigma Delta",
     "url": "https://keasigmadelta.com/",
     "description": "We enjoy creating useful stuff using software.",
@@ -878,13 +761,6 @@
     "description": "Premium Grade CBD Product Collections, located in Illinois USA and shipping worldwide. They use the BTCPay Server Shopify integration at checkout.",
     "type": "merchants",
     "subType": "adult"
-  },
-  {
-    "name": "Kin-moo",
-    "url": "https://kin-moo.com/",
-    "description": "Featuring the quaint and tasty street-food culture of Thailand in a minimalist yet modern cafe set-up, KinMoo is also the 1st open-concept Thai kitchen in Singapore!",
-    "type": "merchants",
-    "subType": "food"
   },
   {
     "name": "Kiosk",
@@ -927,18 +803,12 @@
     "type": "apps"
   },
   {
-    "name": "Librty Tools",
-    "url": "https://librty.tools/",
-    "description": "Your activity and information inside big tech is now a liability. We are censored, shadow banned and exploited. Time to build our own future and move to platforms that are decentralised and devoid of any dependence on big tech or the traditional banking system.",
-    "type": "merchants",
-    "subType": "services"
-  },
-  {
     "name": "Lightning Checkout",
     "url": "https://lightningcheckout.tech",
     "description": "We try to increase bitcoin adoption by making it easy for entrepreneurs to accept bitcoin within their company.",
-    "type": "hosts",
-    "twitter": "@lncheckout"
+    "type": "hosted-btcpay",
+    "twitter": "@lncheckout",
+    "country": "NL"
   },
   {
     "name": "Lightning in a Box",
@@ -972,7 +842,8 @@
     "name": "LNPayments",
     "url": "https://www.lnpayments.org/",
     "description": "Our focus is to provide any one person or company with the ability to have their own BTCPayServer instance for their needs.We help the customer setup the node from scratch and provide managed support if needed.",
-    "type": "hosts"
+    "type": "hosted-btcpay",
+    "country": "GLOBAL"
   },
   {
     "name": "LNswapBot",
@@ -1071,12 +942,6 @@
     "subType": "food"
   },
   {
-    "name": "Nate's donation page",
-    "url": "https://natepay.tempestboom.com/apps/27n4A8JwekzZ6CpjzWGqYaEEj2BB/pos",
-    "description": "Nate's donation page. He's a Bitcoin enthusiast and knowledge sponge.",
-    "type": "apps"
-  },
-  {
     "name": "Nicolas Dorier’s Donation App",
     "url": "https://donate.nicolas-dorier.com/",
     "description": "This is Nicolas Dorier’s BTCPayServer donation app. He is the main coder of BTCPayServer and the individual who started the project in the first place. He loves Docker and Sushi!",
@@ -1104,30 +969,11 @@
     "subType": "education"
   },
   {
-    "name": "Old City Bitcoiners",
-    "url": "https://www.oldcity-bitcoiners.info/",
-    "description": "We are a bitcoin-only meetup in St. Augustine FL. All our meetup announcements have a donate button at the bottom. We use BTCPay server for monthly crowdfunding goals.",
-    "type": "non-profits"
-  },
-  {
     "name": "ONG Bitcoin Chile",
     "url": "https://achicrip.org/servicios/transbit/",
     "description": "Trans₿IT es nuestra solución que ofrecemos a comercios que quieran recibir pagos P2P en Bitcoin, sin comisiones, sin custodia y sin KYC. Ofrecemos documentación y soporte técnico completamente en español. Basado en la implementación de BTCPay Server.",
-    "type": "hosts"
-  },
-  {
-    "name": "Original Kush Roots",
-    "url": "https://webshop.sweet-kushroots.art/",
-    "description": "Painter based in Senegal, passionate about painting, my goal is to spread more and more art on clothes. Art should be everywhere, not just in museums.",
-    "type": "merchants",
-    "subType": "art"
-  },
-  {
-    "name": "PacketBunker",
-    "url": "https://packetbunker.com",
-    "description": "Host your internet based business at a provider that cares about Customers, and Data Freedom. At Packet Bunker, we excel and protecting our customers server and data.",
-    "type": "merchants",
-    "subType": "domains-hosting-vpns"
+    "type": "hosted-btcpay",
+    "country": "CL"
   },
   {
     "name": "Paralelna Polis",
@@ -1178,20 +1024,6 @@
     "type": "apps"
   },
   {
-    "name": "Printed Threads",
-    "url": "https://printedthreads.net/",
-    "description": "Printedthreads is a custom shirt printer that uses BTCPayServer in it’s shop.",
-    "type": "merchants",
-    "subType": "fashion"
-  },
-  {
-    "name": "PrivateRouter",
-    "url": "https://privaterouter.com/en/",
-    "description": "PrivateRouter offers router VPN’s and accepts Bitcoin via BTCPayServer.",
-    "type": "merchants",
-    "subType": "domains-hosting-vpns"
-  },
-  {
     "name": "Professional Writing and Development",
     "url": "https://pwdpr.com/",
     "description": "Pwdpr.com is a language service company (translation, copywriting, proofreading). They also have training courses and use BTCPayServer on checkout.",
@@ -1202,15 +1034,9 @@
     "name": "psychoet",
     "url": "https://btcpay.psychoet.nexus",
     "description": "Enjoy your smooth payment experience with BTCpayServer rooted on well connected routing node!",
-    "type": "hosts",
-    "twitter": "@Unlim_pow"
-  },
-  {
-    "name": "quinsolo",
-    "url": "https://quinsolo.com/",
-    "description": "Online store offering decentralized cryptocurrency merchandises including  related magnets, coasters, vinyl decals and stickers.",
-    "type": "merchants",
-    "subType": "cryptocurrency-paraphernalia"
+    "type": "hosted-btcpay",
+    "twitter": "@Unlim_pow",
+    "country": "GLOBAL"
   },
   {
     "name": "Quite Beyond",
@@ -1232,13 +1058,6 @@
     "description": "Random.org mission is to provide the highest quality true random numbers and make them available to the world in useful forms.",
     "type": "merchants",
     "subType": "services"
-  },
-  {
-    "name": "Reckless Coffee",
-    "url": "https://reckless.coffee",
-    "description": "Specialty grade selection of coffees from Puerto Rico. Bitcoin-only. (P2EP enabled).",
-    "type": "merchants",
-    "subType": "food"
   },
   {
     "name": "Richelle Steyn (DOE Idea)",
@@ -1351,7 +1170,8 @@
     "name": "Six910Pay",
     "url": "http://www.six910pay.com",
     "description": "Six910Pay is based in Atlanta, GA USA and provides BTCPay Server at a very low cost. We do a free installation and free support on your full node.",
-    "type": "hosts"
+    "type": "hosted-btcpay",
+    "country": "US"
   },
   {
     "name": "Skhron",
@@ -1359,13 +1179,6 @@
     "description": "Skhron is a privacy-focused VPS provider founded in Ukraine. Accepts on-chain and off-chain (Lightning) Bitcoin. Mirror is available at Tor network.",
     "type": "merchants",
     "subType": "domains-hosting-vpns"
-  },
-  {
-    "name": "SpendBTC",
-    "url": "https://spendbtc.io/",
-    "description": "spendbtc.io lets you spend your BTC to buy giftcards.",
-    "type": "merchants",
-    "subType": "gift-cards"
   },
   {
     "name": "Spoof Defender",
@@ -1424,13 +1237,6 @@
     "subType": "education"
   },
   {
-    "name": "The tything coffee club",
-    "url": "https://tythingcoffee.club/",
-    "description": "Art, books, antiques and coffee.",
-    "type": "merchants",
-    "subType": "art"
-  },
-  {
     "name": "TorGuard VPN",
     "url": "https://torguard.net/",
     "description": "TorGuard VPN Service encrypts your internet access and provides an anonymous IP so you can browse securely.",
@@ -1458,46 +1264,28 @@
     "type": "non-profits"
   },
   {
-    "name": "Uncovr",
-    "url": "https://uncovr.org/",
-    "description": "A place to share and archive the information, thoughts and ideas that the cabal is censoring and surpressing.",
-    "type": "merchants",
-    "subType": "services"
-  },
-  {
-    "name": "undercoverwallet.com",
-    "url": "https://undercoverwallet.com",
-    "description": "Undercover Bitcoin hardware wallets.",
-    "type": "merchants",
-    "subType": "cryptocurrency-paraphernalia"
-  },
-  {
-    "name": "Unhashedpodcat.com",
-    "url": "https://www.unhashedpodcast.com/",
-    "description": "Four guys cutting out the Bitcoin BS in this weekly podcast. They accept donations by using BTCPay Server.",
-    "type": "merchants",
-    "subType": "education"
-  },
-  {
     "name": "VerifiedBitcoin.com",
     "url": "https://verifiedbitcoin.com",
     "description": "At VerifiedBitcoin.com we’re passionate about fostering an inclusive digital economy and breaking down barriers for merchants everywhere. By providing this service at no charge, we hope to encourage more retailers to dive into the world of Bitcoin.",
-    "type": "hosts",
-    "github": "https://github.com/Brad-CurrencyHub"
+    "type": "hosted-btcpay",
+    "github": "https://github.com/Brad-CurrencyHub",
+    "country": "GLOBAL"
   },
   {
     "name": "Villaggio Bitcoin",
     "url": "https://www.villaggiobitcoin.it/",
     "description": "Brick-and-mortar Bitcoin education Center located in northern Italy.Consulting and training courses for businesses and individuals. Helping merchants get paid in btc. Two self-published books: \"Bitcoin Village\"",
-    "type": "hosts",
+    "type": "hosted-btcpay",
     "twitter": "@villaggiobtc",
-    "github": "https://github.com/villaggiobtc"
+    "github": "https://github.com/villaggiobtc",
+    "country": "IT"
   },
   {
     "name": "We BTC",
     "url": "https://webtc.io/",
     "description": "We BTC is facilitating the adoption of bitcoin by providing Bitcoin Merchant Services using BTCPay Server",
-    "type": "hosts"
+    "type": "hosted-btcpay",
+    "country": "GLOBAL"
   },
   {
     "name": "Wears My Liberty",
@@ -1523,7 +1311,8 @@
     "name": "withBitcoin.org",
     "url": "https://withbitcoin.org/",
     "description": "We're a host offering free BTCPay accounts and customization services for companies interested in doing business with Bitcoin. Managed accounts are available for a nominal fee, free for nonprofits.",
-    "type": "hosts"
+    "type": "hosted-btcpay",
+    "country": "GLOBAL"
   },
   {
     "name": "Yeewu",
@@ -1542,12 +1331,6 @@
     "name": "Youtube Recommendation Modifier",
     "url": "https://microsoftedge.microsoft.com/addons/detail/youtube-recommendation-mo/lifhdhloggjmjfbhbgnjfjbhjfidinol",
     "description": "A chrome extension that gives power💪 to the user to modify their YouTube homepage Recommendation in order to increase their productivity 😎. It is free of charge. We created it because we badly needed it for our own use, and wanted to share it with the world 😊.",
-    "type": "non-profits"
-  },
-  {
-    "name": "Zaxounette’s Donation App",
-    "url": "https://btcpay.keyla.fr/apps/HYQ3CxKuTrMHeEyDVHoYYhc694W/pos",
-    "description": "Zaxounette contributes to BTCPay Server by translating part of the content into French. He also provides feedback on the website, different features and this directory you are viewing. He loves Burgers and Raspberry Pi’s !",
     "type": "non-profits"
   }
 ]

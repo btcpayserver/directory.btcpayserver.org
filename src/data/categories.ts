@@ -2,7 +2,7 @@ export const mainTypes = [
   "All",
   "Merchants",
   "Apps",
-  "Hosts",
+  "Hosted BTCPay",
   "Non-Profits",
 ] as const;
 
@@ -12,7 +12,7 @@ export type MainType = (typeof mainTypes)[number];
 export const typeMap: Record<string, string> = {
   Merchants: "merchants",
   Apps: "apps",
-  Hosts: "hosts",
+  "Hosted BTCPay": "hosted-btcpay",
   "Non-Profits": "non-profits",
 };
 
@@ -33,6 +33,7 @@ export const merchantSubTypes = [
   "health-household",
   "holiday-travel",
   "jewelry",
+  "payment-services",
   "pets",
   "services",
   "software-video-games",
@@ -60,6 +61,7 @@ export const subTypeLabels: Record<string, string> = {
   "health-household": "Health & Household",
   "holiday-travel": "Holiday & Travel",
   jewelry: "Jewelry",
+  "payment-services": "Payment Services",
   pets: "Pets",
   services: "Services",
   "software-video-games": "Software & Video Games",
@@ -73,7 +75,32 @@ export interface Merchant {
   description: string;
   type: string;
   subType?: string;
+  country?: string;
   twitter?: string;
   github?: string;
   onionUrl?: string;
 }
+
+// ── Country helpers (for Hosted BTCPay entries) ──────────────────────
+
+/** Convert ISO 3166-1 alpha-2 code to flag emoji (e.g. "US" → "🇺🇸") */
+export function countryFlag(code: string): string {
+  if (code === "GLOBAL") return "🌍";
+  return [...code.toUpperCase()].map((c) =>
+    String.fromCodePoint(0x1f1e6 - 65 + c.charCodeAt(0))
+  ).join("");
+}
+
+/** Countries available in the Hosted BTCPay dropdown — only countries with entries */
+export const hostedBtcpayCountries: Record<string, string> = {
+  GLOBAL: "Global",
+  AW: "Aruba",
+  BR: "Brazil",
+  BG: "Bulgaria",
+  CL: "Chile",
+  IS: "Iceland",
+  IT: "Italy",
+  NL: "Netherlands",
+  SV: "El Salvador",
+  US: "United States",
+};

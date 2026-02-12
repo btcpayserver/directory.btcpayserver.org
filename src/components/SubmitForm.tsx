@@ -5,7 +5,7 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
-import { typeMap, merchantSubTypes, subTypeLabels } from "@/data/categories";
+import { typeMap, merchantSubTypes, subTypeLabels, hostedBtcpayCountries, countryFlag } from "@/data/categories";
 import { ExternalLink } from "lucide-react";
 
 const REPO_URL =
@@ -21,11 +21,13 @@ export default function SubmitForm({ onSuccess }: SubmitFormProps) {
   const [description, setDescription] = useState("");
   const [type, setType] = useState("");
   const [subType, setSubType] = useState("");
+  const [country, setCountry] = useState("");
   const [twitter, setTwitter] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [errors, setErrors] = useState<Record<string, boolean>>({});
 
   const isMerchant = type === "merchants";
+  const isHostedBtcpay = type === "hosted-btcpay";
 
   function validate() {
     const newErrors: Record<string, boolean> = {};
@@ -51,6 +53,7 @@ export default function SubmitForm({ onSuccess }: SubmitFormProps) {
     if (twitter.trim()) lines.push(`Twitter: ${twitter.trim()}`);
     lines.push(`Type: ${type}`);
     if (isMerchant && subType) lines.push(`SubType: ${subType}`);
+    if (isHostedBtcpay && country) lines.push(`Country: ${country}`);
     lines.push(`Description: ${description.trim()}`);
 
     const issueTitle = `New entry submission - ${name.trim()}`;
@@ -141,6 +144,7 @@ export default function SubmitForm({ onSuccess }: SubmitFormProps) {
             onChange={(e) => {
               setType(e.target.value);
               if (e.target.value !== "merchants") setSubType("");
+              if (e.target.value !== "hosted-btcpay") setCountry("");
             }}
             className={selectClass("type")}
           >
@@ -168,6 +172,25 @@ export default function SubmitForm({ onSuccess }: SubmitFormProps) {
               {merchantSubTypes.map((st) => (
                 <option key={st} value={st}>
                   {subTypeLabels[st] || st}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+
+        {/* Country (hosted-btcpay only) */}
+        {isHostedBtcpay && (
+          <div className="space-y-1.5">
+            <label className="text-sm font-medium">Country</label>
+            <select
+              value={country}
+              onChange={(e) => setCountry(e.target.value)}
+              className={selectClass("country")}
+            >
+              <option value="">Select a country (optional)…</option>
+              {Object.entries(hostedBtcpayCountries).map(([code, name]) => (
+                <option key={code} value={code}>
+                  {countryFlag(code)} {name}
                 </option>
               ))}
             </select>
