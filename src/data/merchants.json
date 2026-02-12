@@ -91,13 +91,6 @@
   },
   {
     "name": "Bitcoin Aruba",
-    "url": "https://btc.aw/accept-bitcoin-everywhere/",
-    "description": "BTC.aw is a free BTCPay Server hosting provider for anybody. Bitcoin Aruba maintains the cost of hosting by receiving donations from users.",
-    "type": "hosted-btcpay",
-    "country": "AW"
-  },
-  {
-    "name": "Bitcoin Aruba",
     "url": "https://btcpay.btc.aw/",
     "description": "Bitcoin and Crypto enthusiast on the gorgeous island of Aruba that can act as a host.",
     "type": "hosted-btcpay",
