@@ -6,9 +6,7 @@ import MerchantCard from "@/components/MerchantCard";
 import DirectoryFilters from "@/components/DirectoryFilters";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import SupporterSprite from "@/components/SupporterSprite";
 import SubmitForm from "@/components/SubmitForm";
-import { supporters } from "@/data/supporters";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Search, SlidersHorizontal } from "lucide-react";
@@ -120,24 +118,25 @@ export default function DirectoryPage() {
       <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery} onSubmitClick={openSubmit} />
 
       {/* Hero Section */}
-      <div className="relative pt-32 pb-20 overflow-hidden bg-background">
+      <div className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 overflow-hidden bg-background">
         {/* Subtle Mesh Gradient Background */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-primary/10 blur-[120px] rounded-full opacity-40 pointer-events-none" />
-        <div className="absolute top-[-100px] right-[-100px] w-[600px] h-[600px] bg-emerald-500/10 blur-[100px] rounded-full opacity-40 pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] sm:w-[1000px] h-[400px] sm:h-[600px] bg-primary/10 blur-[120px] rounded-full opacity-40 pointer-events-none" />
+        <div className="absolute top-[-100px] right-[-100px] w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-emerald-500/10 blur-[100px] rounded-full opacity-40 pointer-events-none" />
 
-        <div className="container mx-auto px-6 relative z-10 text-center">
-          <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold mb-4 sm:mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
             ₿itcoin is<br className="hidden md:block" />
             <span className="bg-gradient-to-r from-primary to-emerald-600 bg-clip-text text-transparent">Money.</span>
           </h1>
 
-          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
-            Discover merchants, creators, and organizations accepting Bitcoin with BTCPay Server, and support circular economies.          </p>
+          <p className="text-base sm:text-xl text-muted-foreground mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200 px-2">
+            Discover merchants, creators, and organizations accepting Bitcoin with BTCPay Server, and support circular economies.
+          </p>
 
-          <div className="flex flex-wrap justify-center gap-4 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-300">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-300 px-4 sm:px-0">
             <Button
               size="lg"
-              className="rounded-full px-8 h-12 text-base shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all duration-300 hover:scale-105"
+              className="rounded-full px-8 h-11 sm:h-12 text-sm sm:text-base shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all duration-300 hover:scale-105"
               onClick={scrollToDirectory}
             >
               Browse Directory
@@ -145,7 +144,7 @@ export default function DirectoryPage() {
             <Button
               size="lg"
               variant="outline"
-              className="rounded-full px-8 h-12 text-base backdrop-blur-sm bg-background/50 border-input/50 hover:bg-background/80 transition-all duration-300"
+              className="rounded-full px-8 h-11 sm:h-12 text-sm sm:text-base backdrop-blur-sm bg-background/50 border-input/50 hover:bg-background/80 transition-all duration-300"
               onClick={openSubmit}
             >
               Submit a Store
@@ -155,11 +154,11 @@ export default function DirectoryPage() {
       </div>
 
       {/* Main Content */}
-      <main id="directory" className="flex-1 container mx-auto px-4 pb-24">
-        <div className="flex flex-col lg:flex-row gap-8">
+      <main id="directory" className="flex-1 container mx-auto px-4 sm:px-6 pb-16 sm:pb-24">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8">
 
           {/* Mobile Filter + Search Bar */}
-          <div className="lg:hidden sticky top-20 z-30 bg-background/80 backdrop-blur-md p-4 rounded-2xl border border-border/50 shadow-sm space-y-3 mb-6">
+          <div className="lg:hidden sticky top-16 sm:top-20 z-40 -mx-1 bg-background/80 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-border/50 shadow-sm space-y-2 sm:space-y-3 mb-4 sm:mb-6">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <input
@@ -172,12 +171,12 @@ export default function DirectoryPage() {
             </div>
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" className="gap-2 font-medium w-full justify-start">
+                <Button variant="ghost" size="sm" className="gap-2 font-medium w-full justify-start">
                   <SlidersHorizontal className="w-4 h-4" />
                   Filters
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+              <SheetContent side="left" className="w-[280px] sm:w-[400px]">
                 <DirectoryFilters
                   selectedType={selectedType}
                   setSelectedType={setSelectedType}
@@ -206,46 +205,20 @@ export default function DirectoryPage() {
                 </Button>
               </div>
 
-              <div>
-                <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/60 mb-4">Foundation Supporters</h4>
-                <div className="flex flex-wrap gap-4 items-center">
-                  <SupporterSprite />
-                  {supporters.map((s) => (
-                    <a
-                      key={s.svgId}
-                      href={s.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      title={s.name}
-                      className="opacity-50 hover:opacity-100 transition-opacity duration-300"
-                    >
-                      <svg
-                        role="img"
-                        width={s.width}
-                        height={s.height}
-                        className="max-h-8 w-auto"
-                        style={s.fillCurrentColor ? { fill: "currentColor" } : undefined}
-                      >
-                        <use href={`#${s.svgId}`} />
-                      </svg>
-                    </a>
-                  ))}
-                </div>
-              </div>
             </div>
           </aside>
 
           {/* Content Area */}
-          <div className="flex-1">
-            <div className="flex justify-between items-end mb-8 px-2">
+          <div className="flex-1 min-w-0">
+            <div className="flex justify-between items-end mb-6 sm:mb-8 px-1 sm:px-2">
               <div>
-                <h2 className="text-3xl font-display font-bold tracking-tight">
+                <h2 className="text-2xl sm:text-3xl font-display font-bold tracking-tight">
                   {selectedType === "All" ? "Discover" : selectedType}
                 </h2>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300">
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300">
               {visibleMerchants.map((merchant, i) => (
                 <div
                   key={merchant.url}
@@ -258,11 +231,11 @@ export default function DirectoryPage() {
             </div>
 
             {hasMore && (
-              <div className="flex justify-center mt-12">
+              <div className="flex justify-center mt-8 sm:mt-12">
                 <Button
                   variant="outline"
                   size="lg"
-                  className="rounded-full px-10 h-12 gap-3 font-semibold border-border/50 hover:bg-muted/50 hover:border-primary/30 transition-all duration-300"
+                  className="rounded-full px-8 sm:px-10 h-11 sm:h-12 gap-3 font-semibold border-border/50 hover:bg-muted/50 hover:border-primary/30 transition-all duration-300"
                   onClick={loadMore}
                 >
                   Load More
@@ -271,12 +244,12 @@ export default function DirectoryPage() {
             )}
 
             {filteredMerchants.length === 0 && (
-              <div className="text-center py-32 bg-card/40 rounded-3xl border border-dashed border-muted-foreground/20 backdrop-blur-sm">
-                <div className="bg-muted/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <SlidersHorizontal className="w-8 h-8 text-muted-foreground" />
+              <div className="text-center py-16 sm:py-32 bg-card/40 rounded-2xl sm:rounded-3xl border border-dashed border-muted-foreground/20 backdrop-blur-sm">
+                <div className="bg-muted/50 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <SlidersHorizontal className="w-6 h-6 sm:w-8 sm:h-8 text-muted-foreground" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">No merchants found</h3>
-                <p className="text-muted-foreground mb-6 max-w-sm mx-auto">We couldn't find any merchants matching your current filters.</p>
+                <h3 className="text-lg sm:text-xl font-bold mb-2">No merchants found</h3>
+                <p className="text-sm sm:text-base text-muted-foreground mb-6 max-w-sm mx-auto px-4">We couldn't find any merchants matching your current filters.</p>
                 <Button variant="outline" className="rounded-full" onClick={clearFilters}>
                   Clear filters
                 </Button>
@@ -289,7 +262,7 @@ export default function DirectoryPage() {
       <Footer />
 
       <Dialog open={submitOpen} onOpenChange={setSubmitOpen}>
-        <DialogContent className="sm:max-w-md max-h-[90vh] overflow-y-auto">
+        <DialogContent className="mx-4 sm:mx-auto sm:max-w-md max-h-[85vh] overflow-y-auto rounded-xl">
           <SubmitForm onSuccess={() => setSubmitOpen(false)} />
         </DialogContent>
       </Dialog>

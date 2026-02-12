@@ -13,40 +13,40 @@ export default function MerchantCard({ merchant }: MerchantCardProps) {
     : merchant.type.charAt(0).toUpperCase() + merchant.type.slice(1);
 
   return (
-    <div className="group relative flex flex-col h-full bg-card/40 hover:bg-card/80 backdrop-blur-md border border-white/5 hover:border-primary/20 rounded-3xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
+    <div className="group relative flex flex-col h-full bg-card/40 hover:bg-card/80 backdrop-blur-md border border-white/5 hover:border-primary/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
       {/* Category Pill */}
-      <div className="mb-4 flex justify-between items-start">
-        <Badge variant="secondary" className="rounded-full px-3 py-1 text-xs font-medium bg-muted/50 border border-white/5 backdrop-blur-sm group-hover:bg-primary/10 group-hover:text-primary transition-colors">
+      <div className="mb-3 sm:mb-4 flex justify-between items-start">
+        <Badge variant="secondary" className="rounded-full px-2.5 sm:px-3 py-0.5 sm:py-1 text-xs font-medium bg-muted/50 border border-white/5 backdrop-blur-sm group-hover:bg-primary/10 group-hover:text-primary transition-colors">
           {displayCategory}
         </Badge>
 
-        <div className="w-8 h-8 rounded-full bg-muted/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-           <ExternalLink className="w-4 h-4 text-primary" />
+        <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-muted/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+           <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
         </div>
       </div>
 
       {/* Content */}
       <div className="flex-1">
-        <h3 className="font-display font-bold text-xl mb-2 group-hover:text-primary transition-colors duration-300">
+        <h3 className="font-display font-bold text-lg sm:text-xl mb-1.5 sm:mb-2 group-hover:text-primary transition-colors duration-300">
           {merchant.name}
         </h3>
-        <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3 mb-6">
+        <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3 mb-4 sm:mb-6">
           {merchant.description}
         </p>
       </div>
 
       {/* Tags - show type + optional social indicators */}
-      <div className="flex flex-wrap gap-2 mb-6">
-        <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground/70 bg-muted/30 px-2 py-1 rounded-md border border-white/5">
+      <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
+        <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground/70 bg-muted/30 px-2 py-0.5 sm:py-1 rounded-md border border-white/5">
           {merchant.type}
         </span>
         {merchant.twitter && (
-          <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground/70 bg-muted/30 px-2 py-1 rounded-md border border-white/5">
+          <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground/70 bg-muted/30 px-2 py-0.5 sm:py-1 rounded-md border border-white/5">
             Twitter
           </span>
         )}
         {merchant.onionUrl && (
-          <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground/70 bg-muted/30 px-2 py-1 rounded-md border border-white/5">
+          <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground/70 bg-muted/30 px-2 py-0.5 sm:py-1 rounded-md border border-white/5">
             Tor
           </span>
         )}
@@ -57,7 +57,7 @@ export default function MerchantCard({ merchant }: MerchantCardProps) {
         href={merchant.url}
         target="_blank"
         rel="noreferrer"
-        className="absolute inset-0 z-10 focus:outline-none focus:ring-2 focus:ring-primary/50 rounded-3xl"
+        className="absolute inset-0 z-10 focus:outline-none focus:ring-2 focus:ring-primary/50 rounded-2xl sm:rounded-3xl"
         aria-label={`Visit ${merchant.name}`}
       />
     </div>
