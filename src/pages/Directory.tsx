@@ -6,7 +6,11 @@ import MerchantCard from "@/components/MerchantCard";
 import DirectoryFilters from "@/components/DirectoryFilters";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SupporterSprite from "@/components/SupporterSprite";
+import SubmitForm from "@/components/SubmitForm";
+import { supporters } from "@/data/supporters";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Search, SlidersHorizontal } from "lucide-react";
 import {
   Sheet,
@@ -108,9 +112,12 @@ export default function DirectoryPage() {
     setSearchQuery("");
   }, []);
 
+  const [submitOpen, setSubmitOpen] = useState(false);
+  const openSubmit = useCallback(() => setSubmitOpen(true), []);
+
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans selection:bg-primary/30">
-      <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery} onSubmitClick={openSubmit} />
 
       {/* Hero Section */}
       <div className="relative pt-32 pb-20 overflow-hidden bg-background">
@@ -135,10 +142,13 @@ export default function DirectoryPage() {
             >
               Browse Directory
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full px-8 h-12 text-base backdrop-blur-sm bg-background/50 border-input/50 hover:bg-background/80 transition-all duration-300" asChild>
-              <a href="https://github.com/btcpayserver/directory.btcpayserver.org/issues/new?template=submission.md" target="_blank" rel="noreferrer">
-                Submit a Store
-              </a>
+            <Button
+              size="lg"
+              variant="outline"
+              className="rounded-full px-8 h-12 text-base backdrop-blur-sm bg-background/50 border-input/50 hover:bg-background/80 transition-all duration-300"
+              onClick={openSubmit}
+            >
+              Submit a Store
             </Button>
           </div>
         </div>
@@ -191,11 +201,36 @@ export default function DirectoryPage() {
               <div className="p-6 rounded-3xl bg-gradient-to-br from-primary/10 to-emerald-500/5 border border-primary/10 backdrop-blur-xl">
                 <h3 className="font-bold text-lg mb-2 text-primary">Add your store</h3>
                 <p className="text-sm text-muted-foreground mb-4">Are you using BTCPay Server? Get listed in the directory.</p>
-                <Button className="w-full rounded-xl bg-primary/90 hover:bg-primary shadow-lg shadow-primary/10" size="sm" asChild>
-                  <a href="https://github.com/btcpayserver/directory.btcpayserver.org/issues/new?template=submission.md" target="_blank" rel="noreferrer">
+                <Button className="w-full rounded-xl bg-primary/90 hover:bg-primary shadow-lg shadow-primary/10" size="sm" onClick={openSubmit}>
                     Submit Now
-                  </a>
                 </Button>
+              </div>
+
+              <div>
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/60 mb-4">Foundation Supporters</h4>
+                <div className="flex flex-wrap gap-4 items-center">
+                  <SupporterSprite />
+                  {supporters.map((s) => (
+                    <a
+                      key={s.svgId}
+                      href={s.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      title={s.name}
+                      className="opacity-50 hover:opacity-100 transition-opacity duration-300"
+                    >
+                      <svg
+                        role="img"
+                        width={s.width}
+                        height={s.height}
+                        className="max-h-8 w-auto"
+                        style={s.fillCurrentColor ? { fill: "currentColor" } : undefined}
+                      >
+                        <use href={`#${s.svgId}`} />
+                      </svg>
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </aside>
@@ -231,9 +266,6 @@ export default function DirectoryPage() {
                   onClick={loadMore}
                 >
                   Load More
-                  <span className="text-muted-foreground text-sm font-normal">
-                    ({Math.min(visibleCount, filteredMerchants.length)} of {filteredMerchants.length})
-                  </span>
                 </Button>
               </div>
             )}
@@ -255,6 +287,12 @@ export default function DirectoryPage() {
       </main>
 
       <Footer />
+
+      <Dialog open={submitOpen} onOpenChange={setSubmitOpen}>
+        <DialogContent className="sm:max-w-md max-h-[90vh] overflow-y-auto">
+          <SubmitForm onSuccess={() => setSubmitOpen(false)} />
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

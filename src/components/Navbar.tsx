@@ -5,9 +5,10 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 interface NavbarProps {
   searchQuery: string;
   setSearchQuery: (query: string) => void;
+  onSubmitClick: () => void;
 }
 
-export default function Navbar({ searchQuery, setSearchQuery }: NavbarProps) {
+export default function Navbar({ searchQuery, setSearchQuery, onSubmitClick }: NavbarProps) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/40 supports-[backdrop-filter]:bg-background/80 transition-all duration-300">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
@@ -39,10 +40,8 @@ export default function Navbar({ searchQuery, setSearchQuery }: NavbarProps) {
 
         <div className="flex items-center gap-3">
           <ThemeToggle />
-          <Button size="sm" className="rounded-full px-5 font-semibold text-primary-foreground hover:opacity-90 transition-all shadow-lg shadow-primary/20 bg-primary hover:bg-primary/90" asChild>
-            <a href="https://github.com/btcpayserver/directory.btcpayserver.org/issues/new?template=submission.md" target="_blank" rel="noreferrer">
+          <Button size="sm" className="rounded-full px-5 font-semibold text-primary-foreground hover:opacity-90 transition-all shadow-lg shadow-primary/20 bg-primary hover:bg-primary/90" onClick={onSubmitClick}>
               Submit Store
-            </a>
           </Button>
         </div>
       </div>
