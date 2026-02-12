@@ -1,0 +1,224 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+
+  /* Primary Brand Colors - as per design.btcpayserver.org */
+  --color-btcpay-primary-100: #fef3e6;
+  --color-btcpay-primary-200: #fcdcb5;
+  --color-btcpay-primary-300: #fbc584;
+  --color-btcpay-primary-400: #f9ae53;
+  --color-btcpay-primary-500: #f79621;
+  --color-btcpay-primary-600: #de7d08;
+  --color-btcpay-primary-700: #ac6106;
+  --color-btcpay-primary-800: #7b4504;
+  --color-btcpay-primary-900: #4a2a03;
+
+  /* Neutral Colors (Light) */
+  --color-btcpay-neutral-light-100: #f8f9fa;
+  --color-btcpay-neutral-light-200: #e9ecef;
+  --color-btcpay-neutral-light-300: #dee2e6;
+  --color-btcpay-neutral-light-400: #ced4da;
+  --color-btcpay-neutral-light-500: #8f979e;
+  --color-btcpay-neutral-light-600: #6c757d;
+  --color-btcpay-neutral-light-700: #495057;
+  --color-btcpay-neutral-light-800: #343a40;
+  --color-btcpay-neutral-light-900: #292929;
+
+  /* Neutral Colors (Dark) */
+  --color-btcpay-neutral-dark-100: #F0F6FC;
+  --color-btcpay-neutral-dark-200: #C9D1D9;
+  --color-btcpay-neutral-dark-300: #B1BAC4;
+  --color-btcpay-neutral-dark-400: #8B949E;
+  --color-btcpay-neutral-dark-500: #6E7681;
+  --color-btcpay-neutral-dark-600: #484F58;
+  --color-btcpay-neutral-dark-700: #30363D;
+  --color-btcpay-neutral-dark-800: #21262D;
+  --color-btcpay-neutral-dark-900: #0D1117;
+
+  /* Core Brand Colors */
+  --color-btcpay-brand-primary: #51b13e;  /* Green - "Jungle Green" */
+  --color-btcpay-brand-secondary: #CEDC21; /* Lime/Yellow */
+  --color-btcpay-brand-tertiary: #1e7a44;  /* Dark Green */
+  --color-btcpay-brand-dark: #0F3B21;      /* Very Dark Green */
+  --color-btcpay-white: #ffffff;
+  --color-btcpay-black: #000000;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-2: hsl(var(--chart-2));
+  --color-chart-3: hsl(var(--chart-3));
+  --color-chart-4: hsl(var(--chart-4));
+  --color-chart-5: hsl(var(--chart-5));
+
+  --color-sidebar: hsl(var(--sidebar));
+  --color-sidebar-foreground: hsl(var(--sidebar-foreground));
+  --color-sidebar-primary: hsl(var(--sidebar-primary));
+  --color-sidebar-primary-foreground: hsl(var(--sidebar-primary-foreground));
+  --color-sidebar-accent: hsl(var(--sidebar-accent));
+  --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
+  --color-sidebar-border: hsl(var(--sidebar-border));
+  --color-sidebar-ring: hsl(var(--sidebar-ring));
+}
+
+@layer base {
+  :root {
+    /* Light Mode - Uses Neutral Light scale */
+    /* Background: Neutral Light 100 (#f8f9fa) */
+    --background: 210 20% 98%;
+
+    /* Foreground: Neutral Light 900 (#292929) */
+    --foreground: 0 0% 16%;
+
+    /* Card: White */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 16%;
+
+    /* Primary: BTCPay Green (#51b13e) - HSL: 110 48% 47% */
+    --primary: 110 48% 47%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Neutral Light 200 (#e9ecef) */
+    --secondary: 210 16% 93%;
+    --secondary-foreground: 0 0% 16%;
+
+    /* Muted: Neutral Light 200 */
+    --muted: 210 16% 93%;
+    --muted-foreground: 210 7% 40%; /* Neutral 600 */
+
+    /* Accent: Primary 100 or Brand Secondary */
+    --accent: 110 48% 95%;
+    --accent-foreground: 110 48% 30%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Border: Neutral Light 300 (#dee2e6) */
+    --border: 210 14% 89%;
+    --input: 210 14% 89%;
+    --ring: 110 48% 47%;
+
+    --radius: 0.5rem;
+
+    --chart-1: 110 48% 47%;
+    --chart-2: 65 74% 50%;
+    --chart-3: 139 60% 30%;
+    --chart-4: 110 48% 70%;
+    --chart-5: 27 87% 67%;
+
+    --sidebar: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Mode - Uses Neutral Dark scale */
+    /* Background: Neutral Dark 900 (#0D1117) */
+    --background: 216 28% 7%;
+
+    /* Foreground: Neutral Dark 100 (#F0F6FC) */
+    --foreground: 210 40% 96%;
+
+    /* Card: Neutral Dark 800 (#21262D) */
+    --card: 215 15% 15%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 215 15% 15%;
+    --popover-foreground: 210 40% 96%;
+
+    /* Primary: BTCPay Green (#51b13e) */
+    --primary: 110 48% 47%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Neutral Dark 700 (#30363D) */
+    --secondary: 210 12% 21%;
+    --secondary-foreground: 210 40% 96%;
+
+    /* Muted: Neutral Dark 700 */
+    --muted: 210 12% 21%;
+    --muted-foreground: 215 12% 58%; /* Neutral Dark 400 */
+
+    /* Accent: Neutral Dark 600 or Dark Green tint */
+    --accent: 213 10% 28%;
+    --accent-foreground: 210 40% 96%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 96%;
+
+    /* Border: Neutral Dark 700 (#30363D) */
+    --border: 210 12% 21%;
+    --input: 210 12% 21%;
+    --ring: 110 48% 47%;
+
+    --chart-1: 110 48% 47%;
+    --chart-2: 65 74% 50%;
+    --chart-3: 139 60% 30%;
+    --chart-4: 110 48% 70%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar: 216 28% 7%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 110 48% 47%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 12% 21%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 210 12% 21%;
+    --sidebar-ring: 110 48% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}

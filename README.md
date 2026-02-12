@@ -1,28 +1,73 @@
 # BTCPay Server Directory
 
-BTCPay Server Directory is a place for merchants, projects and charities to showcase their store, websites or advertise their cause. If you're using BTCPay Server, feel free to add your website.
+A community-curated directory of merchants, projects, and organizations accepting Bitcoin via [BTCPay Server](https://btcpayserver.org).
 
-![Node CI](https://github.com/btcpayserver/directory.btcpayserver.org/workflows/Node%20CI/badge.svg)
+## How to add a merchant
 
-## How to submit an entry?
+**Only submit entries that use BTCPay Server to accept payments. All submissions are reviewed before merging.**
 
-**Submit entry only if you're using BTCPay Server to accept payments, we evaluate all submissions prior to adding**)
+### Option 1: Edit the JSON directly (preferred)
 
-There are two ways to get your submission added to the directory:
+1. Fork this repository
+2. Open `src/data/merchants.json`
+3. Add your entry in alphabetical order:
 
-1. If you have some basic GitHub knowledge, you can fork this repository, modify the [List.js](https://github.com/btcpayserver/directory.btcpayserver.org/blob/master/src/components/Directory/List.js) and do a pull request.
-2. You can request someone else to add your submission by filling out the form on [this link](https://directory.btcpayserver.org/newentry) (GitHub account required). Alternatively, you can open an issue in the repository (please do not ignore the issue template).
+```json
+{
+  "name": "Your Store Name",
+  "url": "https://yourstore.com",
+  "description": "A brief description of your store (max ~250 characters).",
+  "type": "merchants",
+  "subType": "fashion"
+}
+```
 
-## How to build the directory locally?
+4. Submit a pull request
 
-In order to build the website locally, you'll need [Node.js](https://nodejs.org/) >= 12.16 (or basically the latest LTS version).
+### Option 2: Open an issue
 
-The setup is straight forward:
+If you're not comfortable editing JSON, [open an issue](https://github.com/btcpayserver/directory.btcpayserver.org/issues/new?template=submission.md) with your store details.
+
+### Entry schema
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `name` | Yes | Store or project name |
+| `url` | Yes | Website URL (include `https://`) |
+| `description` | Yes | Brief description (keep it under 250 characters) |
+| `type` | Yes | One of: `merchants`, `apps`, `hosts`, `non-profits` |
+| `subType` | No | For merchants only. See subtypes below |
+| `twitter` | No | Twitter/X handle (e.g. `@yourhandle`) |
+| `github` | No | GitHub URL |
+| `onionUrl` | No | Tor `.onion` URL |
+
+### Merchant subtypes
+
+`3d-printing`, `adult`, `appliances-furniture`, `art`, `books`, `cryptocurrency-paraphernalia`, `domains-hosting-vpns`, `education`, `electronics`, `fashion`, `food`, `gambling`, `gift-cards`, `health-household`, `holiday-travel`, `jewelry`, `pets`, `services`, `software-video-games`, `sports`, `tools`
+
+## Development
 
 ```bash
 # Install dependencies
 npm install
 
-# Serve locally (by default on port 3000)
-npm start
+# Start dev server (default port 5173)
+npm run dev
+
+# Production build
+npm run build
+
+# Preview production build
+npm run preview
 ```
+
+### Tech stack
+
+- [React](https://react.dev) 19 + TypeScript
+- [Tailwind CSS](https://tailwindcss.com) 4
+- [Vite](https://vite.dev) for build tooling
+- Deployed via GitHub Pages
+
+## License
+
+MIT
