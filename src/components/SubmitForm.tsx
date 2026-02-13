@@ -5,7 +5,8 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
-import { typeMap, merchantSubTypes, subTypeLabels, hostedBtcpayCountries, countryFlag } from "@/data/categories";
+import { typeMap, merchantSubTypes, subTypeLabels, countryFlag } from "@/data/categories";
+import { countries } from "@/data/countries";
 import { ExternalLink } from "lucide-react";
 
 const REPO_URL =
@@ -24,18 +25,22 @@ export default function SubmitForm({ onSuccess }: SubmitFormProps) {
   const [country, setCountry] = useState("");
   const [twitter, setTwitter] = useState("");
   const [submitted, setSubmitted] = useState(false);
-  const [errors, setErrors] = useState<Record<string, boolean>>({});
+  const [errors, setErrors] = useState<Record<string, string>>({});
 
   const isMerchant = type === "merchants";
   const isHostedBtcpay = type === "hosted-btcpay";
 
   function validate() {
-    const newErrors: Record<string, boolean> = {};
-    if (!name.trim()) newErrors.name = true;
-    if (!url.trim()) newErrors.url = true;
-    if (!description.trim()) newErrors.description = true;
-    if (!type) newErrors.type = true;
-    if (isMerchant && !subType) newErrors.subType = true;
+    const newErrors: Record<string, string> = {};
+    if (!name.trim()) newErrors.name = "Name is required";
+    if (!url.trim()) {
+      newErrors.url = "URL is required";
+    } else if (!/^https?:\/\//i.test(url.trim())) {
+      newErrors.url = "URL must start with https:// or http://";
+    }
+    if (!description.trim()) newErrors.description = "Description is required";
+    if (!type) newErrors.type = "Category is required";
+    if (isMerchant && !subType) newErrors.subType = "Subcategory is required";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   }
@@ -126,12 +131,15 @@ export default function SubmitForm({ onSuccess }: SubmitFormProps) {
             URL <span className="text-red-500">*</span>
           </label>
           <input
-            type="url"
+            type="text"
             placeholder="https://example.com"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
             className={inputClass("url")}
           />
+          {errors.url && (
+            <p className="text-xs text-red-500 mt-1">{errors.url}</p>
+          )}
         </div>
 
         {/* Type */}
@@ -188,7 +196,7 @@ export default function SubmitForm({ onSuccess }: SubmitFormProps) {
               className={selectClass("country")}
             >
               <option value="">Select a country (optional)…</option>
-              {Object.entries(hostedBtcpayCountries).map(([code, name]) => (
+              {Object.entries(countries).map(([code, name]) => (
                 <option key={code} value={code}>
                   {countryFlag(code)} {name}
                 </option>
@@ -205,18 +213,18 @@ export default function SubmitForm({ onSuccess }: SubmitFormProps) {
             </label>
             <span
               className={`text-xs ${
-                description.length > 250
+                description.length > 180
                   ? "text-red-500"
                   : "text-muted-foreground"
               }`}
             >
-              {description.length}/250
+              {description.length}/180
             </span>
           </div>
           <textarea
             placeholder="Brief description of your project…"
             value={description}
-            onChange={(e) => setDescription(e.target.value.slice(0, 250))}
+            onChange={(e) => setDescription(e.target.value.slice(0, 180))}
             rows={3}
             className={`w-full px-3 py-2 rounded-lg bg-muted/40 border text-sm outline-none transition-all duration-200 focus:bg-background focus:border-primary/30 focus:ring-4 focus:ring-primary/10 resize-none ${
               errors.description

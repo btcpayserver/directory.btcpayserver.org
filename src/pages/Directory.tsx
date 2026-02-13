@@ -13,6 +13,8 @@ import { Search, SlidersHorizontal } from "lucide-react";
 import {
   Sheet,
   SheetContent,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
@@ -191,7 +193,10 @@ export default function DirectoryPage() {
                   Filters
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="w-[280px] sm:w-[400px]">
+              <SheetContent side="left" className="w-[280px] sm:w-[400px] overflow-y-auto">
+                <SheetHeader>
+                  <SheetTitle>Filters</SheetTitle>
+                </SheetHeader>
                 <DirectoryFilters
                   selectedType={selectedType}
                   setSelectedType={setSelectedType}
