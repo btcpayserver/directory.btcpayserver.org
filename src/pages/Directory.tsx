@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useCallback } from "react";
+import { useState, useMemo, useEffect, useCallback, useLayoutEffect, useRef } from "react";
 import merchantsData from "@/data/merchants.json";
 import type { Merchant } from "@/data/categories";
 import { typeMap, mainTypes, merchantSubTypes, hostedBtcpayCountries } from "@/data/categories";
@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import SubmitForm from "@/components/SubmitForm";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { Search, SlidersHorizontal } from "lucide-react";
+import { Search, SlidersHorizontal, Loader2 } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -113,8 +113,31 @@ export default function DirectoryPage() {
   const visibleMerchants = filteredMerchants.slice(0, visibleCount);
   const hasMore = visibleCount < filteredMerchants.length;
 
+  const [isLoadingMore, setIsLoadingMore] = useState(false);
+  const scrollAnchorRef = useRef<number>(0);
+
+  // useLayoutEffect fires synchronously after DOM mutation but BEFORE the browser
+  // paints — the only reliable place to clamp scroll position when new cards are
+  // inserted into the grid.
+  useLayoutEffect(() => {
+    if (scrollAnchorRef.current > 0) {
+      window.scrollTo({ top: scrollAnchorRef.current, behavior: "instant" });
+      scrollAnchorRef.current = 0;
+    }
+  }, [visibleCount]); // ← keyed on visibleCount, not on the loading flag
+
   const loadMore = useCallback(() => {
-    setVisibleCount((prev) => prev + BATCH_SIZE);
+    scrollAnchorRef.current = window.scrollY;
+    setIsLoadingMore(true);
+    // Double rAF: first frame lets the loading button paint so the user sees
+    // feedback; second frame commits the new cards and the useLayoutEffect above
+    // restores scroll before the browser paints that frame.
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        setVisibleCount((prev) => prev + BATCH_SIZE);
+        setIsLoadingMore(false);
+      });
+    });
   }, []);
 
   const scrollToDirectory = () => {
@@ -240,27 +263,47 @@ export default function DirectoryPage() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300">
-              {visibleMerchants.map((merchant, i) => (
-                <div
-                  key={merchant.url}
-                  style={i < INITIAL_BATCH ? { animationDelay: `${i * 50}ms` } : undefined}
-                  className={i < INITIAL_BATCH ? "animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-backwards" : ""}
-                >
-                  <MerchantCard merchant={merchant} />
-                </div>
-              ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {visibleMerchants.map((merchant, i) => {
+                // First batch on initial load: staggered slide-up entrance
+                const isInitialBatch = visibleCount <= INITIAL_BATCH;
+                // Cards added by "Load More": simple fade-in, no slide
+                const isNewCard = !isInitialBatch && i >= visibleCount - BATCH_SIZE;
+                return (
+                  <div
+                    key={merchant.url}
+                    style={isInitialBatch ? { animationDelay: `${i * 50}ms` } : undefined}
+                    className={
+                      isInitialBatch
+                        ? "animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-backwards"
+                        : isNewCard
+                        ? "animate-in fade-in duration-300"
+                        : ""
+                    }
+                  >
+                    <MerchantCard merchant={merchant} />
+                  </div>
+                );
+              })}
             </div>
 
-            {hasMore && (
+            {(hasMore || isLoadingMore) && (
               <div className="flex justify-center mt-8 sm:mt-12">
                 <Button
                   variant="outline"
                   size="lg"
-                  className="rounded-full px-8 sm:px-10 h-11 sm:h-12 gap-3 font-semibold border-border/50 hover:bg-muted/50 hover:border-primary/30 transition-all duration-300"
+                  disabled={isLoadingMore}
+                  className="rounded-full px-8 sm:px-10 h-11 sm:h-12 gap-3 font-semibold border-border/50 hover:bg-muted/50 hover:border-primary/30 transition-all duration-300 disabled:opacity-70"
                   onClick={loadMore}
                 >
-                  Load More
+                  {isLoadingMore ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Loading…
+                    </>
+                  ) : (
+                    "Load More"
+                  )}
                 </Button>
               </div>
             )}
