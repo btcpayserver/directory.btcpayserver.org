@@ -69,7 +69,11 @@ export default function SubmitForm({ onSuccess }: SubmitFormProps) {
       body: issueBody,
     });
 
-    window.open(`${REPO_URL}?${params.toString()}`, "_blank");
+    window.open(
+      `${REPO_URL}?${params.toString()}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
     setSubmitted(true);
     setTimeout(() => onSuccess?.(), 2000);
   }
