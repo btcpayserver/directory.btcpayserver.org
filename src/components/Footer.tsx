@@ -10,7 +10,7 @@ export default function Footer() {
       <div>
         <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-10">
           <SupporterSprite />
-          <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-4 sm:gap-6 items-center justify-items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-9 gap-3 sm:gap-6 items-center justify-items-center">
             {supporters.map((s) => (
               <a
                 key={s.svgId}
@@ -40,18 +40,18 @@ export default function Footer() {
         <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
           <div className="flex items-center gap-3 min-w-0">
             <a href="/" className="shrink-0">
-              <img src="/btcpay-directory-logo.svg" alt="BTCPay Directory" className="h-4 sm:h-5 dark:hidden" />
-              <img src="/btcpay-directory-logo-white.svg" alt="BTCPay Directory" className="h-4 sm:h-5 hidden dark:block" />
+              <img src="/btcpay-directory-logo.svg" alt="BTCPay Directory" className="h-5 sm:h-6 dark:hidden" />
+              <img src="/btcpay-directory-logo-white.svg" alt="BTCPay Directory" className="h-5 sm:h-6 hidden dark:block" />
             </a>
-            <span className="text-[10px] sm:text-[11px] text-muted-foreground leading-tight">
+            <span className="text-[11px] sm:text-xs text-muted-foreground leading-tight">
               Community-maintained listing. Inclusion does not imply endorsement.
             </span>
           </div>
           <div className="flex items-center gap-3 shrink-0">
-            <a href="https://github.com/btcpayserver" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="https://github.com/btcpayserver" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground active:text-foreground transition-colors p-2 -m-2">
               <Github className="h-4 w-4" />
             </a>
-            <a href="https://x.com/BtcpayServer" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="https://x.com/BtcpayServer" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground active:text-foreground transition-colors p-2 -m-2">
               <Twitter className="h-4 w-4" />
             </a>
           </div>

@@ -92,14 +92,14 @@ export default function SubmitForm({ onSuccess }: SubmitFormProps) {
   }
 
   const inputClass = (field: string) =>
-    `w-full h-10 px-3 rounded-lg bg-muted/40 border text-sm outline-none transition-all duration-200 focus:bg-background focus:border-primary/30 focus:ring-4 focus:ring-primary/10 ${
+    `w-full h-11 px-3 rounded-lg bg-muted/40 border text-sm outline-none transition-all duration-200 focus:bg-background focus:border-primary/30 focus:ring-4 focus:ring-primary/10 ${
       errors[field]
         ? "border-red-500/50 bg-red-500/5"
         : "border-transparent"
     }`;
 
   const selectClass = (field: string) =>
-    `w-full h-10 px-3 rounded-lg bg-muted/40 border text-sm outline-none transition-all duration-200 focus:bg-background focus:border-primary/30 focus:ring-4 focus:ring-primary/10 appearance-none cursor-pointer ${
+    `w-full h-11 px-3 rounded-lg bg-muted/40 border text-sm outline-none transition-all duration-200 focus:bg-background focus:border-primary/30 focus:ring-4 focus:ring-primary/10 appearance-none cursor-pointer ${
       errors[field]
         ? "border-red-500/50 bg-red-500/5"
         : "border-transparent"
@@ -230,7 +230,7 @@ export default function SubmitForm({ onSuccess }: SubmitFormProps) {
             value={description}
             onChange={(e) => setDescription(e.target.value.slice(0, 180))}
             rows={3}
-            className={`w-full px-3 py-2 rounded-lg bg-muted/40 border text-sm outline-none transition-all duration-200 focus:bg-background focus:border-primary/30 focus:ring-4 focus:ring-primary/10 resize-none ${
+            className={`w-full px-3 py-2.5 rounded-lg bg-muted/40 border text-sm outline-none transition-all duration-200 focus:bg-background focus:border-primary/30 focus:ring-4 focus:ring-primary/10 resize-none ${
               errors.description
                 ? "border-red-500/50 bg-red-500/5"
                 : "border-transparent"

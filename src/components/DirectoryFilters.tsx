@@ -59,13 +59,13 @@ export default function DirectoryFilters({
             <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider px-2 mb-3">
               Subcategories
             </p>
-            <div className="space-y-0.5 max-h-64 overflow-y-auto">
+            <div className="space-y-0.5 max-h-[40vh] sm:max-h-64 overflow-y-auto">
               {merchantSubTypes.map((subType) => (
                 <button
                   key={subType}
                   onClick={() => handleSubTypeClick(subType)}
                   className={cn(
-                    "w-full text-left px-3 py-2 rounded-xl text-xs font-medium transition-all duration-200",
+                    "w-full text-left px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200",
                     selectedSubType === subType
                       ? "bg-primary/10 text-primary"
                       : "text-muted-foreground hover:bg-muted/30 hover:text-foreground"
@@ -84,13 +84,13 @@ export default function DirectoryFilters({
             <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider px-2 mb-3">
               Country
             </p>
-            <div className="space-y-0.5 max-h-64 overflow-y-auto">
+            <div className="space-y-0.5 max-h-[40vh] sm:max-h-64 overflow-y-auto">
               {Object.entries(hostedBtcpayCountries).map(([code, name]) => (
                 <button
                   key={code}
                   onClick={() => handleSubTypeClick(code)}
                   className={cn(
-                    "w-full text-left px-3 py-2 rounded-xl text-xs font-medium transition-all duration-200",
+                    "w-full text-left px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200",
                     selectedSubType === code
                       ? "bg-primary/10 text-primary"
                       : "text-muted-foreground hover:bg-muted/30 hover:text-foreground"
