@@ -202,6 +202,7 @@ export default function DirectoryPage() {
                   setSelectedType={setSelectedType}
                   selectedSubType={selectedSubType}
                   setSelectedSubType={setSelectedSubType}
+                  onFilterChange={scrollToDirectory}
                 />
               </SheetContent>
             </Sheet>
@@ -215,6 +216,7 @@ export default function DirectoryPage() {
                 setSelectedType={setSelectedType}
                 selectedSubType={selectedSubType}
                 setSelectedSubType={setSelectedSubType}
+                onFilterChange={scrollToDirectory}
               />
 
               <div className="p-6 rounded-3xl bg-gradient-to-br from-primary/10 to-emerald-500/5 border border-primary/10 backdrop-blur-xl">

@@ -6,6 +6,7 @@ interface DirectoryFiltersProps {
   setSelectedType: (type: string) => void;
   selectedSubType: string | null;
   setSelectedSubType: (subType: string | null) => void;
+  onFilterChange?: () => void;
   className?: string;
 }
 
@@ -14,15 +15,18 @@ export default function DirectoryFilters({
   setSelectedType,
   selectedSubType,
   setSelectedSubType,
+  onFilterChange,
   className,
 }: DirectoryFiltersProps) {
   const handleTypeClick = (type: string) => {
     setSelectedType(type);
     setSelectedSubType(null);
+    onFilterChange?.();
   };
 
   const handleSubTypeClick = (subType: string) => {
     setSelectedSubType(selectedSubType === subType ? null : subType);
+    onFilterChange?.();
   };
 
   return (
