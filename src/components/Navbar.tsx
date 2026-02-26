@@ -45,7 +45,7 @@ export default function Navbar({ searchQuery, setSearchQuery, onSubmitClick }: N
             className="rounded-full px-3 sm:px-5 text-xs sm:text-sm font-semibold text-primary-foreground hover:opacity-90 transition-all shadow-lg shadow-primary/20 bg-primary hover:bg-primary/90"
             onClick={onSubmitClick}
           >
-            <span className="hidden sm:inline">Submit Store</span>
+            <span className="hidden sm:inline">Submit Entry</span>
             <span className="sm:hidden">Submit</span>
           </Button>
         </div>

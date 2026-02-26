@@ -187,7 +187,7 @@ export default function DirectoryPage() {
               className="rounded-full px-8 h-11 sm:h-12 text-sm sm:text-base backdrop-blur-sm bg-background/50 border-input/50 hover:bg-background/80 transition-all duration-300"
               onClick={openSubmit}
             >
-              Submit a Store
+              Submit Entry
             </Button>
           </div>
         </div>
@@ -243,7 +243,7 @@ export default function DirectoryPage() {
               />
 
               <div className="p-6 rounded-3xl bg-gradient-to-br from-primary/10 to-emerald-500/5 border border-primary/10 backdrop-blur-xl">
-                <h3 className="font-bold text-lg mb-2 text-primary">Add your store</h3>
+                <h3 className="font-bold text-lg mb-2 text-primary">Submit a new entry</h3>
                 <p className="text-sm text-muted-foreground mb-4">Are you using BTCPay Server? Get listed in the directory.</p>
                 <Button className="w-full rounded-xl bg-primary/90 hover:bg-primary shadow-lg shadow-primary/10" size="sm" onClick={openSubmit}>
                     Submit Now

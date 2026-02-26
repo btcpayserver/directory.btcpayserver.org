@@ -52,7 +52,7 @@ Use [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) count
 
 ### Public submissions
 
-End users submit new entries via the **Submit a Store** button on the site, which opens a pre-filled GitHub Issue. Maintainers review the issue and manually add the entry to `merchants.json`.
+End users submit new entries via the **Submit Entry** button on the site, which opens a pre-filled GitHub Issue. Maintainers review the issue and manually add the entry to `merchants.json`.
 
 ## Link checker
 
