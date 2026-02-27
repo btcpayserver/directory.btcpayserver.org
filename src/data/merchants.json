@@ -110,6 +110,13 @@
     "type": "non-profits"
   },
   {
+    "name": "Bitcoin Austria",
+    "url": "https://bitcoin-austria.at",
+    "description": "The oldest Bitcoin NPO in the world, advancing Bitcoin knowledge through educational initiatives, community engagement, and awareness campaigns throughout Austria.",
+    "type": "non-profits",
+    "twitter": "@bitcoin_at"
+  },
+  {
     "name": "Bitcoin Bloem",
     "url": "https://www.bitcoinbloem.com/",
     "description": "Flowers are beautiful and make people happy. It shows appreciation for one another. Flowers are a waste of energy to grow, so it should be forbidden. We offer you flowers for your bitcoin.",
@@ -191,6 +198,13 @@
     "type": "non-profits"
   },
   {
+    "name": "Blockobit",
+    "url": "https://c.blockobit.com",
+    "description": "BTCPay instance for merchants who do not want to host BTCPay themselves.",
+    "type": "hosted-btcpay",
+    "country": "GLOBAL"
+  },
+  {
     "name": "Blockstream Store",
     "url": "https://store.blockstream.com/",
     "description": "Blockstream online store sells stickers, hoodies, t-shirts, and metal engraved protectors for your recovery seed.",
@@ -212,6 +226,13 @@
     "subType": "food"
   },
   {
+    "name": "Branta",
+    "url": "https://pay.branta.pro",
+    "description": "Helping businesses in accepting BTC payments for their products and services via BTCPay Server.",
+    "type": "hosted-btcpay",
+    "country": "GLOBAL"
+  },
+  {
     "name": "Breaking Bread Cafe",
     "url": "http://www.breakingbread-dubai.com/",
     "description": "Delicious Coffee, sandwiches, salads, cakes and dinner items. Accepting bitcoin as the first coffee-shop in Dubai.",
@@ -223,6 +244,14 @@
     "url": "https://btcps0.com/",
     "description": "This is Britttttk’s BTCPayServer donation app. She manages all the translations that need be done for the BTCPayServer and contributes to the documentation.",
     "type": "non-profits"
+  },
+  {
+    "name": "BTC Consulting 360",
+    "url": "https://btcconsulting360.com",
+    "description": "Bitcoin self-custody training and consulting, offering online and in-person sessions on self-custody, privacy, and security with Bitcoin.",
+    "type": "merchants",
+    "subType": "education",
+    "twitter": "@BTConsulting360"
   },
   {
     "name": "BTC Factura",
@@ -596,6 +625,14 @@
     "twitter": "@GoGetFunding"
   },
   {
+    "name": "Good Brew",
+    "url": "https://btcpay.digitalthread.link",
+    "description": "Bitcoin payment hosting provider offering a reliable BTCPay Server for merchants, with easy integration and security.",
+    "type": "hosted-btcpay",
+    "twitter": "@lonniev",
+    "country": "GLOBAL"
+  },
+  {
     "name": "Groupsteam",
     "url": "https://www.groupsteam.com/",
     "description": "groupsteam.com sells games and game keys using BTCPayServer.",
@@ -783,6 +820,13 @@
     "subType": "food"
   },
   {
+    "name": "Let's Fo Live",
+    "url": "https://live.letsfo.com/",
+    "description": "A self-hosted Nostr livestream platform that integrates BTCPay Server for Bitcoin payments, enabling creators to unlock and manage livestream capabilities without intermediaries.",
+    "type": "merchants",
+    "subType": "software-video-games"
+  },
+  {
     "name": "Liberty Mugs",
     "url": "https://www.libertymugs.com/",
     "description": "libertymugs.com is a shop that sells mugs and uses Btcpay Server at checkout.",
@@ -948,6 +992,13 @@
     "subType": "electronics"
   },
   {
+    "name": "Nym VPN",
+    "url": "https://nym.com",
+    "description": "The world's most private VPN. Two VPN modes to balance your needs for speed and anonymity.",
+    "type": "merchants",
+    "subType": "domains-hosting-vpns"
+  },
+  {
     "name": "Ocean County Retina, PC",
     "url": "http://www.oceancountyretina.com",
     "description": "Medical practice accepting payment in Bitcoin.",
@@ -987,6 +1038,13 @@
     "url": "https://donate.pavlenex.com",
     "description": "This is Pavlenex’s BTCPayServer donation app.",
     "type": "non-profits"
+  },
+  {
+    "name": "pay.system.direct",
+    "url": "https://pay.system.direct",
+    "description": "BTCPay Server hosted instance for merchants.",
+    "type": "hosted-btcpay",
+    "country": "GLOBAL"
   },
   {
     "name": "PikaSim",
@@ -1051,6 +1109,14 @@
     "description": "Random.org mission is to provide the highest quality true random numbers and make them available to the world in useful forms.",
     "type": "merchants",
     "subType": "services"
+  },
+  {
+    "name": "Reunion Festival",
+    "url": "https://festivall.ca/reunion",
+    "description": "Family friendly Canadian electronic music festival accepting Bitcoin payments.",
+    "type": "merchants",
+    "subType": "art",
+    "twitter": "@dasrecord"
   },
   {
     "name": "Richelle Steyn (DOE Idea)",
@@ -1274,6 +1340,14 @@
     "country": "IT"
   },
   {
+    "name": "VoltageBTC",
+    "url": "https://www.voltageBTC.net",
+    "description": "At VoltageBTC, we believe every business should have access to the benefits of Bitcoin payments without the complexity.",
+    "type": "hosted-btcpay",
+    "twitter": "@Voltage_BTC",
+    "country": "US"
+  },
+  {
     "name": "We BTC",
     "url": "https://webtc.io/",
     "description": "We BTC is facilitating the adoption of bitcoin by providing Bitcoin Merchant Services using BTCPay Server",
@@ -1325,5 +1399,12 @@
     "url": "https://microsoftedge.microsoft.com/addons/detail/youtube-recommendation-mo/lifhdhloggjmjfbhbgnjfjbhjfidinol",
     "description": "A chrome extension that gives power💪 to the user to modify their YouTube homepage Recommendation in order to increase their productivity 😎. It is free of charge. We created it because we badly needed it for our own use, and wanted to share it with the world 😊.",
     "type": "non-profits"
+  },
+  {
+    "name": "zaplat.sk",
+    "url": "https://zaplat.sk",
+    "description": "BTCPay Server installation provided in the Slovak language for educational and training purposes.",
+    "type": "hosted-btcpay",
+    "country": "SK"
   }
 ]
