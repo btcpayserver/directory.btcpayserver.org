@@ -131,6 +131,14 @@
     "subType": "fashion"
   },
   {
+    "name": "Bitcoin Kenya",
+    "url": "https://bitcoin.co.ke/",
+    "description": "Kenya's home for Bitcoin payments. bitcoin.co.ke hosts a BTCPay Server so any Kenyan business can accept BTC directly to their own wallet.",
+    "type": "hosted-btcpay",
+    "country": "KE",
+    "twitter": "@tando_me"
+  },
+  {
     "name": "Bitcoin People",
     "url": "http://bitcoinpeople.it",
     "description": "Bitcoin People is a software company based in North Italy Brescia. We code for Bitcoin and make it easy for people to use Bitcoin.",
@@ -311,6 +319,14 @@
     "subType": "cryptocurrency-paraphernalia"
   },
   {
+    "name": "Cajero",
+    "url": "https://cajero.pe",
+    "description": "Facilitamos el acceso a pagos con bitcóin (BTC) a través de soluciones sobre BTCPayServer.",
+    "type": "hosted-btcpay",
+    "country": "PE",
+    "twitter": "@CajeroBitcoin"
+  },
+  {
     "name": "CheapAir.com",
     "url": "https://www.cheapair.com/",
     "description": "Cheapair is a travel agency launched in 1989. They’re the first in their industry to accept Bitcoin. Company offers affordable airline tickets for flights around the globe.",
@@ -487,6 +503,14 @@
     "subType": "services"
   },
   {
+    "name": "Dinero sin reglas",
+    "url": "https://dinerosinreglas.com",
+    "description": "A blog in Spanish that offers educational articles for beginners and anyone interested in learning about Bitcoin.",
+    "type": "merchants",
+    "subType": "education",
+    "twitter": "@decentralized_b"
+  },
+  {
     "name": "DIYnodes.com",
     "url": "https://diynodes.com/",
     "description": "Custom built BTC nodes. Accepts BTC via BTCPay Server at checkout.",
@@ -615,6 +639,14 @@
     "description": "btcpay.gianlock.xyz is a free, BTCPay Server hosting provider for stores. Helping local businesses in accepting BTC payments.",
     "type": "hosted-btcpay",
     "country": "GLOBAL"
+  },
+  {
+    "name": "Go Brrr",
+    "url": "https://gobrrr.me",
+    "description": "3D-design, on-demand Printing and Open-Source Hardware Shop made in Austria!",
+    "type": "merchants",
+    "subType": "3d-printing",
+    "twitter": "@Printer_Gobrrr"
   },
   {
     "name": "GoGetFunding",
@@ -931,6 +963,14 @@
     "subType": "education"
   },
   {
+    "name": "modulo bitcoin keys",
+    "url": "https://modulo.network",
+    "description": "Physical bitcoin private keys you create offline.",
+    "type": "merchants",
+    "subType": "tools",
+    "twitter": "@moduloBTC"
+  },
+  {
     "name": "Modurist Design",
     "url": "https://www.modurist.com/",
     "description": "Branding & logo design services for organisations, teams, streamers and gamers. Accepting cryptocurrencies and using BTCPay Server for the premades shop.",
@@ -1111,6 +1151,14 @@
     "subType": "services"
   },
   {
+    "name": "Regarding Fresh ®",
+    "url": "https://www.regardingfresh.com/shop",
+    "description": "Regarding Fresh ® is a luxury Fashion and Lifestyle retailer located in New Orleans! Curating globally sourced brands, and designers!",
+    "type": "merchants",
+    "subType": "fashion",
+    "twitter": "@refresh223"
+  },
+  {
     "name": "Reunion Festival",
     "url": "https://festivall.ca/reunion",
     "description": "Family friendly Canadian electronic music festival accepting Bitcoin payments.",
@@ -1217,6 +1265,14 @@
     "description": "Shift sells hardware wallets using BTCPayServer at checkout.",
     "type": "merchants",
     "subType": "electronics"
+  },
+  {
+    "name": "ShopinBit",
+    "url": "https://shopinbit.com",
+    "description": "Travel the world, buy cars and anything else that is legal; worldwide! ShopinBit is the KYC-Free Concierge Service since 2018.",
+    "type": "merchants",
+    "subType": "holiday-travel",
+    "twitter": "@shopinbit"
   },
   {
     "name": "SIP Sorcery",
@@ -1377,8 +1433,9 @@
   {
     "name": "withBitcoin.org",
     "url": "https://withbitcoin.org/",
-    "description": "We're a host offering free BTCPay accounts and customization services for companies interested in doing business with Bitcoin. Managed accounts are available for a nominal fee, free for nonprofits.",
+    "description": "Secure & low cost BTCPay Server host. Free trial, no hot wallets, many plugins enabled. We've processed over $1MM of BTC transactions since 2021.",
     "type": "hosted-btcpay",
+    "twitter": "@scottpruett",
     "country": "GLOBAL"
   },
   {
