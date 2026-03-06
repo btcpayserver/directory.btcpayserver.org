@@ -284,6 +284,15 @@
     "country": "IS"
   },
   {
+    "name": "BTCPay Server Italia",
+    "url": "https://www.btcpayserver.it",
+    "description": "The Italian BTCPayServer Community",
+    "type": "hosted-btcpay",
+    "twitter": "@btcpay_italia",
+    "github": "https://github.com/btcpayserver-it/",
+    "country": "IT"
+  },
+  {
     "name": "btcpayprovider.com",
     "url": "https://btcpayprovider.com/",
     "description": "btcpayprovider.com is a BTCPay Server hosting provider.",
