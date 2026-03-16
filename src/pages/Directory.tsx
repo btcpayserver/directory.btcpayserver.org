@@ -160,9 +160,8 @@ export default function DirectoryPage() {
       {/* Hero Section */}
       <div className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 overflow-hidden bg-background">
         {/* Subtle Mesh Gradient Background */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] sm:w-[1000px] h-[400px] sm:h-[600px] bg-primary/10 blur-[120px] rounded-full opacity-40 pointer-events-none" />
-        <div className="absolute top-[-100px] right-[-100px] w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-emerald-500/10 blur-[100px] rounded-full opacity-40 pointer-events-none" />
-
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true" style={{ background: "radial-gradient(ellipse at 50% 0%, hsl(var(--primary) / 0.08) 0%, transparent 75%)" }} />
+        
         <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold mb-4 sm:mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
             ₿itcoin is<br className="hidden md:block" />
