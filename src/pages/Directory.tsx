@@ -193,7 +193,7 @@ export default function DirectoryPage() {
       </div>
 
       {/* Main Content */}
-      <main id="directory" className="flex-1 container mx-auto px-4 sm:px-6 pb-16 sm:pb-24">
+      <main id="directory" className="flex-1 container mx-auto px-4 sm:px-6 pb-16 sm:pb-24 scroll-mt-16 sm:scroll-mt-20 pt-4 sm:pt-6">
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8">
 
           {/* Mobile Filter + Search Bar */}
