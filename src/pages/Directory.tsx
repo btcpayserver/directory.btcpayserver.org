@@ -232,7 +232,7 @@ export default function DirectoryPage() {
 
           {/* Desktop Sidebar */}
           <aside className="hidden lg:block w-64 flex-shrink-0">
-            <div className="sticky top-28 space-y-8 animate-in fade-in slide-in-from-left-6 duration-700 delay-500">
+            <div className="sticky top-28 max-h-[calc(100vh-8rem)] overflow-y-auto pb-4 space-y-8 animate-in fade-in slide-in-from-left-6 duration-700 delay-500 scrollbar-hide [ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <DirectoryFilters
                 selectedType={selectedType}
                 setSelectedType={setSelectedType}
