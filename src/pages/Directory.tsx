@@ -326,7 +326,7 @@ export default function DirectoryPage() {
       <Footer />
 
       <Dialog open={submitOpen} onOpenChange={setSubmitOpen}>
-        <DialogContent className="mx-4 sm:mx-auto sm:max-w-md max-h-[85vh] overflow-y-auto rounded-xl">
+        <DialogContent className="max-h-[92dvh] overflow-y-auto p-0 sm:max-w-2xl sm:max-h-[90vh]"  onOpenAutoFocus={(e) => e.preventDefault()}>
           <SubmitForm onSuccess={() => setSubmitOpen(false)} />
         </DialogContent>
       </Dialog>

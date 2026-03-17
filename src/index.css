@@ -244,3 +244,9 @@
     @apply font-display font-bold;
   }
 }
+
+@layer utilities {
+  .pb-safe {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}
