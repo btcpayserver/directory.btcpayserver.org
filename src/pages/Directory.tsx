@@ -164,7 +164,7 @@ export default function DirectoryPage() {
         
         <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold mb-4 sm:mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
-            ₿itcoin is<br className="hidden md:block" />
+            ₿itcoin is <br className="hidden md:block" />
             <span className="bg-gradient-to-r from-primary to-emerald-600 bg-clip-text text-transparent">Money.</span>
           </h1>
 
