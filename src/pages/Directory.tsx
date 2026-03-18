@@ -160,12 +160,11 @@ export default function DirectoryPage() {
       {/* Hero Section */}
       <div className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 overflow-hidden bg-background">
         {/* Subtle Mesh Gradient Background */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] sm:w-[1000px] h-[400px] sm:h-[600px] bg-primary/10 blur-[120px] rounded-full opacity-40 pointer-events-none" />
-        <div className="absolute top-[-100px] right-[-100px] w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-emerald-500/10 blur-[100px] rounded-full opacity-40 pointer-events-none" />
-
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true" style={{ background: "radial-gradient(ellipse at 50% 0%, hsl(var(--primary) / 0.08) 0%, transparent 70%)" }} />
+        
         <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold mb-4 sm:mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
-            ₿itcoin is<br className="hidden md:block" />
+            ₿itcoin is <br className="hidden md:block" />
             <span className="bg-gradient-to-r from-primary to-emerald-600 bg-clip-text text-transparent">Money.</span>
           </h1>
 
@@ -194,7 +193,7 @@ export default function DirectoryPage() {
       </div>
 
       {/* Main Content */}
-      <main id="directory" className="flex-1 container mx-auto px-4 sm:px-6 pb-16 sm:pb-24">
+      <main id="directory" className="flex-1 container mx-auto px-4 sm:px-6 pb-16 sm:pb-24 scroll-mt-16 sm:scroll-mt-20 pt-4 sm:pt-6">
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8">
 
           {/* Mobile Filter + Search Bar */}
@@ -206,7 +205,7 @@ export default function DirectoryPage() {
                 placeholder="Search merchants..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full h-11 pl-9 pr-4 rounded-full bg-muted/50 border border-transparent focus:bg-background focus:border-primary/20 focus:ring-4 focus:ring-primary/10 outline-none transition-all duration-300 text-sm placeholder:text-muted-foreground"
+                className="w-full h-11 pl-9 pr-4 rounded-full bg-muted/50 border border-transparent focus:bg-background focus:border-primary/20 focus:ring-4 focus:ring-primary/10 outline-none transition-all duration-300 text-base sm:text-sm placeholder:text-muted-foreground"
               />
             </div>
             <Sheet>
@@ -233,7 +232,7 @@ export default function DirectoryPage() {
 
           {/* Desktop Sidebar */}
           <aside className="hidden lg:block w-64 flex-shrink-0">
-            <div className="sticky top-28 space-y-8 animate-in fade-in slide-in-from-left-6 duration-700 delay-500">
+            <div className="sticky top-28 max-h-[calc(100vh-8rem)] overflow-y-auto pb-4 space-y-8 animate-in fade-in slide-in-from-left-6 duration-700 delay-500 scrollbar-hide [ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <DirectoryFilters
                 selectedType={selectedType}
                 setSelectedType={setSelectedType}
@@ -327,7 +326,7 @@ export default function DirectoryPage() {
       <Footer />
 
       <Dialog open={submitOpen} onOpenChange={setSubmitOpen}>
-        <DialogContent className="mx-4 sm:mx-auto sm:max-w-md max-h-[85vh] overflow-y-auto rounded-xl">
+        <DialogContent className="max-h-[92dvh] overflow-y-auto p-0 sm:max-w-2xl sm:max-h-[90vh]"  onOpenAutoFocus={(e) => e.preventDefault()}>
           <SubmitForm onSuccess={() => setSubmitOpen(false)} />
         </DialogContent>
       </Dialog>
