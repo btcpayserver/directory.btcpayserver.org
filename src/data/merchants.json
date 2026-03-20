@@ -1472,5 +1472,20 @@
     "description": "BTCPay Server installation provided in the Slovak language for educational and training purposes.",
     "type": "hosted-btcpay",
     "country": "SK"
+  },
+  {
+    "name": "MAGIC Grants",
+    "url": "https://donate.magicgrants.org",
+    "twitter": "@MAGICGrants",
+    "type": "non-profits",
+    "description": "MAGIC Grants provides scholarships for students interested in cryptocurrencies and privacy, supports public cryptocurrency infrastructure, and promotes privacy."
+  },
+  {
+    "name": "Way of Bitcoin",
+    "url": "https://wayofbitcoin.com",
+    "twitter": "@alanbwt",
+    "type": "merchants",
+    "subType": "books",
+    "description": "A philosophical guide to Bitcoin as a discipline and a way of life. Published by Hyperborean Press. Pay on-chain or with lightning via BTCPay Server Shopify V2."
   }
 ]
