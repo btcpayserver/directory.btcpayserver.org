@@ -1487,5 +1487,19 @@
     "type": "merchants",
     "subType": "books",
     "description": "A philosophical guide to Bitcoin as a discipline and a way of life. Published by Hyperborean Press. Pay on-chain or with lightning via BTCPay Server Shopify V2."
+  },
+  {
+    "name": "Bitasha",
+    "url": "https://bitasha.com/",
+    "type": "merchants",
+    "subType": "electronics",
+    "description": "Bitasha is a open Source Bitcoin ASIC Home Miner which is built by Indians for India"
+  },
+  {
+    "name": "Paco de la India",
+    "url": "https://pacodelaindia.com/",
+    "type": "merchants",
+    "subType": "books",
+    "description": "A 2-Year Journey Across 42 Countries over 800 days using bitcoin. The book is a tell-all covering paco journey"
   }
 ]
