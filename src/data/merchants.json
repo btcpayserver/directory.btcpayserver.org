@@ -1501,5 +1501,27 @@
     "type": "merchants",
     "subType": "books",
     "description": "A 2-Year Journey Across 42 Countries over 800 days using bitcoin. The book is a tell-all covering paco journey"
+  },
+  {
+    "name": "PayInBTC",
+    "url": "https://payinbtc.me",
+    "type": "apps",
+    "twitter": "@payinbtc_me",
+    "description": "Connect your accounting software to your BTCPay instance and get a bticoin payment link on all your invoices. Works with Quickbooks, Xero, Zoho, Sage, Simplbooks and more."
+  },
+  {
+    "name": "EasyMerchant",
+    "url": "https://btcpay870642.lndyn.com/plan-checkout/plancheckout_HaiUHtKgagSa7nGn2w",
+    "type": "hosted-btcpay",
+    "country": "GLOBAL",
+    "twitter": "EasySats_",
+    "description": "Whether you're a Merchant ready to accept Bitcoin or a pioneer ready to expand the network, the TimeForce starts here with EasyMerchant"
+  },
+  {
+    "name": "Northwest Vapors",
+    "url": "https://nwvliquids.com",
+    "type": "merchants",
+    "subType": "health-household",
+    "description": "We have been manufacturing quality e-liquids since 2011 at Northwest Vapors"
   }
 ]
