@@ -1523,5 +1523,20 @@
     "type": "merchants",
     "subType": "health-household",
     "description": "We have been manufacturing quality e-liquids since 2011 at Northwest Vapors"
+  },
+  {
+    "name": "Blockchange",
+    "url": "https://www.blockchange.expert",
+    "type": "merchants",
+    "subType": "payment-services",
+    "description": "We design complete value flows across cards, banks, and local rails, with final settlement in bitcoin or stablecoins. Chargeback-free by design.",
+    "twitter": "BlockchangeExp"
+  },
+  {
+    "name": "Tour Guide Lite",
+    "url": "https://tourguidelite.wificlashroom.online/",
+    "type": "merchants",
+    "subType": "tools",
+    "description": "TourGuideLite is the pay-as-you-go version of TourGuidePro. No monthly subscription, no commitment. You buy credits, each credit gives you one room session."
   }
 ]
