@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>BTC Map Plugin — Redirecting...</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #1e1e2e;
+      color: #cdd6f4;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem;
+      max-width: 32rem;
+    }
+    .error { color: #f38ba8; }
+    h1 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+    p { margin: 0.5rem 0; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <div class="container" id="message">
+    <p>Redirecting back to your BTCPay Server...</p>
+  </div>
+  <script>
+    (function () {
+      var messageEl = document.getElementById('message');
+
+      function showError(msg) {
+        messageEl.innerHTML =
+          '<h1 class="error">Redirect failed</h1>' +
+          '<p>' + msg + '</p>' +
+          '<p>Please return to your BTCPay Server and try connecting again.</p>';
+      }
+
+      var params = new URLSearchParams(window.location.search);
+      var code = params.get('code');
+      var state = params.get('state');
+
+      // OSM may redirect here with an error (e.g. user declined authorization).
+      var oauthError = params.get('error');
+      if (oauthError) {
+        showError('OpenStreetMap returned an error: ' + oauthError);
+        return;
+      }
+
+      if (!code || !state) {
+        showError('Missing authorization parameters.');
+        return;
+      }
+
+      var origin;
+      try {
+        // state is base64-encoded (standard or url-safe) UTF-8 origin URL.
+        var normalized = state.replace(/-/g, '+').replace(/_/g, '/');
+        // Pad to multiple of 4.
+        while (normalized.length % 4) normalized += '=';
+        origin = atob(normalized);
+      } catch (e) {
+        showError('Invalid state parameter.');
+        return;
+      }
+
+      var url;
+      try {
+        url = new URL(origin);
+      } catch (e) {
+        showError('State did not decode to a valid URL.');
+        return;
+      }
+
+      // Only HTTPS is allowed in production. HTTP is permitted for localhost-only
+      // dev scenarios (127.0.0.1 / localhost). This is a security boundary: if an
+      // attacker crafts a malicious state pointing to their own server, PKCE alone
+      // makes the intercepted code useless without the code_verifier — but we still
+      // refuse to forward codes to arbitrary origins.
+      var isLocalhost = url.hostname === '127.0.0.1' || url.hostname === 'localhost';
+      if (url.protocol !== 'https:' && !(url.protocol === 'http:' && isLocalhost)) {
+        showError('Only HTTPS origins are allowed (or http://localhost for development).');
+        return;
+      }
+
+      // Rebuild the target URL: {origin}/plugins/btcmap/oauth/callback?code={code}
+      // We deliberately do not forward state onward — the BTCPay instance already
+      // has the PKCE code_verifier in its settings and does not need state to
+      // identify the in-flight flow.
+      url.pathname = '/plugins/btcmap/oauth/callback';
+      url.search = '';
+      url.searchParams.set('code', code);
+
+      // Use replace() so the auth code does not remain in this domain's history.
+      window.location.replace(url.toString());
+    })();
+  </script>
+</body>
+</html>
