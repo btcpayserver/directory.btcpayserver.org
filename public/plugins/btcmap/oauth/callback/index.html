@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
   <title>BTC Map Plugin — Redirecting...</title>
   <style>
     body {
@@ -27,18 +28,20 @@
   </style>
 </head>
 <body>
-  <div class="container" id="message">
-    <p>Redirecting back to your BTCPay Server...</p>
+  <div class="container">
+    <p id="status">Redirecting back to your BTCPay Server...</p>
+    <div id="error-box" style="display:none">
+      <h1 class="error">Redirect failed</h1>
+      <p id="error-detail"></p>
+      <p>Please return to your BTCPay Server and try connecting again.</p>
+    </div>
   </div>
   <script>
     (function () {
-      var messageEl = document.getElementById('message');
-
       function showError(msg) {
-        messageEl.innerHTML =
-          '<h1 class="error">Redirect failed</h1>' +
-          '<p>' + msg + '</p>' +
-          '<p>Please return to your BTCPay Server and try connecting again.</p>';
+        document.getElementById('status').style.display = 'none';
+        document.getElementById('error-detail').textContent = msg;
+        document.getElementById('error-box').style.display = '';
       }
 
       var params = new URLSearchParams(window.location.search);
@@ -82,6 +85,11 @@
       // attacker crafts a malicious state pointing to their own server, PKCE alone
       // makes the intercepted code useless without the code_verifier — but we still
       // refuse to forward codes to arbitrary origins.
+      //
+      // NOTE: This is intentionally an open redirect to any HTTPS origin — BTCPay
+      // instances live at arbitrary domains, so we cannot allowlist hosts. PKCE
+      // mitigates auth-code theft; the fixed pathname and single-param query
+      // constrain generic abuse of this endpoint as a redirector.
       var isLocalhost = url.hostname === '127.0.0.1' || url.hostname === 'localhost';
       if (url.protocol !== 'https:' && !(url.protocol === 'http:' && isLocalhost)) {
         showError('Only HTTPS origins are allowed (or http://localhost for development).');
