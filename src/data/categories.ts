@@ -1,3 +1,6 @@
+import merchantsData from "@/data/merchants.json";
+import { countries } from "@/data/countries";
+
 export const mainTypes = [
   "All",
   "Merchants",
@@ -91,17 +94,19 @@ export function countryFlag(code: string): string {
   ).join("");
 }
 
-/** Countries available in the Hosted BTCPay dropdown — only countries with entries */
-export const hostedBtcpayCountries: Record<string, string> = {
-  GLOBAL: "Global",
-  AW: "Aruba",
-  BR: "Brazil",
-  BG: "Bulgaria",
-  CL: "Chile",
-  IS: "Iceland",
-  IT: "Italy",
-  KE: "Kenya",
-  NL: "Netherlands",
-  PE: "Peru",
-  US: "United States",
-};
+/** Countries available in the Hosted BTCPay dropdown — derived from hosted entries */
+export const hostedBtcpayCountries: Record<string, string> = Object.fromEntries(
+  Array.from(
+    new Set(
+      (merchantsData as Merchant[])
+        .filter((merchant) => merchant.type === "hosted-btcpay" && merchant.country)
+        .map((merchant) => merchant.country!.toUpperCase())
+    )
+  )
+    .sort((a, b) => {
+      if (a === "GLOBAL") return -1;
+      if (b === "GLOBAL") return 1;
+      return (countries[a] || a).localeCompare(countries[b] || b);
+    })
+    .map((code) => [code, countries[code] || code])
+);
