@@ -276,6 +276,14 @@
     "country": "BG"
   },
   {
+  "name": "BTCPay Latin America",
+  "url": "https://btcpay.lat",
+  "description": "Acepta Bitcoin en tu negocio con BTCPay.lat: costo accesible desde 100 MXN/mes, configuración fácil sin complicaciones técnicas y control total de tus fondos en tu wallet.",
+  "type": "hosted-btcpay",
+  "country": "MX",
+  "twitter": "@BTCPay_Latam"
+  },
+  {
     "name": "BTCPay Server Hosting",
     "url": "https://www.privacyauditor.institute/btcpayserver-hosting/",
     "description": "Low-cost BTCPay Server hosting — from Privacy Auditor Institute — Dutch expats in El Salvador — the world's first Bitcoin nation — with privacy-first infrastructure on secure, encrypted Flokinet servers in free-speech Iceland.",
