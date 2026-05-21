@@ -1546,5 +1546,42 @@
     "type": "merchants",
     "subType": "tools",
     "description": "TourGuideLite is the pay-as-you-go version of TourGuidePro. No monthly subscription, no commitment. You buy credits, each credit gives you one room session."
+  },
+  {
+    "name": "SUP Norway",
+    "url": "https://supnorway.com/",
+    "type": "merchants",
+    "subType": "holiday-travel",
+    "twitter": "@supnorway",
+    "description": "Unique and exclusive stand up paddling adventures in the most magnificent nature Norway has to offer. Top line equipment and experienced guides on beautiful UNESCO waters."
+  },
+  {
+    "name": "La Industria Handmade",
+    "url": "https://laindustriahandmade.com/",
+    "type": "merchants",
+    "subType": "fashion",
+    "twitter": "laIndustriahand",
+    "description": "Textile accessories carefully handmade with attention to detail. Minimalist design with maximum functionality, original gift ideas, and worldwide shipping."
+  },
+  {
+    "name": "Lifeproject 3003",
+    "url": "https://lifeproject3003.com/",
+    "type": "merchants",
+    "subType": "tools",
+    "description": "LifeProject3003 Geolocalizada Baliza V16 Homologada y Geolocalizada. Bitcoin and LN payment with BTCPay Server accepted."
+  },
+  {
+    "name": "Unbank",
+    "url": "https://unbank.com/",
+    "type": "apps",
+    "twitter": "unbankworld",
+    "description": "Unbank is a non-custodial exchange that allows users to buy Bitcoin with the privacy of cash at over 50k locations or cash out with zero fees."
+  },
+  {
+    "name": "Stack",
+    "url": "https://stackatm.com/",
+    "type": "apps",
+    "twitter": "unbankworld",
+    "description": "Stack is a non-custodial exchange that allows users to buy Bitcoin with the privacy of cash at over 50k locations or cash out with zero fees."
   }
 ]
