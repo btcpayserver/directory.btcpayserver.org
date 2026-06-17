@@ -1583,5 +1583,40 @@
     "type": "apps",
     "twitter": "unbankworld",
     "description": "Stack is a non-custodial exchange that allows users to buy Bitcoin with the privacy of cash at over 50k locations or cash out with zero fees."
+  },
+  {
+    "name": "CityGlide",
+    "url": "https://www.cityglide.co.th",
+    "type": "apps",
+    "description": "Scooter rental in Chiang Mai, Thailand. Delivered free to your door in minutes. Order online, pay by card, Bitcoin or Lightning ⚡"
+  },
+  {
+    "name": "Jimbeels",
+    "url": "https://www.jimbeels.store",
+    "type": "merchants",
+    "subType": "fashion",
+    "description": "jimbeels.store is an independent print‑on‑demand shop offering funny, original designs for pet lovers on T‑shirts, mugs and stickers. We accept Bitcoin on‑chain."
+  },
+  {
+    "name": "Forest Park Pharmacy",
+    "url": "https://www.forestparkpharmacy.com/",
+    "type": "merchants",
+    "subType": "health-household",
+    "description": "Fort Worth cash-pay compounding pharmacy. Cost-plus pricing, no insurance. Compounded meds, weight loss, and supplements shipped to select US states. Pay online in Bitcoin."
+  },
+  {
+    "name": "Pay Sprey.Win",
+    "url": "https://pay.sprey.win",
+    "type": "hosted-btcpay",
+    "twitter": "spreywin",
+    "description": "You can accept payments in BTC, USDT and other altcoins without any functionality limitations. Payment from 1 month. Grace period from 3 days. Pay.Sprey.Win is moving in the right."
+  },
+  {
+    "name": "Tienda Espía México",
+    "url": "https://tiendaespia.com.mx/",
+    "type": "merchants",
+    "subType": "electronics",
+    "twitter": "TiendaEspiaMX",
+    "description": "Your trusted online store for cybersecurity, hacking, and espionage tools — shipping across Mexico."
   }
 ]
