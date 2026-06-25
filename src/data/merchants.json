@@ -90,6 +90,13 @@
     "subType": "art"
   },
   {
+    "name": "Bitasha",
+    "url": "https://bitasha.com/",
+    "type": "merchants",
+    "subType": "electronics",
+    "description": "Bitasha is a open Source Bitcoin ASIC Home Miner which is built by Indians for India"
+  },
+  {
     "name": "Bitcoin Aruba",
     "url": "https://btcpay.btc.aw/",
     "description": "Bitcoin and Crypto enthusiast on the gorgeous island of Aruba that can act as a host.",
@@ -206,6 +213,14 @@
     "type": "non-profits"
   },
   {
+    "name": "Blockchange",
+    "url": "https://www.blockchange.expert",
+    "type": "merchants",
+    "subType": "payment-services",
+    "description": "We design complete value flows across cards, banks, and local rails, with final settlement in bitcoin or stablecoins. Chargeback-free by design.",
+    "twitter": "BlockchangeExp"
+  },
+  {
     "name": "Blockobit",
     "url": "https://c.blockobit.com",
     "description": "BTCPay instance for merchants who do not want to host BTCPay themselves.",
@@ -276,12 +291,12 @@
     "country": "BG"
   },
   {
-  "name": "BTCPay Latin America",
-  "url": "https://btcpay.lat",
-  "description": "Acepta Bitcoin en tu negocio con BTCPay.lat: costo accesible desde 100 MXN/mes, configuración fácil sin complicaciones técnicas y control total de tus fondos en tu wallet.",
-  "type": "hosted-btcpay",
-  "country": "MX",
-  "twitter": "@BTCPay_Latam"
+    "name": "BTCPay Latin America",
+    "url": "https://btcpay.lat",
+    "description": "Acepta Bitcoin en tu negocio con BTCPay.lat: costo accesible desde 100 MXN/mes, configuración fácil sin complicaciones técnicas y control total de tus fondos en tu wallet.",
+    "type": "hosted-btcpay",
+    "country": "MX",
+    "twitter": "@BTCPay_Latam"
   },
   {
     "name": "BTCPay Server Hosting",
@@ -377,6 +392,12 @@
     "description": "Citadel21 produces Bitcoin related literature through their blog and website. You can donate to support their present and future projects through their BTCPayServer donation button.",
     "type": "merchants",
     "subType": "cryptocurrency-paraphernalia"
+  },
+  {
+    "name": "CityGlide",
+    "url": "https://www.cityglide.co.th",
+    "type": "apps",
+    "description": "Scooter rental in Chiang Mai, Thailand. Delivered free to your door in minutes. Order online, pay by card, Bitcoin or Lightning ⚡"
   },
   {
     "name": "Code Engine",
@@ -554,6 +575,14 @@
     "subType": "electronics"
   },
   {
+    "name": "EasyMerchant",
+    "url": "https://btcpay870642.lndyn.com/plan-checkout/plancheckout_HaiUHtKgagSa7nGn2w",
+    "type": "hosted-btcpay",
+    "country": "GLOBAL",
+    "twitter": "EasySats_",
+    "description": "Whether you're a Merchant ready to accept Bitcoin or a pioneer ready to expand the network, the TimeForce starts here with EasyMerchant"
+  },
+  {
     "name": "Edberg Store",
     "url": "https://store.edberg.eu/",
     "description": "Edberg Store is a Swedish online merchant selling geeky stuff: Pebble watches, stickers and even Cosmo robots among other things.",
@@ -608,6 +637,13 @@
     "description": "CBD Oil & Extracts made in Switzerland.",
     "type": "merchants",
     "subType": "health-household"
+  },
+  {
+    "name": "Forest Park Pharmacy",
+    "url": "https://www.forestparkpharmacy.com/",
+    "type": "merchants",
+    "subType": "health-household",
+    "description": "Fort Worth cash-pay compounding pharmacy. Cost-plus pricing, no insurance. Compounded meds, weight loss, and supplements shipped to select US states. Pay online in Bitcoin."
   },
   {
     "name": "Foundation Devices",
@@ -807,6 +843,13 @@
     "twitter": "@ixtechcrypto"
   },
   {
+    "name": "Jimbeels",
+    "url": "https://www.jimbeels.store",
+    "type": "merchants",
+    "subType": "fashion",
+    "description": "jimbeels.store is an independent print‑on‑demand shop offering funny, original designs for pet lovers on T‑shirts, mugs and stickers. We accept Bitcoin on‑chain."
+  },
+  {
     "name": "Johnny’s Gardens",
     "url": "https://johnnysgardens.com/",
     "description": "Installation of garden beds with support of the garden.",
@@ -862,6 +905,14 @@
     "type": "non-profits"
   },
   {
+    "name": "La Industria Handmade",
+    "url": "https://laindustriahandmade.com/",
+    "type": "merchants",
+    "subType": "fashion",
+    "twitter": "laIndustriahand",
+    "description": "Textile accessories carefully handmade with attention to detail. Minimalist design with maximum functionality, original gift ideas, and worldwide shipping."
+  },
+  {
     "name": "Le Maxine's bar",
     "url": "https://btcpay.bitcoin-lyon.fr/apps/2WoGzeFotWBpVRi5LwDBrNtu75Qb/pos",
     "description": "Maxine's is nestled in the 1st arrondissement of Lyon, on a street perpendicular to Burdeau Street and easily accessible from the station Croix Paquet. Maxine's will satisfy everyone's needs with its various drinks: wines, cocktails, spirits, beers and all at low prices. They use BTCPay Server as a Point of Sales solution. Official website: maxines.fr/en",
@@ -887,6 +938,13 @@
     "url": "https://github.com/JeffVandrewJr/patron",
     "description": "A Self-Hosted Patreon Alternative Backed by BTCPay.",
     "type": "apps"
+  },
+  {
+    "name": "Lifeproject 3003",
+    "url": "https://lifeproject3003.com/",
+    "type": "merchants",
+    "subType": "tools",
+    "description": "LifeProject3003 Geolocalizada Baliza V16 Homologada y Geolocalizada. Bitcoin and LN payment with BTCPay Server accepted."
   },
   {
     "name": "Lightning Checkout",
@@ -957,6 +1015,13 @@
     "description": "Mad Gringo Hot Sauce™ Established 2012 Canadian owned and operatedAfter, leaving his job in corporate trade and returning from a life-changing trip to South America Jordan realized that going back to a desk job was not in the cards for him.",
     "type": "merchants",
     "subType": "food"
+  },
+  {
+    "name": "MAGIC Grants",
+    "url": "https://donate.magicgrants.org",
+    "twitter": "@MAGICGrants",
+    "type": "non-profits",
+    "description": "MAGIC Grants provides scholarships for students interested in cryptocurrencies and privacy, supports public cryptocurrency infrastructure, and promotes privacy."
   },
   {
     "name": "marcsteiner.tech",
@@ -1049,6 +1114,13 @@
     "subType": "electronics"
   },
   {
+    "name": "Northwest Vapors",
+    "url": "https://nwvliquids.com",
+    "type": "merchants",
+    "subType": "health-household",
+    "description": "We have been manufacturing quality e-liquids since 2011 at Northwest Vapors"
+  },
+  {
     "name": "Nym VPN",
     "url": "https://nym.com",
     "description": "The world's most private VPN. Two VPN modes to balance your needs for speed and anonymity.",
@@ -1077,6 +1149,13 @@
     "country": "CL"
   },
   {
+    "name": "Paco de la India",
+    "url": "https://pacodelaindia.com/",
+    "type": "merchants",
+    "subType": "books",
+    "description": "A 2-Year Journey Across 42 Countries over 800 days using bitcoin. The book is a tell-all covering paco journey"
+  },
+  {
     "name": "Paralelna Polis",
     "url": "https://paralelnapolis.sk/",
     "description": "Paralelna Polis is a non-profit organization focused on education in the area of freedom, technology science and art.",
@@ -1097,11 +1176,25 @@
     "type": "non-profits"
   },
   {
+    "name": "Pay Sprey.Win",
+    "url": "https://pay.sprey.win",
+    "type": "hosted-btcpay",
+    "twitter": "spreywin",
+    "description": "You can accept payments in BTC, USDT and other altcoins without any functionality limitations. Payment from 1 month. Grace period from 3 days. Pay.Sprey.Win is moving in the right."
+  },
+  {
     "name": "pay.system.direct",
     "url": "https://pay.system.direct",
     "description": "BTCPay Server hosted instance for merchants.",
     "type": "hosted-btcpay",
     "country": "GLOBAL"
+  },
+  {
+    "name": "PayInBTC",
+    "url": "https://payinbtc.me",
+    "type": "apps",
+    "twitter": "@payinbtc_me",
+    "description": "Connect your accounting software to your BTCPay instance and get a bticoin payment link on all your invoices. Works with Quickbooks, Xero, Zoho, Sage, Simplbooks and more."
   },
   {
     "name": "PikaSim",
@@ -1320,11 +1413,26 @@
     "subType": "services"
   },
   {
+    "name": "Stack",
+    "url": "https://stackatm.com/",
+    "type": "apps",
+    "twitter": "unbankworld",
+    "description": "Stack is a non-custodial exchange that allows users to buy Bitcoin with the privacy of cash at over 50k locations or cash out with zero fees."
+  },
+  {
     "name": "Sticky",
     "url": "https://sticky.com.sg/",
     "description": "Confectionary company from Singapore selling custom, mouthwatering candies. They have their own range of retail sweets.",
     "type": "merchants",
     "subType": "food"
+  },
+  {
+    "name": "SUP Norway",
+    "url": "https://supnorway.com/",
+    "type": "merchants",
+    "subType": "holiday-travel",
+    "twitter": "@supnorway",
+    "description": "Unique and exclusive stand up paddling adventures in the most magnificent nature Norway has to offer. Top line equipment and experienced guides on beautiful UNESCO waters."
   },
   {
     "name": "SweetSats",
@@ -1349,6 +1457,16 @@
     "github": "https://github.com/TechnoprepaySolutions"
   },
   {
+    "name": "TEST Submission 2 - Please Reject",
+    "url": "https://plugin-builder.btcpayserver.org",
+    "description": "Testing the btc map import RPC - rollforsats",
+    "type": "merchants",
+    "subType": "food",
+    "country": "US",
+    "twitter": "@rollforsats",
+    "github": "https://github.com/rollforsats"
+  },
+  {
     "name": "TFTC",
     "url": "https://tftc.io/",
     "description": "TFTC is a mostly Bitcoin news and information aggregation website. They also sell fashion items.",
@@ -1369,6 +1487,14 @@
     "subType": "education"
   },
   {
+    "name": "Tienda Espía México",
+    "url": "https://tiendaespia.com.mx/",
+    "type": "merchants",
+    "subType": "electronics",
+    "twitter": "TiendaEspiaMX",
+    "description": "Your trusted online store for cybersecurity, hacking, and espionage tools — shipping across Mexico."
+  },
+  {
     "name": "TorGuard VPN",
     "url": "https://torguard.net/",
     "description": "TorGuard VPN Service encrypts your internet access and provides an anonymous IP so you can browse securely.",
@@ -1380,6 +1506,13 @@
     "url": "https://donate.torproject.org/cryptocurrency",
     "description": "The Torproject has set up a donation widget that uses BTCPayServer. You can now donate Bitcoin directly with no middleman involved, either on-chain, or via LN. Every Sat donated goes into their hardware wallet.",
     "type": "non-profits"
+  },
+  {
+    "name": "Tour Guide Lite",
+    "url": "https://tourguidelite.wificlashroom.online/",
+    "type": "merchants",
+    "subType": "tools",
+    "description": "TourGuideLite is the pay-as-you-go version of TourGuidePro. No monthly subscription, no commitment. You buy credits, each credit gives you one room session."
   },
   {
     "name": "Towards Liberty",
@@ -1394,6 +1527,13 @@
     "url": "https://donate.umar-bolatov.com/",
     "description": "Ubolator's donation app page.",
     "type": "non-profits"
+  },
+  {
+    "name": "Unbank",
+    "url": "https://unbank.com/",
+    "type": "apps",
+    "twitter": "unbankworld",
+    "description": "Unbank is a non-custodial exchange that allows users to buy Bitcoin with the privacy of cash at over 50k locations or cash out with zero fees."
   },
   {
     "name": "VerifiedBitcoin.com",
@@ -1419,6 +1559,14 @@
     "type": "hosted-btcpay",
     "twitter": "@Voltage_BTC",
     "country": "US"
+  },
+  {
+    "name": "Way of Bitcoin",
+    "url": "https://wayofbitcoin.com",
+    "twitter": "@alanbwt",
+    "type": "merchants",
+    "subType": "books",
+    "description": "A philosophical guide to Bitcoin as a discipline and a way of life. Published by Hyperborean Press. Pay on-chain or with lightning via BTCPay Server Shopify V2."
   },
   {
     "name": "We BTC",
@@ -1471,7 +1619,7 @@
   {
     "name": "Youtube Recommendation Modifier",
     "url": "https://microsoftedge.microsoft.com/addons/detail/youtube-recommendation-mo/lifhdhloggjmjfbhbgnjfjbhjfidinol",
-    "description": "A chrome extension that gives power💪 to the user to modify their YouTube homepage Recommendation in order to increase their productivity 😎. It is free of charge. We created it because we badly needed it for our own use, and wanted to share it with the world 😊.",
+    "description": "A chrome extension that gives power\uD83D\uDCAA to the user to modify their YouTube homepage Recommendation in order to increase their productivity \uD83D\uDE0E. It is free of charge. We created it because we badly needed it for our own use, and wanted to share it with the world \uD83D\uDE0A.",
     "type": "non-profits"
   },
   {
@@ -1480,143 +1628,5 @@
     "description": "BTCPay Server installation provided in the Slovak language for educational and training purposes.",
     "type": "hosted-btcpay",
     "country": "SK"
-  },
-  {
-    "name": "MAGIC Grants",
-    "url": "https://donate.magicgrants.org",
-    "twitter": "@MAGICGrants",
-    "type": "non-profits",
-    "description": "MAGIC Grants provides scholarships for students interested in cryptocurrencies and privacy, supports public cryptocurrency infrastructure, and promotes privacy."
-  },
-  {
-    "name": "Way of Bitcoin",
-    "url": "https://wayofbitcoin.com",
-    "twitter": "@alanbwt",
-    "type": "merchants",
-    "subType": "books",
-    "description": "A philosophical guide to Bitcoin as a discipline and a way of life. Published by Hyperborean Press. Pay on-chain or with lightning via BTCPay Server Shopify V2."
-  },
-  {
-    "name": "Bitasha",
-    "url": "https://bitasha.com/",
-    "type": "merchants",
-    "subType": "electronics",
-    "description": "Bitasha is a open Source Bitcoin ASIC Home Miner which is built by Indians for India"
-  },
-  {
-    "name": "Paco de la India",
-    "url": "https://pacodelaindia.com/",
-    "type": "merchants",
-    "subType": "books",
-    "description": "A 2-Year Journey Across 42 Countries over 800 days using bitcoin. The book is a tell-all covering paco journey"
-  },
-  {
-    "name": "PayInBTC",
-    "url": "https://payinbtc.me",
-    "type": "apps",
-    "twitter": "@payinbtc_me",
-    "description": "Connect your accounting software to your BTCPay instance and get a bticoin payment link on all your invoices. Works with Quickbooks, Xero, Zoho, Sage, Simplbooks and more."
-  },
-  {
-    "name": "EasyMerchant",
-    "url": "https://btcpay870642.lndyn.com/plan-checkout/plancheckout_HaiUHtKgagSa7nGn2w",
-    "type": "hosted-btcpay",
-    "country": "GLOBAL",
-    "twitter": "EasySats_",
-    "description": "Whether you're a Merchant ready to accept Bitcoin or a pioneer ready to expand the network, the TimeForce starts here with EasyMerchant"
-  },
-  {
-    "name": "Northwest Vapors",
-    "url": "https://nwvliquids.com",
-    "type": "merchants",
-    "subType": "health-household",
-    "description": "We have been manufacturing quality e-liquids since 2011 at Northwest Vapors"
-  },
-  {
-    "name": "Blockchange",
-    "url": "https://www.blockchange.expert",
-    "type": "merchants",
-    "subType": "payment-services",
-    "description": "We design complete value flows across cards, banks, and local rails, with final settlement in bitcoin or stablecoins. Chargeback-free by design.",
-    "twitter": "BlockchangeExp"
-  },
-  {
-    "name": "Tour Guide Lite",
-    "url": "https://tourguidelite.wificlashroom.online/",
-    "type": "merchants",
-    "subType": "tools",
-    "description": "TourGuideLite is the pay-as-you-go version of TourGuidePro. No monthly subscription, no commitment. You buy credits, each credit gives you one room session."
-  },
-  {
-    "name": "SUP Norway",
-    "url": "https://supnorway.com/",
-    "type": "merchants",
-    "subType": "holiday-travel",
-    "twitter": "@supnorway",
-    "description": "Unique and exclusive stand up paddling adventures in the most magnificent nature Norway has to offer. Top line equipment and experienced guides on beautiful UNESCO waters."
-  },
-  {
-    "name": "La Industria Handmade",
-    "url": "https://laindustriahandmade.com/",
-    "type": "merchants",
-    "subType": "fashion",
-    "twitter": "laIndustriahand",
-    "description": "Textile accessories carefully handmade with attention to detail. Minimalist design with maximum functionality, original gift ideas, and worldwide shipping."
-  },
-  {
-    "name": "Lifeproject 3003",
-    "url": "https://lifeproject3003.com/",
-    "type": "merchants",
-    "subType": "tools",
-    "description": "LifeProject3003 Geolocalizada Baliza V16 Homologada y Geolocalizada. Bitcoin and LN payment with BTCPay Server accepted."
-  },
-  {
-    "name": "Unbank",
-    "url": "https://unbank.com/",
-    "type": "apps",
-    "twitter": "unbankworld",
-    "description": "Unbank is a non-custodial exchange that allows users to buy Bitcoin with the privacy of cash at over 50k locations or cash out with zero fees."
-  },
-  {
-    "name": "Stack",
-    "url": "https://stackatm.com/",
-    "type": "apps",
-    "twitter": "unbankworld",
-    "description": "Stack is a non-custodial exchange that allows users to buy Bitcoin with the privacy of cash at over 50k locations or cash out with zero fees."
-  },
-  {
-    "name": "CityGlide",
-    "url": "https://www.cityglide.co.th",
-    "type": "apps",
-    "description": "Scooter rental in Chiang Mai, Thailand. Delivered free to your door in minutes. Order online, pay by card, Bitcoin or Lightning ⚡"
-  },
-  {
-    "name": "Jimbeels",
-    "url": "https://www.jimbeels.store",
-    "type": "merchants",
-    "subType": "fashion",
-    "description": "jimbeels.store is an independent print‑on‑demand shop offering funny, original designs for pet lovers on T‑shirts, mugs and stickers. We accept Bitcoin on‑chain."
-  },
-  {
-    "name": "Forest Park Pharmacy",
-    "url": "https://www.forestparkpharmacy.com/",
-    "type": "merchants",
-    "subType": "health-household",
-    "description": "Fort Worth cash-pay compounding pharmacy. Cost-plus pricing, no insurance. Compounded meds, weight loss, and supplements shipped to select US states. Pay online in Bitcoin."
-  },
-  {
-    "name": "Pay Sprey.Win",
-    "url": "https://pay.sprey.win",
-    "type": "hosted-btcpay",
-    "twitter": "spreywin",
-    "description": "You can accept payments in BTC, USDT and other altcoins without any functionality limitations. Payment from 1 month. Grace period from 3 days. Pay.Sprey.Win is moving in the right."
-  },
-  {
-    "name": "Tienda Espía México",
-    "url": "https://tiendaespia.com.mx/",
-    "type": "merchants",
-    "subType": "electronics",
-    "twitter": "TiendaEspiaMX",
-    "description": "Your trusted online store for cybersecurity, hacking, and espionage tools — shipping across Mexico."
   }
 ]
