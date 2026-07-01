@@ -1106,7 +1106,7 @@
   {
     "name": "PikaSim",
     "url": "https://pikasim.com",
-    "description": "Privacy-focused eSIM provider for 170+ countries. No account required, no ID upload. Accepts Bitcoin on-chain, Lightning Network, and Monero via self-hosted BTCPay Server.",
+    "description": "Privacy-focused eSIMs and real carrier phone numbers for 190+ countries. No account, ID, or email. Accepts Bitcoin on-chain, Lightning, Monero, USDT, and shielded Zcash via self-hosted BTCPay Server.",
     "type": "merchants",
     "subType": "holiday-travel",
     "twitter": "@PikaSim"
