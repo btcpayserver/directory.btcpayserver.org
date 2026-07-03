@@ -1157,6 +1157,14 @@
     "country": "CL"
   },
   {
+    "name": "Packetra",
+    "url": "https://packetra.com",
+    "description": "Privacy-focused hosting in Finland and Switzerland. No-KYC email-only signup, native BTC and Monero via self-hosted BTCPay. Shared, VPS, and dedicated servers with unmetered bandwidth.",
+    "type": "merchants",
+    "subType": "domains-hosting-vpns",
+    "twitter": "packetrahosting"
+  },
+  {
     "name": "Paco de la India",
     "url": "https://pacodelaindia.com/",
     "type": "merchants",
