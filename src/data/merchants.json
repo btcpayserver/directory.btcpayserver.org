@@ -359,6 +359,14 @@
     "twitter": "@CajeroBitcoin"
   },
   {
+    "name": "Chains ERP",
+    "url": "https://btcpay.chains-erp.com",
+    "description": "Enterprise-grade Bitcoin payment infrastructure for modern businesses. Enabling invoices, payroll, and multi-currency treasury flows with instant BTC settlement. Fully non-custodial.",
+    "type": "hosted-btcpay",
+    "country": "GLOBAL",
+    "twitter": "chainserp"
+  },
+  {
     "name": "CheapAir.com",
     "url": "https://www.cheapair.com/",
     "description": "Cheapair is a travel agency launched in 1989. They’re the first in their industry to accept Bitcoin. Company offers affordable airline tickets for flights around the globe.",
