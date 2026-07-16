@@ -1414,6 +1414,15 @@
     "subType": "domains-hosting-vpns"
   },
   {
+    "name": "Spirit Fire Tobacco Co.",
+    "url": "https://spiritfiretobacco.com/",
+    "description": "Indigenous-owned online tobacco shop shipping tax-free native cigarettes, cigars, vapes and nicotine pouches across Canada. Accepts Bitcoin & Lightning via self-hosted BTCPay Server.",
+    "type": "merchants",
+    "subType": "adult",
+    "country": "CA",
+    "twitter": "spiritfireco"
+  },
+  {
     "name": "Spoof Defender",
     "url": "https://spoofdefender.com/",
     "description": "Spoof Defender searches the web for affiliates that misuse your affiliate program. The subscription is paid in Bitcoin with BTCPay Server.",
